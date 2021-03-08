@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "ANTC3216X140N"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "ANTC3216X140N")
+        (spec "default")
+    )
+)

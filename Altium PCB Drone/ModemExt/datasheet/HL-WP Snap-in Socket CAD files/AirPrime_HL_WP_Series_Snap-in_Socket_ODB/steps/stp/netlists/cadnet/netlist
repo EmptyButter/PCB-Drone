@@ -1,0 +1,357 @@
+H optimize N staggered N
+UNITS=MM
+$0 $NONE$
+$1 UIM1_VCC
+$2 GND1
+$3 GND2
+$4 GND3
+$5 GND4
+$6 GND5
+$7 GND6
+$8 UIM2_VCC
+$9 VBATT_RF1
+$10 VBATT_RF2
+$11 VBATT_BB1
+$12 GND7
+$13 GND8
+$14 GND9
+$15 GND10
+$16 GND11
+$17 GND12
+$18 GND13
+$19 GND14
+$20 GND15
+$21 GND16
+$22 VBATT_RF3
+$23 VBATT_BB2
+$24 GND17
+$25 GND18
+$26 GND19
+$27 GND20
+$28 GND21
+$29 GND22
+$30 GND23
+$31 GND24
+$32 GND25
+$33 GND26
+$34 GND27
+$35 GND28
+$36 GND29
+$37 GND30
+$38 GND31
+$39 GND32
+$40 GND33
+$41 GND34
+$42 GND35
+$43 GND36
+$44 GND37
+$45 GND38
+$46 GND39
+$47 GND40
+$48 GND41
+$49 GND42
+$50 GND43
+$51 GND44
+$52 GND45
+$53 GND46
+$54 GND47
+$55 GND48
+$56 GND49
+$57 GND50
+$58 GND51
+$59 GND52
+$60 GND53
+$61 GND54
+$62 GND55
+$63 GND56
+$64 GND57
+$65 GND58
+$66 GND59
+$67 GND60
+$68 GND61
+$69 GND62
+$70 GND63
+$71 GND64
+$72 GND65
+$73 GND66
+$74 GND67
+$75 GND68
+$76 GND69
+$77 GND70
+$78 GND71
+$79 GND72
+$80 GND73
+$81 GND74
+$82 GND75
+$83 GND76
+$84 GND77
+$85 GND78
+$86 GND79
+$87 GND80
+$88 GND81
+$89 GND82
+$90 GND83
+$91 GND84
+$92 GND_SENSE
+#
+#Netlist points
+#
+0 0 73.5 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 74.3 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 75.1 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 75.9 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 76.7 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 77.5 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 78.3 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 79.1 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 79.9 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 80.7 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 81.5 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 82.3 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 83.1 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 83.9 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 84.7 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 85.5 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 86.3 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 87.1 -4.48 T 0.5 1 e e staggered 0 0 0 
+0 0 88.48 -3.3 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 -2.5 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 -1.7 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 -0.9 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 -0.1 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 0.7 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 1.5 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 3.1 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 3.9 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 4.7 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 6.3 T 1 0.5 e e staggered 0 0 0 
+0 0 88.48 7.9 T 1 0.5 e e staggered 0 0 0 
+0 0 87.1 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 86.3 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 85.5 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 83.9 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 82.3 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 81.5 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 80.7 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 79.9 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 79.1 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 78.3 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 77.5 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 76.7 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 75.1 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 73.5 9.08 T 0.5 1 e e staggered 0 0 0 
+0 0 72.12 7.9 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 7.1 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 6.3 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 4.7 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 3.9 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 3.1 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 2.3 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 1.5 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 -1.7 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 -2.5 T 1 0.5 e e staggered 0 0 0 
+0 0 72.12 -3.3 T 1 0.5 e e staggered 0 0 0 
+0 0 70.7 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 71.5 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 72.3 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 73.1 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 73.9 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 74.7 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 75.5 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 76.3 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 77.1 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 77.9 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 78.7 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 79.5 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 80.3 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 81.1 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 81.9 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 82.7 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 83.5 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 84.3 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 85.1 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 85.9 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 86.7 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 87.5 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 88.3 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 89.1 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 89.9 -7.65 T 0.5 1 e e staggered 0 0 0 
+0 0 90.95 -6.5 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -5.7 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -4.9 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -4.1 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -3.3 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -2.5 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -1.7 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -0.9 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 -0.1 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 0.7 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 1.5 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 2.3 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 3.1 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 3.9 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 4.7 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 7.9 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 8.7 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 9.5 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 10.3 T 1 0.5 e e staggered 0 0 0 
+0 0 90.95 11.1 T 1 0.5 e e staggered 0 0 0 
+0 0 89.9 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 89.1 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 88.3 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 87.5 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 86.7 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 85.9 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 81.9 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 81.1 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 80.3 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 79.5 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 78.7 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 77.9 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 77.1 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 73.1 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 72.3 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 71.5 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 70.7 12.25 T 0.5 1 e e staggered 0 0 0 
+0 0 69.65 11.1 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 10.3 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 9.5 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 8.7 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 7.9 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 7.1 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 6.3 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 5.5 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 4.7 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 3.9 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 3.1 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 2.3 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 1.5 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -0.9 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -1.7 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -2.5 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -3.3 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -4.1 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -4.9 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -5.7 T 1 0.5 e e staggered 0 0 0 
+0 0 69.65 -6.5 T 1 0.5 e e staggered 0 0 0 
+0 0.4 73.9 -6.18 T e e staggered 0 0 0 
+0 0.4 75.1 -6.18 T e e staggered 0 0 0 
+0 0.4 76.3 -6.18 T e e staggered 0 0 0 
+0 0.4 77.5 -6.18 T e e staggered 0 0 0 
+0 0.4 78.7 -6.18 T e e staggered 0 0 0 
+0 0.4 79.9 -6.18 T e e staggered 0 0 0 
+0 0.4 81.1 -6.18 T e e staggered 0 0 0 
+0 0.4 82.3 -6.18 T e e staggered 0 0 0 
+0 0.4 83.5 -6.18 T e e staggered 0 0 0 
+0 0 69.25 -10.7 T 2.2 1.9 e e staggered 0 0 0 
+0 0 72.3 -10.35 T 3.3 1.2 e e staggered 0 0 0 
+0 0 80.3 -10.35 T 3.3 1.2 e e staggered 0 0 0 
+0 0 88.3 -10.35 T 3.3 1.2 e e staggered 0 0 0 
+0 0 91.35 -10.7 T 2.2 1.9 e e staggered 0 0 0 
+0 0 93.8 -8.25 T 1.9 2.2 e e staggered 0 0 0 
+0 0 93.45 -4.1 T 1.2 3.3 e e staggered 0 0 0 
+0 0 93.45 2.3 T 1.2 3.3 e e staggered 0 0 0 
+0 0 93.45 8.7 T 1.2 3.3 e e staggered 0 0 0 
+0 0 93.8 12.85 T 1.9 2.2 e e staggered 0 0 0 
+0 0 91.35 15.3 T 2.2 1.9 e e staggered 0 0 0 
+0 0 88.3 14.95 T 3.3 1.2 e e staggered 0 0 0 
+0 0 80.3 14.95 T 3.3 1.2 e e staggered 0 0 0 
+0 0 72.3 14.95 T 3.3 1.2 e e staggered 0 0 0 
+0 0 69.25 15.3 T 2.2 1.9 e e staggered 0 0 0 
+0 0 66.8 12.85 T 1.9 2.2 e e staggered 0 0 0 
+0 0 67.15 8.7 T 1.2 3.3 e e staggered 0 0 0 
+0 0 67.15 2.3 T 1.2 3.3 e e staggered 0 0 0 
+0 0 67.15 -4.1 T 1.2 3.3 e e staggered 0 0 0 
+0 0 66.8 -8.25 T 1.9 2.2 e e staggered 0 0 0 
+1 0 88.48 2.3 T 1 0.5 e e staggered 0 0 0 
+2 0 88.48 5.5 T 1 0.5 e e staggered 0 0 0 
+3 0 88.48 7.1 T 1 0.5 e e staggered 0 0 0 
+4 0 84.7 9.08 T 0.5 1 e e staggered 0 0 0 
+5 0 83.1 9.08 T 0.5 1 e e staggered 0 0 0 
+6 0 75.9 9.08 T 0.5 1 e e staggered 0 0 0 
+7 0 74.3 9.08 T 0.5 1 e e staggered 0 0 0 
+8 0 72.12 5.5 T 1 0.5 e e staggered 0 0 0 
+9 0 72.12 0.7 T 1 0.5 e e staggered 0 0 0 
+10 0 72.12 -0.1 T 1 0.5 e e staggered 0 0 0 
+11 0 72.12 -0.9 T 1 0.5 e e staggered 0 0 0 
+12 0 72.12 -4.48 T 1 1 e e staggered 0 0 0 
+13 0 88.48 -4.48 T 1 1 e e staggered 0 0 0 
+14 0 88.48 9.08 T 1 1 e e staggered 0 0 0 
+15 0 72.12 9.08 T 1 1 e e staggered 0 0 0 
+16 0 90.95 5.5 T 1 0.5 e e staggered 0 0 0 
+17 0 90.95 7.1 T 1 0.5 e e staggered 0 0 0 
+18 0 85.1 12.25 T 0.5 1 e e staggered 0 0 0 
+19 0 82.7 12.25 T 0.5 1 e e staggered 0 0 0 
+20 0 76.3 12.25 T 0.5 1 e e staggered 0 0 0 
+21 0 73.9 12.25 T 0.5 1 e e staggered 0 0 0 
+22 0 69.65 0.7 T 1 0.5 e e staggered 0 0 0 
+23 0 69.65 -0.1 T 1 0.5 e e staggered 0 0 0 
+24 0 69.6 -7.65 T 0.9 1 e e staggered 0 0 0 
+25 0 91 -7.65 T 0.9 1 e e staggered 0 0 0 
+26 0 91 12.25 T 0.9 1 e e staggered 0 0 0 
+27 0 69.6 12.25 T 0.9 1 e e staggered 0 0 0 
+28 0 86.6875 -2.8625 T 1 1 e e staggered 0 0 0 
+29 0 86.6875 -1.3875 T 1 1 e e staggered 0 0 0 
+30 0 86.6875 0.0875 T 1 1 e e staggered 0 0 0 
+31 0 86.6875 1.5625 T 1 1 e e staggered 0 0 0 
+32 0 86.6875 3.0375 T 1 1 e e staggered 0 0 0 
+33 0 86.6875 4.5125 T 1 1 e e staggered 0 0 0 
+34 0 86.6875 5.9875 T 1 1 e e staggered 0 0 0 
+35 0 86.6875 7.4625 T 1 1 e e staggered 0 0 0 
+36 0 84.8625 7.4625 T 1 1 e e staggered 0 0 0 
+37 0 83.0375 7.4625 T 1 1 e e staggered 0 0 0 
+38 0 81.2125 7.4625 T 1 1 e e staggered 0 0 0 
+39 0 79.3875 7.4625 T 1 1 e e staggered 0 0 0 
+40 0 77.5625 7.4625 T 1 1 e e staggered 0 0 0 
+41 0 75.7375 7.4625 T 1 1 e e staggered 0 0 0 
+42 0 73.9125 7.4625 T 1 1 e e staggered 0 0 0 
+43 0 73.9125 5.9875 T 1 1 e e staggered 0 0 0 
+44 0 73.9125 4.5125 T 1 1 e e staggered 0 0 0 
+45 0 73.9125 3.0375 T 1 1 e e staggered 0 0 0 
+46 0 73.9125 1.5625 T 1 1 e e staggered 0 0 0 
+47 0 73.9125 0.0875 T 1 1 e e staggered 0 0 0 
+48 0 73.9125 -1.3875 T 1 1 e e staggered 0 0 0 
+49 0 73.9125 -2.8625 T 1 1 e e staggered 0 0 0 
+50 0 75.7375 -2.8625 T 1 1 e e staggered 0 0 0 
+51 0 77.5625 -2.8625 T 1 1 e e staggered 0 0 0 
+52 0 79.3875 -2.8625 T 1 1 e e staggered 0 0 0 
+53 0 81.2125 -2.8625 T 1 1 e e staggered 0 0 0 
+54 0 83.0375 -2.8625 T 1 1 e e staggered 0 0 0 
+55 0 84.8625 -2.8625 T 1 1 e e staggered 0 0 0 
+56 0 84.8625 -1.3875 T 1 1 e e staggered 0 0 0 
+57 0 84.8625 0.0875 T 1 1 e e staggered 0 0 0 
+58 0 84.8625 1.5625 T 1 1 e e staggered 0 0 0 
+59 0 84.8625 3.0375 T 1 1 e e staggered 0 0 0 
+60 0 84.8625 4.5125 T 1 1 e e staggered 0 0 0 
+61 0 84.8625 5.9875 T 1 1 e e staggered 0 0 0 
+62 0 83.0375 5.9875 T 1 1 e e staggered 0 0 0 
+63 0 81.2125 5.9875 T 1 1 e e staggered 0 0 0 
+64 0 79.3875 5.9875 T 1 1 e e staggered 0 0 0 
+65 0 77.5625 5.9875 T 1 1 e e staggered 0 0 0 
+66 0 75.7375 5.9875 T 1 1 e e staggered 0 0 0 
+67 0 75.7375 4.5125 T 1 1 e e staggered 0 0 0 
+68 0 75.7375 3.0375 T 1 1 e e staggered 0 0 0 
+69 0 75.7375 1.5625 T 1 1 e e staggered 0 0 0 
+70 0 75.7375 0.0875 T 1 1 e e staggered 0 0 0 
+71 0 75.7375 -1.3875 T 1 1 e e staggered 0 0 0 
+72 0 77.5625 -1.3875 T 1 1 e e staggered 0 0 0 
+73 0 79.3875 -1.3875 T 1 1 e e staggered 0 0 0 
+74 0 81.2125 -1.3875 T 1 1 e e staggered 0 0 0 
+75 0 83.0375 -1.3875 T 1 1 e e staggered 0 0 0 
+76 0 83.0375 0.0875 T 1 1 e e staggered 0 0 0 
+77 0 83.0375 1.5625 T 1 1 e e staggered 0 0 0 
+78 0 83.0375 3.0375 T 1 1 e e staggered 0 0 0 
+79 0 83.0375 4.5125 T 1 1 e e staggered 0 0 0 
+80 0 81.2125 4.5125 T 1 1 e e staggered 0 0 0 
+81 0 79.3875 4.5125 T 1 1 e e staggered 0 0 0 
+82 0 77.5625 4.5125 T 1 1 e e staggered 0 0 0 
+83 0 77.5625 3.0375 T 1 1 e e staggered 0 0 0 
+84 0 77.5625 1.5625 T 1 1 e e staggered 0 0 0 
+85 0 77.5625 0.0875 T 1 1 e e staggered 0 0 0 
+86 0 79.3875 0.0875 T 1 1 e e staggered 0 0 0 
+87 0 81.2125 0.0875 T 1 1 e e staggered 0 0 0 
+88 0 81.2125 1.5625 T 1 1 e e staggered 0 0 0 
+89 0 81.2125 3.0375 T 1 1 e e staggered 0 0 0 
+90 0 79.3875 3.0375 T 1 1 e e staggered 0 0 0 
+91 0 79.3875 1.5625 T 1 1 e e staggered 0 0 0 
+92 0.5 72.12 -5.98 T e e staggered 0 0 0 

@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "WPSNAPINBASE"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "WPSNAPINBASE")
+        (spec "default")
+    )
+)

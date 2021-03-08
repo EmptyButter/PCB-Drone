@@ -1,0 +1,1 @@
+C:\1234\PCB drone project\Crazyflie2.1\FreeRTOS\FreeRTOSv10.3.1\FreeRTOS\Demo\WIN32-MSVC\Debug\RTOSDemo.exe

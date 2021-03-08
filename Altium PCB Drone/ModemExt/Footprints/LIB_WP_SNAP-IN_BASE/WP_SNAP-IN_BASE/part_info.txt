@@ -1,0 +1,9 @@
+Manufacturer=SIERRA WIRELESS
+PartNumber=WP SNAP-IN BASE
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=258
+Version=1.3
+Released=2018-07-26 09:39:56
+Downloaded=2020-07-14 07:39:42
+3D=Y

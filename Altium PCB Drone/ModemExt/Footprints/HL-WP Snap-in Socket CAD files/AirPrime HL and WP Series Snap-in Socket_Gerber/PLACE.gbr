@@ -1,0 +1,19 @@
+G04 CAM350/DFMSTREAM V12.2 (Build 1124) Date:  Wed Mar 06 16:06:52 2019 *
+G04 Database: d:\cad\swi_source\new folder\airprime hl and wp series snap-in socket.cam *
+G04 Layer 1: PLACE *
+%FSLAX23Y23*%
+%MOIN*%
+%SFA1.000B1.000*%
+
+%MIA0B0*%
+%IPPOS*%
+%LNPLACE*%
+%LPD*%
+G36*
+X-522Y-502D02*
+G01Y502D01*
+X522*
+Y-502*
+X-522*
+G37*
+M02*

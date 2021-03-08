@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PMW3901MB_TXQT'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "PixArt Imaging Inc.", "PMW3901MB-TXQT" (!) = "", "PMW3901MBTXQT", "Other", "PMW3901MB-TXQT", "", "", "", "PMW3901MB-TXQT", "http://www.pixart.com.tw/upload/POT0189-PMW3901MB-TXQT-DS-R1.10-200617%20(NonNDA)_20170720181537_20170802183402.pdf", "2.36 mm"
+END_PART
+
+END.

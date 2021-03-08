@@ -1,0 +1,33 @@
+PCAD Importer Log
+Project : HL7588.LibPkg
+
+Section : C:\1234\PCB drone project\Altium PCB Drone\ModemExt\Footprints\HL7588\HL7588.lia
+    Section : PCB Library - HL7588.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token HL7588 On Line 2011
+            Warning - 1 : Skipping Token attachedSymbol On Line 3482
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - HL7588.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token padStyleDef On Line 33
+            Warning - 1 : Skipping Token padStyleDef On Line 45
+            Warning - 1 : Skipping Token padStyleDef On Line 57
+            Warning - 1 : Skipping Token multiLayer On Line 132
+            Warning - 1 : Skipping Token layerContents On Line 280
+            Warning - 1 : Skipping Token layerContents On Line 288
+            Warning - 1 : Skipping Token layerContents On Line 296
+            Warning - 1 : Skipping Token layerContents On Line 302
+            Warning - 1 : Skipping Token layerContents On Line 2003
+        EndSection
+
+        Section : Generating SCH Library - HL7588.SchLib
+        EndSection
+    EndSection
+EndSection

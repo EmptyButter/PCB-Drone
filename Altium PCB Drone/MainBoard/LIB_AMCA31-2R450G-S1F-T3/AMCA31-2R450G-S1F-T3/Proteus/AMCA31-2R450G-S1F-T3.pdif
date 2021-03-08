@@ -1,0 +1,102 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "AMCA31-2R450G-S1F-T3"
+   (description "ABRACON - AMCA31-2R450G-S1F-T3 - ANTENNA, CHIP, 2.45GHZ, 50 OHM, 1206")
+   (family "ANA")
+   (package "ANTC3216X140N")
+   (attribute "Datasheet Link" "http://www.abracon.com/chip-antenna/AMCA31-2R450G-S1F-T.pdf")
+   (attribute "Geometry.Height" "1.4mm")
+   (attribute "Manufacturer_Name" "ABRACON")
+   (attribute "Manufacturer_Part_Number" "AMCA31-2R450G-S1F-T3")
+   (attribute "Arrow Part Number" "AMCA31-2R450G-S1F-T3")
+   (attribute "Arrow Price/Stock" "https://www.arrow.com/en/products/amca31-2r450g-s1f-t3/abracon")
+   (attribute "Mouser Part Number" "815-CA312R450GS1FT3")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/ABRACON/AMCA31-2R450G-S1F-T3?qs=AAveGqk956GLuOddQEK40Q%3D%3D")
+   (gate
+    (symbol "AMCA31-2R450G-S1F-T3")
+    (pin "FEED" 1 IP)
+    (pin "NC" 2 NC)
+   )
+  )
+  (symbol "AMCA31-2R450G-S1F-T3"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 700 100) (pt 700 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "ANTC3216X140N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -2.525 1.35)
+      (pt 2.525 1.35)
+      (pt 2.525 -1.35)
+      (pt -2.525 -1.35)
+      (pt -2.525 1.35))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.6 0.8)
+      (pt 1.6 0.8)
+      (pt 1.6 -0.8)
+      (pt -1.6 -0.8)
+      (pt -1.6 0.8))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.6 0.225)
+      (pt -1.025 0.8))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 1.5 1.25)
+      (pt -2.425 1.25)
+      (pt -2.425 -1.25)
+      (pt 1.5 -1.25))))
+   (leg 1 (pt -1.5 0) (padstack 0))
+   (leg 2 (pt 1.5 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 1.15 1.8 0 0 90))
+   )
+   (model "AMCA31-2R450G-S1F-T3.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,439 @@
+Component: ARM Compiler 6.14 Tool: armlink [5db06800]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x08000189
+
+  Load Region LR_1 (Base: 0x08000000, Size: 0x0000d2c0, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x0000d0a8])
+
+    Execution Region ER_RO (Base: 0x08000000, Size: 0x0000cdbc, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x08000000   0x00000188   Data   RO            3    RESET               startup_stm32f405xx.o
+    0x08000188   0x00000000   Code   RO         2109  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x08000188   0x00000004   Code   RO         2183    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x0800018c   0x00000004   Code   RO         2186    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x08000190   0x00000000   Code   RO         2188    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x08000190   0x00000000   Code   RO         2190    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x08000190   0x00000008   Code   RO         2191    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x08000198   0x00000000   Code   RO         2193    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x08000198   0x00000000   Code   RO         2195    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x08000198   0x00000004   Code   RO         2184    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x0800019c   0x00000024   Code   RO            4    .text               startup_stm32f405xx.o
+    0x080001c0   0x00000062   Code   RO         2112    .text               mc_w.l(uldiv.o)
+    0x08000222   0x00000024   Code   RO         2114    .text               mc_w.l(memcpya.o)
+    0x08000246   0x00000024   Code   RO         2116    .text               mc_w.l(memseta.o)
+    0x0800026a   0x0000001c   Code   RO         2120    .text               mc_w.l(strcmp.o)
+    0x08000286   0x00000012   Code   RO         2122    .text               mc_w.l(strcpy.o)
+    0x08000298   0x000000b0   Code   RO         2126    .text               mf_w.l(fadd.o)
+    0x08000348   0x00000064   Code   RO         2128    .text               mf_w.l(fmul.o)
+    0x080003ac   0x0000007c   Code   RO         2130    .text               mf_w.l(fdiv.o)
+    0x08000428   0x0000014e   Code   RO         2132    .text               mf_w.l(dadd.o)
+    0x08000576   0x000000e4   Code   RO         2134    .text               mf_w.l(dmul.o)
+    0x0800065a   0x0000001c   Code   RO         2136    .text               mf_w.l(fcmple.o)
+    0x08000676   0x0000001c   Code   RO         2138    .text               mf_w.l(fcmplt.o)
+    0x08000692   0x0000001c   Code   RO         2140    .text               mf_w.l(fcmpge.o)
+    0x080006ae   0x0000001c   Code   RO         2142    .text               mf_w.l(fcmpgt.o)
+    0x080006ca   0x0000001c   Code   RO         2144    .text               mf_w.l(fcmpeq.o)
+    0x080006e6   0x00000036   Code   RO         2146    .text               mf_w.l(dcmpge.o)
+    0x0800071c   0x00000036   Code   RO         2148    .text               mf_w.l(dcmpgt.o)
+    0x08000752   0x00000012   Code   RO         2150    .text               mf_w.l(fflti.o)
+    0x08000764   0x0000000a   Code   RO         2152    .text               mf_w.l(ffltui.o)
+    0x0800076e   0x0000002c   Code   RO         2154    .text               mf_w.l(ffltl.o)
+    0x0800079a   0x00000032   Code   RO         2158    .text               mf_w.l(ffixi.o)
+    0x080007cc   0x00000026   Code   RO         2160    .text               mf_w.l(f2d.o)
+    0x080007f2   0x00000038   Code   RO         2162    .text               mf_w.l(d2f.o)
+    0x0800082a   0x0000001e   Code   RO         2197    .text               mc_w.l(llshl.o)
+    0x08000848   0x00000020   Code   RO         2199    .text               mc_w.l(llushr.o)
+    0x08000868   0x00000024   Code   RO         2201    .text               mc_w.l(llsshr.o)
+    0x0800088c   0x00000000   Code   RO         2210    .text               mc_w.l(iusefp.o)
+    0x0800088c   0x0000006e   Code   RO         2211    .text               mf_w.l(fepilogue.o)
+    0x080008fa   0x00000018   Code   RO         2213    .text               mf_w.l(fscalb.o)
+    0x08000912   0x0000005e   Code   RO         2215    .text               mf_w.l(fsqrt.o)
+    0x08000970   0x0000003c   Code   RO         2217    .text               mf_w.l(frnd.o)
+    0x080009ac   0x000000ba   Code   RO         2219    .text               mf_w.l(depilogue.o)
+    0x08000a66   0x00000036   Code   RO         2221    .text               mf_w.l(fcmp4.o)
+    0x08000a9c   0x00000024   Code   RO         2223    .text               mc_w.l(init.o)
+    0x08000ac0   0x00000056   Code   RO         2233    .text               mc_w.l(__dczerorl2.o)
+    0x08000b16   0x00000002   PAD
+    0x08000b18   0x00000002   Code   RO          195    .text.BusFault_Handler  stm32f4xx_it.o
+    0x08000b1a   0x00000002   PAD
+    0x08000b1c   0x0000020a   Code   RO          319    .text.ControllerInit  controller.o
+    0x08000d26   0x00000002   PAD
+    0x08000d28   0x0000000c   Code   RO          437    .text.CurrentLedSeq  LED_sequence.o
+    0x08000d34   0x0000000c   Code   RO          203    .text.DMA1_Stream2_IRQHandler  stm32f4xx_it.o
+    0x08000d40   0x0000000c   Code   RO          205    .text.DMA1_Stream4_IRQHandler  stm32f4xx_it.o
+    0x08000d4c   0x00000002   Code   RO          199    .text.DebugMon_Handler  stm32f4xx_it.o
+    0x08000d4e   0x00000002   PAD
+    0x08000d50   0x0000001c   Code   RO          128    .text.Error_Handler  main.o
+    0x08000d6c   0x00000020   Code   RO          829    .text.HAL_DMA_Abort_IT  stm32f4xx_hal_dma.o
+    0x08000d8c   0x00000082   Code   RO          821    .text.HAL_DMA_DeInit  stm32f4xx_hal_dma.o
+    0x08000e0e   0x00000002   PAD
+    0x08000e10   0x000001ae   Code   RO          833    .text.HAL_DMA_IRQHandler  stm32f4xx_hal_dma.o
+    0x08000fbe   0x00000002   PAD
+    0x08000fc0   0x00000152   Code   RO          819    .text.HAL_DMA_Init  stm32f4xx_hal_dma.o
+    0x08001112   0x00000002   PAD
+    0x08001114   0x00000028   Code   RO          980    .text.HAL_Delay     stm32f4xx_hal.o
+    0x0800113c   0x0000033e   Code   RO          783    .text.HAL_GPIO_DeInit  stm32f4xx_hal_gpio.o
+    0x0800147a   0x00000002   PAD
+    0x0800147c   0x000001ae   Code   RO          781    .text.HAL_GPIO_Init  stm32f4xx_hal_gpio.o
+    0x0800162a   0x00000002   PAD
+    0x0800162c   0x0000000e   Code   RO          789    .text.HAL_GPIO_TogglePin  stm32f4xx_hal_gpio.o
+    0x0800163a   0x00000002   PAD
+    0x0800163c   0x0000000a   Code   RO          787    .text.HAL_GPIO_WritePin  stm32f4xx_hal_gpio.o
+    0x08001646   0x00000002   PAD
+    0x08001648   0x0000000c   Code   RO          972    .text.HAL_GetTick   stm32f4xx_hal.o
+    0x08001654   0x0000002e   Code   RO          552    .text.HAL_I2C_DeInit  stm32f4xx_hal_i2c.o
+    0x08001682   0x00000002   PAD
+    0x08001684   0x00000198   Code   RO          548    .text.HAL_I2C_Init  stm32f4xx_hal_i2c.o
+    0x0800181c   0x000005b4   Code   RO          562    .text.HAL_I2C_Master_Receive  stm32f4xx_hal_i2c.o
+    0x08001dd0   0x000002ea   Code   RO          556    .text.HAL_I2C_Master_Transmit  stm32f4xx_hal_i2c.o
+    0x080020ba   0x00000002   PAD
+    0x080020bc   0x00000080   Code   RO          102    .text.HAL_I2C_MspDeInit  i2c.o
+    0x0800213c   0x0000019e   Code   RO          100    .text.HAL_I2C_MspInit  i2c.o
+    0x080022da   0x00000002   PAD
+    0x080022dc   0x0000001a   Code   RO          970    .text.HAL_IncTick   stm32f4xx_hal.o
+    0x080022f6   0x00000002   PAD
+    0x080022f8   0x00000036   Code   RO          960    .text.HAL_Init      stm32f4xx_hal.o
+    0x0800232e   0x00000002   PAD
+    0x08002330   0x00000048   Code   RO          962    .text.HAL_InitTick  stm32f4xx_hal.o
+    0x08002378   0x00000038   Code   RO          181    .text.HAL_MspInit   stm32f4xx_hal_msp.o
+    0x080023b0   0x00000020   Code   RO          918    .text.HAL_NVIC_EnableIRQ  stm32f4xx_hal_cortex.o
+    0x080023d0   0x00000056   Code   RO          916    .text.HAL_NVIC_SetPriority  stm32f4xx_hal_cortex.o
+    0x08002426   0x00000002   PAD
+    0x08002428   0x00000020   Code   RO          914    .text.HAL_NVIC_SetPriorityGrouping  stm32f4xx_hal_cortex.o
+    0x08002448   0x00000160   Code   RO          675    .text.HAL_RCC_ClockConfig  stm32f4xx_hal_rcc.o
+    0x080025a8   0x00000026   Code   RO          687    .text.HAL_RCC_GetPCLK1Freq  stm32f4xx_hal_rcc.o
+    0x080025ce   0x00000002   PAD
+    0x080025d0   0x00000026   Code   RO          689    .text.HAL_RCC_GetPCLK2Freq  stm32f4xx_hal_rcc.o
+    0x080025f6   0x00000002   PAD
+    0x080025f8   0x0000006a   Code   RO          677    .text.HAL_RCC_GetSysClockFreq  stm32f4xx_hal_rcc.o
+    0x08002662   0x00000002   PAD
+    0x08002664   0x00000358   Code   RO          673    .text.HAL_RCC_OscConfig  stm32f4xx_hal_rcc.o
+    0x080029bc   0x00000076   Code   RO         1458    .text.HAL_SPI_Init  stm32f4xx_hal_spi.o
+    0x08002a32   0x00000002   PAD
+    0x08002a34   0x00000072   Code   RO          402    .text.HAL_SPI_MspInit  spi.o
+    0x08002aa6   0x00000002   PAD
+    0x08002aa8   0x0000002c   Code   RO          926    .text.HAL_SYSTICK_Config  stm32f4xx_hal_cortex.o
+    0x08002ad4   0x000000ae   Code   RO         1330    .text.HAL_TIMEx_MasterConfigSynchronization  stm32f4xx_hal_tim_ex.o
+    0x08002b82   0x00000002   PAD
+    0x08002b84   0x000000c8   Code   RO          220    .text.HAL_TIM_MspPostInit  tim.o
+    0x08002c4c   0x0000021e   Code   RO         1204    .text.HAL_TIM_PWM_ConfigChannel  stm32f4xx_hal_tim.o
+    0x08002e6a   0x00000002   PAD
+    0x08002e6c   0x0000002e   Code   RO         1104    .text.HAL_TIM_PWM_Init  stm32f4xx_hal_tim.o
+    0x08002e9a   0x00000002   PAD
+    0x08002e9c   0x00000088   Code   RO          226    .text.HAL_TIM_PWM_MspInit  tim.o
+    0x08002f24   0x0000004c   Code   RO         1112    .text.HAL_TIM_PWM_Start  stm32f4xx_hal_tim.o
+    0x08002f70   0x00000084   Code   RO         1114    .text.HAL_TIM_PWM_Stop  stm32f4xx_hal_tim.o
+    0x08002ff4   0x00000002   Code   RO         1426    .text.HAL_UART_ErrorCallback  stm32f4xx_hal_uart.o
+    0x08002ff6   0x00000002   PAD
+    0x08002ff8   0x00000008   Code   RO         1446    .text.HAL_UART_GetState  stm32f4xx_hal_uart.o
+    0x08003000   0x00000256   Code   RO         1422    .text.HAL_UART_IRQHandler  stm32f4xx_hal_uart.o
+    0x08003256   0x00000002   PAD
+    0x08003258   0x00000054   Code   RO         1352    .text.HAL_UART_Init  stm32f4xx_hal_uart.o
+    0x080032ac   0x000000f2   Code   RO          263    .text.HAL_UART_MspInit  usart.o
+    0x0800339e   0x00000002   PAD
+    0x080033a0   0x00000002   Code   RO         1432    .text.HAL_UART_RxCpltCallback  stm32f4xx_hal_uart.o
+    0x080033a2   0x00000002   PAD
+    0x080033a4   0x00000002   Code   RO         1428    .text.HAL_UART_TxCpltCallback  stm32f4xx_hal_uart.o
+    0x080033a6   0x00000002   PAD
+    0x080033a8   0x00000002   Code   RO          191    .text.HardFault_Handler  stm32f4xx_it.o
+    0x080033aa   0x00000002   PAD
+    0x080033ac   0x000000b8   Code   RO          560    .text.I2C_WaitOnBTFFlagUntilTimeout  stm32f4xx_hal_i2c.o
+    0x08003464   0x000000b8   Code   RO          558    .text.I2C_WaitOnTXEFlagUntilTimeout  stm32f4xx_hal_i2c.o
+    0x0800351c   0x0000000c   Code   RO          439    .text.LEDTest       LED_sequence.o
+    0x08003528   0x00000056   Code   RO          419    .text.LED_Init      LED_sequence.o
+    0x0800357e   0x00000002   PAD
+    0x08003580   0x0000015a   Code   RO          433    .text.LED_task      LED_sequence.o
+    0x080036da   0x00000002   PAD
+    0x080036dc   0x000000ae   Code   RO          435    .text.LedSeqRun     LED_sequence.o
+    0x0800378a   0x00000002   PAD
+    0x0800378c   0x00000048   Code   RO           78    .text.MX_DMA_Init   dma.o
+    0x080037d4   0x0000014e   Code   RO           87    .text.MX_GPIO_Init  gpio.o
+    0x08003922   0x00000002   PAD
+    0x08003924   0x00000042   Code   RO           96    .text.MX_I2C1_Init  i2c.o
+    0x08003966   0x00000002   PAD
+    0x08003968   0x00000042   Code   RO           98    .text.MX_I2C3_Init  i2c.o
+    0x080039aa   0x00000002   PAD
+    0x080039ac   0x0000004c   Code   RO          400    .text.MX_SPI1_Init  spi.o
+    0x080039f8   0x000000a4   Code   RO          218    .text.MX_TIM2_Init  tim.o
+    0x08003a9c   0x00000090   Code   RO          222    .text.MX_TIM3_Init  tim.o
+    0x08003b2c   0x00000090   Code   RO          224    .text.MX_TIM4_Init  tim.o
+    0x08003bbc   0x0000003c   Code   RO          259    .text.MX_USART3_UART_Init  usart.o
+    0x08003bf8   0x0000003c   Code   RO          261    .text.MX_USART6_UART_Init  usart.o
+    0x08003c34   0x00000002   Code   RO          193    .text.MemManage_Handler  stm32f4xx_it.o
+    0x08003c36   0x00000002   PAD
+    0x08003c38   0x00000052   Code   RO          384    .text.MotorPowerInit  motor_pwr_out.o
+    0x08003c8a   0x00000002   PAD
+    0x08003c8c   0x0000000c   Code   RO          386    .text.MotorPowerTest  motor_pwr_out.o
+    0x08003c98   0x00000002   Code   RO          189    .text.NMI_Handler   stm32f4xx_it.o
+    0x08003c9a   0x00000002   PAD
+    0x08003c9c   0x00000094   Code   RO         1595    .text.SEGGER_RTT_Write  SEGGER_RTT.o
+    0x08003d30   0x00000174   Code   RO         1593    .text.SEGGER_RTT_WriteNoLock  SEGGER_RTT.o
+    0x08003ea4   0x0000001e   Code   RO         1654    .text.SEGGER_RTT_printf  SEGGER_RTT_printf.o
+    0x08003ec2   0x00000002   PAD
+    0x08003ec4   0x000005e4   Code   RO         1650    .text.SEGGER_RTT_vprintf  SEGGER_RTT_printf.o
+    0x080044a8   0x00000004   Code   RO          201    .text.SysTick_Handler  stm32f4xx_it.o
+    0x080044ac   0x00000250   Code   RO          118    .text.Syslink_task  main.o
+    0x080046fc   0x000000a0   Code   RO          126    .text.SystemClock_Config  main.o
+    0x0800479c   0x00000010   Code   RO         1570    .text.SystemInit    system_stm32f4xx.o
+    0x080047ac   0x00000136   Code   RO         1054    .text.TIM_Base_SetConfig  stm32f4xx_hal_tim.o
+    0x080048e2   0x00000002   PAD
+    0x080048e4   0x0000000c   Code   RO         1424    .text.UART_DMAAbortOnError  stm32f4xx_hal_uart.o
+    0x080048f0   0x000000f4   Code   RO         1356    .text.UART_SetConfig  stm32f4xx_hal_uart.o
+    0x080049e4   0x0000000c   Code   RO          207    .text.USART3_IRQHandler  stm32f4xx_it.o
+    0x080049f0   0x00000004   Code   RO          209    .text.USART6_IRQHandler  stm32f4xx_it.o
+    0x080049f4   0x00000002   Code   RO          197    .text.UsageFault_Handler  stm32f4xx_it.o
+    0x080049f6   0x00000002   PAD
+    0x080049f8   0x00000052   Code   RO         1832    .text.VL53L0X_ClearInterruptMask  vl53l0x_api.o
+    0x08004a4a   0x00000002   PAD
+    0x08004a4c   0x000001e0   Code   RO         1706    .text.VL53L0X_DataInit  vl53l0x_api.o
+    0x08004c2c   0x00000004   Code   RO         1670    .text.VL53L0X_GetDeviceInfo  vl53l0x_api.o
+    0x08004c30   0x00000128   Code   RO         1708    .text.VL53L0X_GetDeviceParameters  vl53l0x_api.o
+    0x08004d58   0x0000001c   Code   RO         1750    .text.VL53L0X_GetLimitCheckEnable  vl53l0x_api.o
+    0x08004d74   0x00000094   Code   RO         1748    .text.VL53L0X_GetLimitCheckValue  vl53l0x_api.o
+    0x08004e08   0x0000005a   Code   RO         1818    .text.VL53L0X_GetMeasurementDataReady  vl53l0x_api.o
+    0x08004e62   0x00000002   PAD
+    0x08004e64   0x00000120   Code   RO         1824    .text.VL53L0X_GetRangingMeasurementData  vl53l0x_api.o
+    0x08004f84   0x00000040   Code   RO         1768    .text.VL53L0X_GetSequenceStepEnables  vl53l0x_api.o
+    0x08004fc4   0x00000004   Code   RO         1724    .text.VL53L0X_GetVcselPulsePeriod  vl53l0x_api.o
+    0x08004fc8   0x00000008   Code   RO         1780    .text.VL53L0X_GetXTalkCompensationEnable  vl53l0x_api.o
+    0x08004fd0   0x00000006   Code   RO         1804    .text.VL53L0X_PerformRefCalibration  vl53l0x_api.o
+    0x08004fd6   0x00000002   PAD
+    0x08004fd8   0x00000004   Code   RO         1860    .text.VL53L0X_PerformRefSpadManagement  vl53l0x_api.o
+    0x08004fdc   0x00000084   Code   RO         1830    .text.VL53L0X_PerformSingleRangingMeasurement  vl53l0x_api.o
+    0x08005060   0x00000020   Code   RO         2058    .text.VL53L0X_PollingDelay  vl53l0x_platform.o
+    0x08005080   0x00000014   Code   RO         2052    .text.VL53L0X_RdByte  vl53l0x_platform.o
+    0x08005094   0x00000014   Code   RO         2056    .text.VL53L0X_RdDWord  vl53l0x_platform.o
+    0x080050a8   0x00000014   Code   RO         2054    .text.VL53L0X_RdWord  vl53l0x_platform.o
+    0x080050bc   0x00000020   Code   RO         2042    .text.VL53L0X_ReadMulti  vl53l0x_platform.o
+    0x080050dc   0x00000022   Code   RO         1732    .text.VL53L0X_SetDeviceMode  vl53l0x_api.o
+    0x080050fe   0x00000002   PAD
+    0x08005100   0x00000170   Code   RO         1718    .text.VL53L0X_SetGpioConfig  vl53l0x_api.o
+    0x08005270   0x00000098   Code   RO         1710    .text.VL53L0X_SetLimitCheckEnable  vl53l0x_api.o
+    0x08005308   0x00000056   Code   RO         1712    .text.VL53L0X_SetLimitCheckValue  vl53l0x_api.o
+    0x0800535e   0x00000002   PAD
+    0x08005360   0x00000004   Code   RO         1740    .text.VL53L0X_SetMeasurementTimingBudgetMicroSeconds  vl53l0x_api.o
+    0x08005364   0x00000004   Code   RO         1762    .text.VL53L0X_SetVcselPulsePeriod  vl53l0x_api.o
+    0x08005368   0x00000184   Code   RO         1800    .text.VL53L0X_StartMeasurement  vl53l0x_api.o
+    0x080054ec   0x00000228   Code   RO         1686    .text.VL53L0X_StaticInit  vl53l0x_api.o
+    0x08005714   0x00000046   Code   RO         2050    .text.VL53L0X_UpdateByte  vl53l0x_platform.o
+    0x0800575a   0x00000002   PAD
+    0x0800575c   0x00000014   Code   RO         2044    .text.VL53L0X_WrByte  vl53l0x_platform.o
+    0x08005770   0x00000014   Code   RO         2046    .text.VL53L0X_WrWord  vl53l0x_platform.o
+    0x08005784   0x00000020   Code   RO         2040    .text.VL53L0X_WriteMulti  vl53l0x_platform.o
+    0x080057a4   0x00000252   Code   RO         1971    .text.VL53L0X_calc_dmax  vl53l0x_api_core.o
+    0x080059f6   0x00000002   PAD
+    0x080059f8   0x0000055e   Code   RO         1973    .text.VL53L0X_calc_sigma_estimate  vl53l0x_api_core.o
+    0x08005f56   0x00000002   PAD
+    0x08005f58   0x000000d0   Code   RO         1988    .text.VL53L0X_get_device_info  vl53l0x_api_strings.o
+    0x08006028   0x00000a0e   Code   RO         1941    .text.VL53L0X_get_info_from_device  vl53l0x_api_core.o
+    0x08006a36   0x00000002   PAD
+    0x08006a38   0x0000017a   Code   RO         1963    .text.VL53L0X_get_measurement_timing_budget_micro_seconds  vl53l0x_api_core.o
+    0x08006bb2   0x00000002   PAD
+    0x08006bb4   0x00000042   Code   RO         1878    .text.VL53L0X_get_offset_calibration_data_micro_meter  vl53l0x_api_calibration.o
+    0x08006bf6   0x00000002   PAD
+    0x08006bf8   0x000002bc   Code   RO         1975    .text.VL53L0X_get_pal_range_status  vl53l0x_api_core.o
+    0x08006eb4   0x00000048   Code   RO         1959    .text.VL53L0X_get_vcsel_pulse_period  vl53l0x_api_core.o
+    0x08006efc   0x000000f0   Code   RO         1965    .text.VL53L0X_load_tuning_settings  vl53l0x_api_core.o
+    0x08006fec   0x00000052   Code   RO         1929    .text.VL53L0X_measurement_poll_for_completion  vl53l0x_api_core.o
+    0x0800703e   0x00000002   PAD
+    0x08007040   0x000000e8   Code   RO         1912    .text.VL53L0X_perform_phase_calibration  vl53l0x_api_calibration.o
+    0x08007128   0x00000044   Code   RO         1900    .text.VL53L0X_perform_ref_calibration  vl53l0x_api_calibration.o
+    0x0800716c   0x00000400   Code   RO         1898    .text.VL53L0X_perform_ref_spad_management  vl53l0x_api_calibration.o
+    0x0800756c   0x000000d2   Code   RO         1910    .text.VL53L0X_perform_vhv_calibration  vl53l0x_api_calibration.o
+    0x0800763e   0x00000002   PAD
+    0x08007640   0x00000038   Code   RO         2022    .text.VL53L0X_read_byte  vl53l0x_i2c_platform.o
+    0x08007678   0x0000005a   Code   RO         2026    .text.VL53L0X_read_dword  vl53l0x_i2c_platform.o
+    0x080076d2   0x00000002   PAD
+    0x080076d4   0x00000044   Code   RO         2014    .text.VL53L0X_read_multi  vl53l0x_i2c_platform.o
+    0x08007718   0x00000044   Code   RO         2024    .text.VL53L0X_read_word  vl53l0x_i2c_platform.o
+    0x0800775c   0x0000017e   Code   RO         1961    .text.VL53L0X_set_measurement_timing_budget_micro_seconds  vl53l0x_api_core.o
+    0x080078da   0x00000002   PAD
+    0x080078dc   0x0000010c   Code   RO         1902    .text.VL53L0X_set_reference_spads  vl53l0x_api_calibration.o
+    0x080079e8   0x000003c4   Code   RO         1957    .text.VL53L0X_set_vcsel_pulse_period  vl53l0x_api_core.o
+    0x08007dac   0x0000002e   Code   RO         2016    .text.VL53L0X_write_byte  vl53l0x_i2c_platform.o
+    0x08007dda   0x00000002   PAD
+    0x08007ddc   0x00000058   Code   RO         2012    .text.VL53L0X_write_multi  vl53l0x_i2c_platform.o
+    0x08007e34   0x00000034   Code   RO         2018    .text.VL53L0X_write_word  vl53l0x_i2c_platform.o
+    0x08007e68   0x0000018c   Code   RO          497    .text.VL53L0x_configSensor  Zrange.o
+    0x08007ff4   0x000001b0   Code   RO         1652    .text._PrintUnsigned  SEGGER_RTT_printf.o
+    0x080081a4   0x000000bc   Code   RO          287    .text.aquireTofMeasurement  stateEstimator.o
+    0x08008260   0x00000046   Code   RO          150    .text.bmi088_I2C_read  sensor.o
+    0x080082a6   0x00000002   PAD
+    0x080082a8   0x0000005a   Code   RO          152    .text.bmi088_I2C_write  sensor.o
+    0x08008302   0x00000002   PAD
+    0x08008304   0x00000064   Code   RO            7    .text.bmi088_accel_init  bmi088_accel.o
+    0x08008368   0x00000048   Code   RO           29    .text.bmi088_accel_switch_control  bmi088_accel.o
+    0x080083b0   0x00000050   Code   RO           25    .text.bmi088_get_accel_data  bmi088_accel.o
+    0x08008400   0x000000f0   Code   RO            9    .text.bmi088_get_accel_regs  bmi088_accel.o
+    0x080084f0   0x00000074   Code   RO           61    .text.bmi088_get_gyro_data  bmi088_gyro.o
+    0x08008564   0x00000060   Code   RO           49    .text.bmi088_gyro_init  bmi088_gyro.o
+    0x080085c4   0x00000196   Code   RO           21    .text.bmi088_set_accel_meas_conf  bmi088_accel.o
+    0x0800875a   0x00000002   PAD
+    0x0800875c   0x00000068   Code   RO           23    .text.bmi088_set_accel_power_mode  bmi088_accel.o
+    0x080087c4   0x000000f6   Code   RO           57    .text.bmi088_set_gyro_meas_conf  bmi088_gyro.o
+    0x080088ba   0x00000002   PAD
+    0x080088bc   0x00000082   Code   RO           59    .text.bmi088_set_gyro_power_mode  bmi088_gyro.o
+    0x0800893e   0x00000002   PAD
+    0x08008940   0x000000ee   Code   RO          454    .text.bmp3_get_regs  bmp3.o
+    0x08008a2e   0x00000002   PAD
+    0x08008a30   0x00000076   Code   RO          484    .text.bmp3_get_sensor_data  bmp3.o
+    0x08008aa6   0x00000002   PAD
+    0x08008aa8   0x000001de   Code   RO          452    .text.bmp3_init     bmp3.o
+    0x08008c86   0x00000002   PAD
+    0x08008c88   0x000001fe   Code   RO          480    .text.bmp3_set_op_mode  bmp3.o
+    0x08008e86   0x00000002   PAD
+    0x08008e88   0x00000208   Code   RO          458    .text.bmp3_set_regs  bmp3.o
+    0x08009090   0x0000030e   Code   RO          460    .text.bmp3_set_sensor_settings  bmp3.o
+    0x0800939e   0x00000002   PAD
+    0x080093a0   0x000000a4   Code   RO          456    .text.bmp3_soft_reset  bmp3.o
+    0x08009444   0x00000024   Code   RO          341    .text.cmdSetPoint   controller.o
+    0x08009468   0x00000172   Code   RO          476    .text.compensate_data  bmp3.o
+    0x080095da   0x00000002   PAD
+    0x080095dc   0x00000020   Code   RO          358    .text.constrain     num.o
+    0x080095fc   0x0000000c   Code   RO          321    .text.controllerTest  controller.o
+    0x08009608   0x00000042   Code   RO          360    .text.deadband      num.o
+    0x0800964a   0x00000002   PAD
+    0x0800964c   0x000001ca   Code   RO         1894    .text.enable_ref_spads  vl53l0x_api_calibration.o
+    0x08009816   0x00000002   PAD
+    0x08009818   0x0000000c   Code   RO          295    .text.getYaw        stateEstimator.o
+    0x08009824   0x00000180   Code   RO         1953    .text.get_sequence_step_timeout  vl53l0x_api_core.o
+    0x080099a4   0x000000a8   Code   RO          415    .text.led_write     LED_sequence.o
+    0x08009a4c   0x00000448   Code   RO          124    .text.main          main.o
+    0x08009e94   0x000000f2   Code   RO          372    .text.motorSetPWM   motor_pwr_out.o
+    0x08009f86   0x00000002   PAD
+    0x08009f88   0x00000068   Code   RO         1896    .text.perform_ref_signal_measurement  vl53l0x_api_calibration.o
+    0x08009ff0   0x00000138   Code   RO          311    .text.pidUpdateOutput  controller.o
+    0x0800a128   0x000000f4   Code   RO          335    .text.positionController  controller.o
+    0x0800a21c   0x00000328   Code   RO          380    .text.powerDistribution  motor_pwr_out.o
+    0x0800a544   0x0000000c   Code   RO          382    .text.powerDistributionUpdate  motor_pwr_out.o
+    0x0800a550   0x0000010c   Code   RO          283    .text.sensfusion6GetEulerRPY  stateEstimator.o
+    0x0800a65c   0x0000047c   Code   RO          279    .text.sensfusion6UpdateQImpl  stateEstimator.o
+    0x0800aad8   0x0000000c   Code   RO          160    .text.sensorCalibTest  sensor.o
+    0x0800aae4   0x000004ee   Code   RO          154    .text.sensorDataUpdate  sensor.o
+    0x0800afd2   0x00000002   PAD
+    0x0800afd4   0x0000000c   Code   RO          162    .text.sensorInitTest  sensor.o
+    0x0800afe0   0x000000ac   Code   RO          164    .text.sensor_I2C_reInit  sensor.o
+    0x0800b08c   0x0000010c   Code   RO          281    .text.sensorfusion6UpdateQ  stateEstimator.o
+    0x0800b198   0x00000210   Code   RO          156    .text.sensorsDeviceInit  sensor.o
+    0x0800b3a8   0x00000028   Code   RO          158    .text.sensorsInit   sensor.o
+    0x0800b3d0   0x00000100   Code   RO          431    .text.seq_Charging  LED_sequence.o
+    0x0800b4d0   0x000000c4   Code   RO          427    .text.seq_FlyingRemoteCon  LED_sequence.o
+    0x0800b594   0x00000118   Code   RO          425    .text.seq_InitSuccess  LED_sequence.o
+    0x0800b6ac   0x0000007e   Code   RO          423    .text.seq_SystemInitFailed  LED_sequence.o
+    0x0800b72a   0x00000002   PAD
+    0x0800b72c   0x0000022c   Code   RO         1955    .text.set_sequence_step_timeout  vl53l0x_api_core.o
+    0x0800b958   0x00000336   Code   RO          337    .text.stateController  controller.o
+    0x0800bc8e   0x00000002   PAD
+    0x0800bc90   0x0000003c   Code   RO          339    .text.stateControllerUpdate  controller.o
+    0x0800bccc   0x00000162   Code   RO          291    .text.stateEstimator  stateEstimator.o
+    0x0800be2e   0x00000002   PAD
+    0x0800be30   0x00000016   Code   RO          293    .text.stateEstimatorUpdate  stateEstimator.o
+    0x0800be46   0x00000002   PAD
+    0x0800be48   0x0000013c   Code   RO          243    .text.uartsyslinkHandleDataFromISR  uart_syslink.o
+    0x0800bf84   0x00000078   Code   RO          241    .text.uartsyslinkInit  uart_syslink.o
+    0x0800bffc   0x00000024   Code   RO          245    .text.uartsyslinkIsr  uart_syslink.o
+    0x0800c020   0x0000000c   Code   RO          247    .text.uartsyslinkTest  uart_syslink.o
+    0x0800c02c   0x00000158   Code   RO          486    .text.validate_osr_and_odr_settings  bmp3.o
+    0x0800c184   0x00000152   Code   RO          333    .text.velocityController  controller.o
+    0x0800c2d6   0x00000026   Code   RO         2164    i.__ARM_fpclassifyf  m_ws.l(fpclassifyf.o)
+    0x0800c2fc   0x00000006   Code   RO         2167    i.__mathlib_flt_infnan  m_ws.l(funder.o)
+    0x0800c302   0x00000004   Code   RO         2168    i.__mathlib_flt_infnan2  m_ws.l(funder.o)
+    0x0800c306   0x00000008   Code   RO         2169    i.__mathlib_flt_invalid  m_ws.l(funder.o)
+    0x0800c30e   0x0000000a   Code   RO         2172    i.__mathlib_flt_underflow  m_ws.l(funder.o)
+    0x0800c318   0x00000168   Code   RO         2180    i.__mathlib_rredf2  m_ws.l(rredf.o)
+    0x0800c480   0x0000000e   Code   RO         2227    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x0800c48e   0x00000002   Code   RO         2228    i.__scatterload_null  mc_w.l(handlers.o)
+    0x0800c490   0x0000000e   Code   RO         2229    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x0800c49e   0x00000002   PAD
+    0x0800c4a0   0x0000000c   Code   RO         2205    i.__set_errno       mc_w.l(errno.o)
+    0x0800c4ac   0x00000124   Code   RO         2068    i.asinf             m_ws.l(asinf.o)
+    0x0800c5d0   0x000002a4   Code   RO         2076    i.atan2f            m_ws.l(atan2f.o)
+    0x0800c874   0x0000017c   Code   RO         2084    i.cosf              m_ws.l(cosf.o)
+    0x0800c9f0   0x00000028   Code   RO         2107    i.fmaxf             m_ws.l(fmaxf.o)
+    0x0800ca18   0x00000188   Code   RO         2092    i.sinf              m_ws.l(sinf.o)
+    0x0800cba0   0x0000002c   Code   RO         2100    i.sqrtf             m_ws.l(sqrtf.o)
+    0x0800cbcc   0x00000020   Data   RO         2181    .constdata          m_ws.l(rredf.o)
+    0x0800cbec   0x00000048   Data   RO          488    .rodata..L__const.validate_osr_and_odr_settings.odr  bmp3.o
+    0x0800cc34   0x00000010   Data   RO         1575    .rodata.AHBPrescTable  system_stm32f4xx.o
+    0x0800cc44   0x00000008   Data   RO         1576    .rodata.APBPrescTable  system_stm32f4xx.o
+    0x0800cc4c   0x00000008   Data   RO          843    .rodata.cst8        stm32f4xx_hal_dma.o
+    0x0800cc54   0x000000e9   Data   RO          138    .rodata.str1.1      main.o
+    0x0800cd3d   0x0000003a   Data   RO          168    .rodata.str1.1      sensor.o
+    0x0800cd77   0x0000001b   Data   RO          441    .rodata.str1.1      LED_sequence.o
+    0x0800cd92   0x00000009   Data   RO         1639    .rodata.str1.1      SEGGER_RTT.o
+    0x0800cd9b   0x00000001   PAD
+    0x0800cd9c   0x00000020   Data   RO         2226    Region$$Table       anon$$obj.o
+
+
+    Execution Region ER_RW (Base: 0x20000000, Size: 0x00000504, Max: 0xffffffff, ABSOLUTE, COMPRESSED[0x000002ec])
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00000004   Data   RW         2206    .data               mc_w.l(errno.o)
+    0x20000004   0x00000008   Data   RW          171    .data..L_MergedGlobals  sensor.o
+    0x2000000c   0x00000030   Data   RW          299    .data..L_MergedGlobals  stateEstimator.o
+    0x2000003c   0x00000008   Data   RW         1015    .data..L_MergedGlobals  stm32f4xx_hal.o
+    0x20000044   0x000000f3   Data   RW         1862    .data.DefaultTuningSettings  vl53l0x_api.o
+    0x20000137   0x000001b6   Data   RW         1863    .data.InterruptThresholdSettings  vl53l0x_api.o
+    0x200002ed   0x00000003   PAD
+    0x200002f0   0x00000004   Data   RW         1574    .data.SystemCoreClock  system_stm32f4xx.o
+    0x200002f4   0x00000004   Data   RW          343    .data.ilimitt       controller.o
+    0x200002f8   0x00000010   Data   RW         1918    .data.refArrayQuadrants  vl53l0x_api_calibration.o
+    0x20000308   0x000001fc   Data   RW          345    .data.this          controller.o
+
+
+    Execution Region ER_ZI (Base: 0x20000508, Size: 0x00001e98, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000508   0x00000004   Zero   RW           39    .bss..L_MergedGlobals  bmi088_accel.o
+    0x2000050c   0x00000003   Zero   RW           69    .bss..L_MergedGlobals  bmi088_gyro.o
+    0x2000050f   0x00000001   PAD
+    0x20000510   0x00000044   Zero   RW          141    .bss..L_MergedGlobals  main.o
+    0x20000554   0x0000002a   Zero   RW          250    .bss..L_MergedGlobals  uart_syslink.o
+    0x2000057e   0x00000002   PAD
+    0x20000580   0x00000068   Zero   RW          347    .bss..L_MergedGlobals  controller.o
+    0x200005e8   0x00000048   Zero   RW          443    .bss..L_MergedGlobals  LED_sequence.o
+    0x20000630   0x00000011   Zero   RW         1641    .bss..L_MergedGlobals  SEGGER_RTT.o
+    0x20000641   0x00000003   PAD
+    0x20000644   0x0000002c   Zero   RW          300    .bss..L_MergedGlobals.2  stateEstimator.o
+    0x20000670   0x00000078   Zero   RW          348    .bss..L_MergedGlobals.2  controller.o
+    0x200006e8   0x00000078   Zero   RW          349    .bss..L_MergedGlobals.3  controller.o
+    0x20000760   0x00000054   Zero   RW          172    .bss..L_MergedGlobals.7  sensor.o
+    0x200007b4   0x00000078   Zero   RW         1637    .bss._SEGGER_RTT    SEGGER_RTT.o
+    0x2000082c   0x00000400   Zero   RW         1640    .bss._acUpBuffer    SEGGER_RTT.o
+    0x20000c2c   0x00000004   PAD
+    0x20000c30   0x00000098   Zero   RW          167    .bss.bmp388         sensor.o
+    0x20000cc8   0x00000064   Zero   RW          135    .bss.cmdsetpoint    main.o
+    0x20000d2c   0x0000000c   Zero   RW          298    .bss.control        stateEstimator.o
+    0x20000d38   0x00000c2c   Zero   RW          169    .bss.gyroBiasRunning  sensor.o
+    0x20001964   0x00000064   Zero   RW          107    .bss.hdma_i2c3_rx   i2c.o
+    0x200019c8   0x00000064   Zero   RW          106    .bss.hdma_i2c3_tx   i2c.o
+    0x20001a2c   0x0000005c   Zero   RW          104    .bss.hi2c1          i2c.o
+    0x20001a88   0x0000005c   Zero   RW          105    .bss.hi2c3          i2c.o
+    0x20001ae4   0x0000005c   Zero   RW          406    .bss.hspi1          spi.o
+    0x20001b40   0x00000044   Zero   RW          230    .bss.htim2          tim.o
+    0x20001b84   0x00000044   Zero   RW          231    .bss.htim3          tim.o
+    0x20001bc8   0x00000044   Zero   RW          232    .bss.htim4          tim.o
+    0x20001c0c   0x00000048   Zero   RW          267    .bss.huart3         usart.o
+    0x20001c54   0x00000048   Zero   RW          268    .bss.huart6         usart.o
+    0x20001c9c   0x00000001   Zero   RW          249    .bss.isInit         uart_syslink.o
+    0x20001c9d   0x00000001   Zero   RW          391    .bss.isInit         motor_pwr_out.o
+    0x20001c9e   0x00000001   Zero   RW          442    .bss.isInit         LED_sequence.o
+    0x20001c9f   0x00000001   PAD
+    0x20001ca0   0x00000010   Zero   RW          390    .bss.motorPower     motor_pwr_out.o
+    0x20001cb0   0x0000003c   Zero   RW          344    .bss.pidYaw         controller.o
+    0x20001cec   0x00000030   Zero   RW          166    .bss.sensorData     sensor.o
+    0x20001d1c   0x00000064   Zero   RW          346    .bss.setpoint       controller.o
+    0x20001d80   0x00000054   Zero   RW          297    .bss.state          stateEstimator.o
+    0x20001dd4   0x00000004   Zero   RW         1014    .bss.uwTick         stm32f4xx_hal.o
+    0x20001dd8   0x00000160   Zero   RW          136    .bss.vl53l0C        main.o
+    0x20001f38   0x00000063   Zero   RW          137    .bss.vl53l0cDeviceInfo  main.o
+    0x20001f9b   0x00000005   PAD
+    0x20001fa0   0x00000400   Zero   RW            1    STACK               startup_stm32f405xx.o
+

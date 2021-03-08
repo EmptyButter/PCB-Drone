@@ -1,0 +1,31 @@
+PCAD Importer Log
+Project : NRF51822-QFAC-T.LibPkg
+
+Section : C:\1234\PCB drone project\Altium PCB Drone\MainBoard\NRF51822-QFAC-T\NRF51822-QFAC-T.lia
+    Section : PCB Library - NRF51822-QFAC-T.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token NRF51822-QFAC-T On Line 6818
+            Warning - 1 : Skipping Token attachedSymbol On Line 7329
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - NRF51822-QFAC-T.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 147
+            Warning - 1 : Skipping Token layerContents On Line 3324
+            Warning - 1 : Skipping Token layerContents On Line 3330
+            Warning - 1 : Skipping Token layerContents On Line 3620
+            Warning - 1 : Skipping Token layerContents On Line 6797
+            Warning - 1 : Skipping Token layerContents On Line 6805
+        EndSection
+
+        Section : Generating SCH Library - NRF51822-QFAC-T.SchLib
+        EndSection
+    EndSection
+EndSection

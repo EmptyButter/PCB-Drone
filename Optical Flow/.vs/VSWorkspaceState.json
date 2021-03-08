@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\en.STSW-IMG005",
+    "\\en.STSW-IMG005\\VL53L0X_1.0.2",
+    "\\en.STSW-IMG005\\VL53L0X_1.0.2\\Api",
+    "\\en.STSW-IMG005\\VL53L0X_1.0.2\\Api\\platform",
+    "\\en.STSW-IMG005\\VL53L0X_1.0.2\\Api\\platform\\inc"
+  ],
+  "SelectedNode": "\\en.STSW-IMG005\\VL53L0X_1.0.2\\Api\\platform\\inc\\vl53l0x_i2c_platform.h",
+  "PreviewInSolutionExplorer": false
+}

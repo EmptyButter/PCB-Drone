@@ -1,0 +1,126 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="project" target="8" version="2">
+  <project Name="STM32LIB">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00100000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="STM32F405RG"
+      arm_target_interface_type="SWD"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_endian="little"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000"
+      project_directory=""
+      project_type="Externally Built Executable" />
+    <configuration
+      BUILD_OPTIONS="ARM GNU"
+      Name="External GNU"
+      build_generic_options_file_name="$(StudioDir)/targets/ARMGNU_build_options.xml" />
+    <configuration
+      Name="Debug"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00100000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="STM32F405RG"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_endian="little"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32F405xx"
+      c_user_include_directories="$(ProjectDir)/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;$(ProjectDir)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(ProjectDir)/Drivers/CMSIS/Include"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="Debug"
+      linker_additional_files=""
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000" />
+    <configuration
+      Name="Debug External"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_fpabi="hard"
+      armgnu_cl_fpu="fpv4-sp-d16"
+      asm_additional_options_backup=";-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      build_intermediate_directory="Debug"
+      build_output_directory="Debug"
+      build_output_file_name="Debug/STM32LIB.elf"
+      c_additional_options_backup=";-Og;-g3;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      gcc_cl_enable_debug_info="Level 3"
+      gcc_cl_optimization_level="Debug"
+      link_additional_options_backup=";-Wl,--gc-sections;-lm;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      link_linker_script_file="STM32F405RGTx_FLASH.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_options="-Wl,--gc-sections;-lm"
+      linker_post_build_command="$(ToolChainDir)/arm-none-eabi-objcopy -O ihex &quot;STM32LIB.elf&quot; &quot;STM32LIB.hex&quot; &amp;&amp; $(ToolChainDir)/arm-none-eabi-size &quot;STM32LIB.elf&quot;"
+      linker_post_build_command_wd="$(ProjectDir)/Debug" />
+    <configuration
+      Name="Release"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00100000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="STM32F405RG"
+      armgnu_cl_cpu="cortex-m4"
+      armgnu_cl_endian="little"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32F405xx"
+      c_user_include_directories="$(ProjectDir)/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;$(ProjectDir)/Drivers/CMSIS/Device/ST/STM32F4xx/Include;$(ProjectDir)/Drivers/CMSIS/Include"
+      gcc_debugging_level="Level 3"
+      gcc_optimization_level="Debug"
+      linker_additional_files=""
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000" />
+    <configuration
+      Name="Release External"
+      asm_additional_options=";-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      build_intermediate_directory="Release"
+      build_output_directory="Release"
+      build_output_file_name="Release/STM32LIB.elf"
+      c_additional_options=";-Og;-g3;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      link_linker_script_file="STM32F405RGTx_FLASH.ld"
+      link_use_linker_script_file="Yes"
+      linker_additional_options=";-Wl,--gc-sections;-lm;-mcpu=cortex-m4;-mfloat-abi=hard;-mfpu=fpv4-sp-d16"
+      linker_post_build_command="$(ToolChainDir)/arm-none-eabi-objcopy -O ihex &quot;STM32LIB.elf&quot; &quot;STM32LIB.hex&quot; &amp;&amp; $(ToolChainDir)/arm-none-eabi-size &quot;STM32LIB.elf&quot;"
+      linker_post_build_command_wd="$(ProjectDir)/Release" />
+    <folder Name="Source Files" />
+    <folder
+      Name="startup"
+      exclude=""
+      filter="*.*"
+      path="startup"
+      recurse="Yes" />
+    <folder
+      Name="Drivers"
+      exclude=""
+      filter="*.*"
+      path="Drivers"
+      recurse="Yes" />
+    <folder Name="Src" exclude="" filter="*.*" path="Src" recurse="Yes" />
+  </project>
+  <configuration
+    Name="External GNU"
+    build_toolchain_directory="C:/Program Files (x86)/GNU Arm Embedded Toolchain/9 2020-q2-update/bin/bin"
+    hidden="Yes" />
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None"
+    hidden="Yes" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1"
+    hidden="Yes" />
+  <configuration
+    Name="Debug External"
+    inherited_configurations="External GNU;Debug" />
+  <configuration
+    Name="Release External"
+    inherited_configurations="External GNU;Release" />
+</solution>

@@ -1,0 +1,3000 @@
+ Volume in drive C has no label.
+ Volume Serial Number is E4DA-31A9
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components
+
+08/09/2020  05:49 PM    <DIR>          .
+08/09/2020  05:49 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ant
+08/09/2020  05:31 PM    <DIR>          ble
+08/09/2020  05:31 PM    <DIR>          boards
+08/09/2020  05:31 PM    <DIR>          device
+08/09/2020  05:50 PM                 0 directory.txt
+08/09/2020  05:31 PM    <DIR>          drivers_ext
+08/09/2020  05:31 PM    <DIR>          drivers_nrf
+08/09/2020  05:31 PM    <DIR>          libraries
+08/09/2020  05:31 PM    <DIR>          nfc
+08/09/2020  05:31 PM    <DIR>          proprietary_rf
+05/05/2017  10:10 PM            11,417 sdk_validation.h
+08/09/2020  05:31 PM    <DIR>          serialization
+08/09/2020  05:31 PM    <DIR>          softdevice
+08/09/2020  05:31 PM    <DIR>          toolchain
+               2 File(s)         11,417 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ant_channel_config
+08/09/2020  05:31 PM    <DIR>          ant_encryption
+08/09/2020  05:31 PM    <DIR>          ant_fs
+08/09/2020  05:31 PM    <DIR>          ant_key_manager
+08/09/2020  05:31 PM    <DIR>          ant_profiles
+08/09/2020  05:31 PM    <DIR>          ant_search_config
+08/09/2020  05:31 PM    <DIR>          ant_stack_config
+08/09/2020  05:31 PM    <DIR>          ant_state_indicator
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_channel_config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,633 ant_channel_config.c
+05/05/2017  10:10 PM             4,099 ant_channel_config.h
+               2 File(s)          7,732 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_encryption
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,992 ant_encrypt_config.c
+05/05/2017  10:10 PM            11,670 ant_encrypt_config.h
+05/05/2017  10:10 PM             7,225 ant_encrypt_negotiation_slave.c
+05/05/2017  10:10 PM             5,591 ant_encrypt_negotiation_slave.h
+               4 File(s)         33,478 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_fs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM           101,524 antfs.c
+05/05/2017  10:10 PM            25,245 antfs.h
+05/05/2017  10:10 PM             3,780 crc.c
+05/05/2017  10:10 PM             3,493 crc.h
+05/05/2017  10:10 PM             4,112 defines.h
+               5 File(s)        138,154 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_key_manager
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,925 ant_key_manager.c
+05/05/2017  10:10 PM             3,637 ant_key_manager.h
+08/09/2020  05:31 PM    <DIR>          config
+               2 File(s)          6,562 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_key_manager\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,670 ant_key_manager_config.h
+               1 File(s)          2,670 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ant_bpwr
+08/09/2020  05:31 PM    <DIR>          ant_bsc
+08/09/2020  05:31 PM    <DIR>          ant_common
+08/09/2020  05:31 PM    <DIR>          ant_hrm
+08/09/2020  05:31 PM    <DIR>          ant_sdm
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bpwr
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,841 ant_bpwr.c
+05/05/2017  10:10 PM            19,119 ant_bpwr.h
+05/05/2017  10:10 PM             3,642 ant_bpwr_local.h
+08/09/2020  05:31 PM    <DIR>          pages
+08/09/2020  05:31 PM    <DIR>          simulator
+08/09/2020  05:31 PM    <DIR>          utils
+               3 File(s)         40,602 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bpwr\pages
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,071 ant_bpwr_common_data.c
+05/05/2017  10:10 PM             3,737 ant_bpwr_common_data.h
+05/05/2017  10:10 PM             2,946 ant_bpwr_pages.h
+05/05/2017  10:10 PM            11,078 ant_bpwr_page_1.c
+05/05/2017  10:10 PM             5,597 ant_bpwr_page_1.h
+05/05/2017  10:10 PM             4,892 ant_bpwr_page_16.c
+05/05/2017  10:10 PM             4,301 ant_bpwr_page_16.h
+05/05/2017  10:10 PM             3,297 ant_bpwr_page_17.c
+05/05/2017  10:10 PM             3,433 ant_bpwr_page_17.h
+05/05/2017  10:10 PM             3,297 ant_bpwr_page_18.c
+05/05/2017  10:10 PM             3,431 ant_bpwr_page_18.h
+05/05/2017  10:10 PM             5,281 ant_bpwr_page_torque.c
+05/05/2017  10:10 PM             4,450 ant_bpwr_page_torque.h
+              13 File(s)         59,811 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bpwr\simulator
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,231 ant_bpwr_simulator.c
+05/05/2017  10:10 PM             4,730 ant_bpwr_simulator.h
+05/05/2017  10:10 PM             3,310 ant_bpwr_simulator_local.h
+               3 File(s)         17,271 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bpwr\utils
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,581 ant_bpwr_utils.h
+               1 File(s)          3,581 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bsc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,817 ant_bsc.c
+05/05/2017  10:10 PM            20,891 ant_bsc.h
+05/05/2017  10:10 PM             2,875 ant_bsc_local.h
+08/09/2020  05:31 PM    <DIR>          pages
+08/09/2020  05:31 PM    <DIR>          simulator
+08/09/2020  05:31 PM    <DIR>          utils
+               3 File(s)         40,583 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bsc\pages
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,407 ant_bsc_combined_page_0.c
+05/05/2017  10:10 PM             3,861 ant_bsc_combined_page_0.h
+05/05/2017  10:10 PM             2,665 ant_bsc_pages.h
+05/05/2017  10:10 PM             4,894 ant_bsc_page_0.c
+05/05/2017  10:10 PM             3,457 ant_bsc_page_0.h
+05/05/2017  10:10 PM             4,038 ant_bsc_page_1.c
+05/05/2017  10:10 PM             3,360 ant_bsc_page_1.h
+05/05/2017  10:10 PM             4,147 ant_bsc_page_2.c
+05/05/2017  10:10 PM             3,457 ant_bsc_page_2.h
+05/05/2017  10:10 PM             4,087 ant_bsc_page_3.c
+05/05/2017  10:10 PM             3,553 ant_bsc_page_3.h
+05/05/2017  10:10 PM             4,425 ant_bsc_page_4.c
+05/05/2017  10:10 PM             4,309 ant_bsc_page_4.h
+05/05/2017  10:10 PM             3,756 ant_bsc_page_5.c
+05/05/2017  10:10 PM             3,456 ant_bsc_page_5.h
+              15 File(s)         59,872 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bsc\simulator
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,135 ant_bsc_simulator.c
+05/05/2017  10:10 PM             4,825 ant_bsc_simulator.h
+05/05/2017  10:10 PM             4,143 ant_bsc_simulator_local.h
+               3 File(s)         23,103 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_bsc\utils
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,506 ant_bsc_utils.h
+               1 File(s)          5,506 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ant_request_controller
+08/09/2020  05:31 PM    <DIR>          pages
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_common\ant_request_controller
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,126 ant_request_controller.c
+05/05/2017  10:10 PM             6,669 ant_request_controller.h
+               2 File(s)         14,795 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_common\pages
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,721 ant_common_page_70.c
+05/05/2017  10:10 PM             5,835 ant_common_page_70.h
+05/05/2017  10:10 PM             4,623 ant_common_page_80.c
+05/05/2017  10:10 PM             4,638 ant_common_page_80.h
+05/05/2017  10:10 PM             4,799 ant_common_page_81.c
+05/05/2017  10:10 PM             4,527 ant_common_page_81.h
+               6 File(s)         30,143 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_hrm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            12,091 ant_hrm.c
+05/05/2017  10:10 PM            15,150 ant_hrm.h
+05/05/2017  10:10 PM             2,638 ant_hrm_local.h
+08/09/2020  05:31 PM    <DIR>          pages
+08/09/2020  05:31 PM    <DIR>          simulator
+08/09/2020  05:31 PM    <DIR>          utils
+               3 File(s)         29,879 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_hrm\pages
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,591 ant_hrm_pages.h
+05/05/2017  10:10 PM             5,131 ant_hrm_page_0.c
+05/05/2017  10:10 PM             3,602 ant_hrm_page_0.h
+05/05/2017  10:10 PM             4,322 ant_hrm_page_1.c
+05/05/2017  10:10 PM             3,419 ant_hrm_page_1.h
+05/05/2017  10:10 PM             4,368 ant_hrm_page_2.c
+05/05/2017  10:10 PM             3,497 ant_hrm_page_2.h
+05/05/2017  10:10 PM             4,298 ant_hrm_page_3.c
+05/05/2017  10:10 PM             3,578 ant_hrm_page_3.h
+05/05/2017  10:10 PM             4,384 ant_hrm_page_4.c
+05/05/2017  10:10 PM             3,508 ant_hrm_page_4.h
+              11 File(s)         42,698 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_hrm\simulator
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,581 ant_hrm_simulator.c
+05/05/2017  10:10 PM             5,322 ant_hrm_simulator.h
+05/05/2017  10:10 PM             3,013 ant_hrm_simulator_local.h
+               3 File(s)         14,916 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_hrm\utils
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,624 ant_hrm_utils.h
+               1 File(s)          4,624 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_sdm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,460 ant_sdm.c
+05/05/2017  10:10 PM            17,510 ant_sdm.h
+05/05/2017  10:10 PM             2,826 ant_sdm_local.h
+08/09/2020  05:31 PM    <DIR>          pages
+08/09/2020  05:31 PM    <DIR>          simulator
+08/09/2020  05:31 PM    <DIR>          utils
+               3 File(s)         35,796 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_sdm\pages
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,446 ant_sdm_common_data.c
+05/05/2017  10:10 PM             3,862 ant_sdm_common_data.h
+05/05/2017  10:10 PM             2,747 ant_sdm_pages.h
+05/05/2017  10:10 PM             6,771 ant_sdm_page_1.c
+05/05/2017  10:10 PM             3,854 ant_sdm_page_1.h
+05/05/2017  10:10 PM             4,384 ant_sdm_page_16.c
+05/05/2017  10:10 PM             3,116 ant_sdm_page_16.h
+05/05/2017  10:10 PM             5,620 ant_sdm_page_2.c
+05/05/2017  10:10 PM             4,710 ant_sdm_page_2.h
+05/05/2017  10:10 PM             4,532 ant_sdm_page_22.c
+05/05/2017  10:10 PM             3,965 ant_sdm_page_22.h
+05/05/2017  10:10 PM             3,689 ant_sdm_page_3.c
+05/05/2017  10:10 PM             3,384 ant_sdm_page_3.h
+              13 File(s)         55,080 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_sdm\simulator
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,274 ant_sdm_simulator.c
+05/05/2017  10:10 PM             6,028 ant_sdm_simulator.h
+05/05/2017  10:10 PM             3,062 ant_sdm_simulator_local.h
+               3 File(s)         16,364 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_profiles\ant_sdm\utils
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,917 ant_sdm_utils.h
+               1 File(s)          4,917 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_search_config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,540 ant_search_config.c
+05/05/2017  10:10 PM             5,714 ant_search_config.h
+               2 File(s)          9,254 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_stack_config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,578 ant_stack_config.c
+05/05/2017  10:10 PM             2,952 ant_stack_config.h
+08/09/2020  05:31 PM    <DIR>          config
+               2 File(s)          6,530 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_stack_config\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,476 ant_stack_config_defs.h
+               1 File(s)          2,476 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ant\ant_state_indicator
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,323 ant_state_indicator.c
+05/05/2017  10:10 PM             4,301 ant_state_indicator.h
+               2 File(s)          9,624 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ble_advertising
+08/09/2020  05:31 PM    <DIR>          ble_db_discovery
+08/09/2020  05:31 PM    <DIR>          ble_debug_assert_handler
+08/09/2020  05:31 PM    <DIR>          ble_dtm
+08/09/2020  05:31 PM    <DIR>          ble_error_log
+08/09/2020  05:31 PM    <DIR>          ble_racp
+08/09/2020  05:31 PM    <DIR>          ble_radio_notification
+08/09/2020  05:31 PM    <DIR>          ble_services
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          nrf_ble_gatt
+08/09/2020  05:31 PM    <DIR>          nrf_ble_qwr
+08/09/2020  05:31 PM    <DIR>          peer_manager
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_advertising
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            23,404 ble_advertising.c
+05/05/2017  10:10 PM            12,439 ble_advertising.h
+               2 File(s)         35,843 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_db_discovery
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            40,286 ble_db_discovery.c
+05/05/2017  10:10 PM            10,780 ble_db_discovery.h
+               2 File(s)         51,066 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_debug_assert_handler
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,759 ble_debug_assert_handler.c
+05/05/2017  10:10 PM             3,781 ble_debug_assert_handler.h
+               2 File(s)          7,540 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_dtm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            30,011 ble_dtm.c
+05/05/2017  10:10 PM            10,994 ble_dtm.h
+05/05/2017  10:10 PM             4,021 ble_dtm_hw.h
+05/05/2017  10:10 PM             4,641 ble_dtm_hw_nrf51.c
+05/05/2017  10:10 PM             4,353 ble_dtm_hw_nrf52.c
+               5 File(s)         54,020 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_error_log
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,510 ble_error_log.c
+05/05/2017  10:10 PM             4,739 ble_error_log.h
+               2 File(s)          8,249 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_racp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,203 ble_racp.c
+05/05/2017  10:10 PM             7,652 ble_racp.h
+               2 File(s)         10,855 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_radio_notification
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,448 ble_radio_notification.c
+05/05/2017  10:10 PM             3,448 ble_radio_notification.h
+               2 File(s)          6,896 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ble_ancs_c
+08/09/2020  05:31 PM    <DIR>          ble_ans_c
+08/09/2020  05:31 PM    <DIR>          ble_bas
+08/09/2020  05:31 PM    <DIR>          ble_bas_c
+08/09/2020  05:31 PM    <DIR>          ble_bps
+08/09/2020  05:31 PM    <DIR>          ble_cscs
+08/09/2020  05:31 PM    <DIR>          ble_cts_c
+08/09/2020  05:31 PM    <DIR>          ble_dfu
+08/09/2020  05:31 PM    <DIR>          ble_dis
+08/09/2020  05:31 PM    <DIR>          ble_escs
+08/09/2020  05:31 PM    <DIR>          ble_gls
+08/09/2020  05:31 PM    <DIR>          ble_hids
+08/09/2020  05:31 PM    <DIR>          ble_hrs
+08/09/2020  05:31 PM    <DIR>          ble_hrs_c
+08/09/2020  05:31 PM    <DIR>          ble_hts
+08/09/2020  05:31 PM    <DIR>          ble_ias
+08/09/2020  05:31 PM    <DIR>          ble_ias_c
+08/09/2020  05:31 PM    <DIR>          ble_lbs
+08/09/2020  05:31 PM    <DIR>          ble_lbs_c
+08/09/2020  05:31 PM    <DIR>          ble_lls
+08/09/2020  05:31 PM    <DIR>          ble_nus
+08/09/2020  05:31 PM    <DIR>          ble_nus_c
+08/09/2020  05:31 PM    <DIR>          ble_rscs
+08/09/2020  05:31 PM    <DIR>          ble_rscs_c
+08/09/2020  05:31 PM    <DIR>          ble_tps
+08/09/2020  05:31 PM    <DIR>          experimental_ble_lns
+08/09/2020  05:31 PM    <DIR>          experimental_nrf_ble_bms
+08/09/2020  05:31 PM    <DIR>          experimental_nrf_ble_cgms
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_ancs_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,421 ancs_app_attr_get.c
+05/05/2017  10:10 PM             2,936 ancs_app_attr_get.h
+05/05/2017  10:10 PM            16,015 ancs_attr_parser.c
+05/05/2017  10:10 PM             3,794 ancs_attr_parser.h
+05/05/2017  10:10 PM             5,156 ancs_tx_buffer.c
+05/05/2017  10:10 PM             4,134 ancs_tx_buffer.h
+05/05/2017  10:10 PM            25,163 nrf_ble_ancs_c.c
+05/05/2017  10:10 PM            34,896 nrf_ble_ancs_c.h
+               8 File(s)        108,515 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_ans_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            22,364 ble_ans_c.c
+05/05/2017  10:10 PM            21,817 ble_ans_c.h
+               2 File(s)         44,181 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_bas
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,638 ble_bas.c
+05/05/2017  10:10 PM             8,419 ble_bas.h
+               2 File(s)         20,057 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_bas_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,149 ble_bas_c.c
+05/05/2017  10:10 PM            10,287 ble_bas_c.h
+               2 File(s)         25,436 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_bps
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,574 ble_bps.c
+05/05/2017  10:10 PM            10,697 ble_bps.h
+               2 File(s)         27,271 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_cscs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,100 ble_cscs.c
+05/05/2017  10:10 PM            11,609 ble_cscs.h
+05/05/2017  10:10 PM            24,098 ble_sc_ctrlpt.c
+05/05/2017  10:10 PM            14,454 ble_sc_ctrlpt.h
+               4 File(s)         67,261 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_cts_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,244 ble_cts_c.c
+05/05/2017  10:10 PM            12,166 ble_cts_c.h
+               2 File(s)         25,410 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_dfu
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,113 ble_dfu.c
+05/05/2017  10:10 PM             6,387 ble_dfu.h
+               2 File(s)         19,500 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_dis
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,806 ble_dis.c
+05/05/2017  10:10 PM             6,304 ble_dis.h
+               2 File(s)         18,110 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_escs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,472 escs_defs.h
+05/05/2017  10:10 PM            21,405 nrf_ble_escs.c
+05/05/2017  10:10 PM            12,727 nrf_ble_escs.h
+               3 File(s)         40,604 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_gls
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            43,073 ble_gls.c
+05/05/2017  10:10 PM            18,332 ble_gls.h
+05/05/2017  10:10 PM             4,218 ble_gls_db.c
+05/05/2017  10:10 PM             4,319 ble_gls_db.h
+               4 File(s)         69,942 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_hids
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            50,122 ble_hids.c
+05/05/2017  10:10 PM            20,851 ble_hids.h
+               2 File(s)         70,973 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_hrs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,677 ble_hrs.c
+05/05/2017  10:10 PM            12,450 ble_hrs.h
+               2 File(s)         29,127 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_hrs_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,287 ble_hrs_c.c
+05/05/2017  10:10 PM            11,347 ble_hrs_c.h
+               2 File(s)         26,634 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_hts
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,655 ble_hts.c
+05/05/2017  10:10 PM            10,040 ble_hts.h
+               2 File(s)         25,695 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_ias
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,092 ble_ias.c
+05/05/2017  10:10 PM             6,463 ble_ias.h
+               2 File(s)         13,555 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_ias_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,076 ble_ias_c.c
+05/05/2017  10:10 PM            10,387 ble_ias_c.h
+               2 File(s)         18,463 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_lbs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,189 ble_lbs.c
+05/05/2017  10:10 PM             6,261 ble_lbs.h
+               2 File(s)         15,450 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_lbs_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,220 ble_lbs_c.c
+05/05/2017  10:10 PM            10,476 ble_lbs_c.h
+               2 File(s)         25,696 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_lls
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,294 ble_lls.c
+05/05/2017  10:10 PM             6,829 ble_lls.h
+               2 File(s)         15,123 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_nus
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,278 ble_nus.c
+05/05/2017  10:10 PM             7,050 ble_nus.h
+               2 File(s)         18,328 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_nus_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,312 ble_nus_c.c
+05/05/2017  10:10 PM            10,681 ble_nus_c.h
+               2 File(s)         19,993 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_rscs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,529 ble_rscs.c
+05/05/2017  10:10 PM             9,695 ble_rscs.h
+               2 File(s)         24,224 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_rscs_c
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,380 ble_rscs_c.c
+05/05/2017  10:10 PM             9,838 ble_rscs_c.h
+               2 File(s)         25,218 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\ble_tps
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,109 ble_tps.c
+05/05/2017  10:10 PM             5,350 ble_tps.h
+               2 File(s)         11,459 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\experimental_ble_lns
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            38,254 ble_lns.c
+05/05/2017  10:10 PM            22,515 ble_lns.h
+05/05/2017  10:10 PM             6,083 ble_ln_common.h
+05/05/2017  10:10 PM            26,800 ble_ln_cp.c
+05/05/2017  10:10 PM            11,776 ble_ln_cp.h
+05/05/2017  10:10 PM             4,565 ble_ln_db.c
+05/05/2017  10:10 PM             4,359 ble_ln_db.h
+               7 File(s)        114,352 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\experimental_nrf_ble_bms
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            21,629 nrf_ble_bms.c
+05/05/2017  10:10 PM            18,258 nrf_ble_bms.h
+               2 File(s)         39,887 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\ble_services\experimental_nrf_ble_cgms
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,215 cgms_db.c
+05/05/2017  10:10 PM             4,394 cgms_db.h
+05/05/2017  10:10 PM             8,759 cgms_meas.c
+05/05/2017  10:10 PM             4,106 cgms_meas.h
+05/05/2017  10:10 PM            26,712 cgms_racp.c
+05/05/2017  10:10 PM             3,898 cgms_racp.h
+05/05/2017  10:10 PM            18,007 cgms_socp.c
+05/05/2017  10:10 PM             4,105 cgms_socp.h
+05/05/2017  10:10 PM             8,140 cgms_sst.c
+05/05/2017  10:10 PM             4,434 cgms_sst.h
+05/05/2017  10:10 PM            16,532 nrf_ble_cgms.c
+05/05/2017  10:10 PM            24,408 nrf_ble_cgms.h
+              12 File(s)        127,710 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            24,904 ble_advdata.c
+05/05/2017  10:10 PM            15,533 ble_advdata.h
+05/05/2017  10:10 PM            11,671 ble_conn_params.c
+05/05/2017  10:10 PM             7,551 ble_conn_params.h
+05/05/2017  10:10 PM            15,065 ble_conn_state.c
+05/05/2017  10:10 PM            12,138 ble_conn_state.h
+05/05/2017  10:10 PM             3,961 ble_date_time.h
+05/05/2017  10:10 PM             4,325 ble_gatt_db.h
+05/05/2017  10:10 PM             3,475 ble_sensor_location.h
+05/05/2017  10:10 PM             9,418 ble_srv_common.c
+05/05/2017  10:10 PM            28,073 ble_srv_common.h
+              11 File(s)        136,114 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\nrf_ble_gatt
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,558 nrf_ble_gatt.c
+05/05/2017  10:10 PM             7,901 nrf_ble_gatt.h
+               2 File(s)         19,459 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\nrf_ble_qwr
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,724 nrf_ble_qwr.c
+05/05/2017  10:10 PM            11,323 nrf_ble_qwr.h
+               2 File(s)         25,047 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\ble\peer_manager
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            12,960 gatts_cache_manager.c
+05/05/2017  10:10 PM            10,557 gatts_cache_manager.h
+05/05/2017  10:10 PM            19,885 gatt_cache_manager.c
+05/05/2017  10:10 PM            11,095 gatt_cache_manager.h
+05/05/2017  10:10 PM            35,840 id_manager.c
+05/05/2017  10:10 PM            13,724 id_manager.h
+05/05/2017  10:10 PM             3,470 peer_data.c
+05/05/2017  10:10 PM             3,619 peer_data.h
+05/05/2017  10:10 PM            27,021 peer_database.c
+05/05/2017  10:10 PM            18,735 peer_database.h
+05/05/2017  10:10 PM            21,439 peer_data_storage.c
+05/05/2017  10:10 PM            14,025 peer_data_storage.h
+05/05/2017  10:10 PM             5,886 peer_id.c
+05/05/2017  10:10 PM             5,895 peer_id.h
+05/05/2017  10:10 PM            38,981 peer_manager.c
+05/05/2017  10:10 PM            48,292 peer_manager.h
+05/05/2017  10:10 PM             8,345 peer_manager_internal.h
+05/05/2017  10:10 PM            13,210 peer_manager_types.h
+05/05/2017  10:10 PM             5,209 pm_buffer.c
+05/05/2017  10:10 PM             6,654 pm_buffer.h
+05/05/2017  10:10 PM             4,359 pm_mutex.c
+05/05/2017  10:10 PM             4,321 pm_mutex.h
+05/05/2017  10:10 PM            31,402 security_dispatcher.c
+05/05/2017  10:10 PM            13,393 security_dispatcher.h
+05/05/2017  10:10 PM            18,754 security_manager.c
+05/05/2017  10:10 PM            11,581 security_manager.h
+              26 File(s)        408,652 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\boards
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,711 arduino_primo.h
+05/05/2017  10:10 PM             4,933 boards.c
+05/05/2017  10:10 PM             9,457 boards.h
+05/05/2017  10:10 PM             5,391 d52_starterkit.h
+05/05/2017  10:10 PM             5,141 n5_starterkit.h
+05/05/2017  10:10 PM             8,216 nrf6310.h
+05/05/2017  10:10 PM             3,589 pca10000.h
+05/05/2017  10:10 PM             7,351 pca10001.h
+05/05/2017  10:10 PM             3,500 pca10003.h
+05/05/2017  10:10 PM             7,767 pca10028.h
+05/05/2017  10:10 PM             3,590 pca10031.h
+05/05/2017  10:10 PM             7,907 pca10036.h
+05/05/2017  10:10 PM             7,910 pca10040.h
+05/05/2017  10:10 PM             5,557 pca10056.h
+05/05/2017  10:10 PM             3,354 pca20006.h
+05/05/2017  10:10 PM             3,137 wt51822.h
+              16 File(s)         91,511 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\device
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             4,021 compiler_abstraction.h
+05/05/2017  09:10 PM             3,206 nrf.h
+05/05/2017  09:10 PM            86,792 nrf51.h
+05/05/2017  09:10 PM             3,760 nrf51422_peripherals.h
+05/05/2017  09:10 PM             3,760 nrf51802_peripherals.h
+05/05/2017  09:10 PM             3,760 nrf51822_peripherals.h
+05/05/2017  09:10 PM           349,426 nrf51_bitfields.h
+05/05/2017  09:10 PM            26,604 nrf51_deprecated.h
+05/05/2017  09:10 PM            47,619 nrf51_to_nrf52.h
+05/05/2017  09:10 PM            23,406 nrf51_to_nrf52840.h
+05/05/2017  09:10 PM           159,828 nrf52.h
+05/05/2017  09:10 PM             5,299 nrf52832_peripherals.h
+05/05/2017  09:10 PM           189,579 nrf52840.h
+05/05/2017  09:10 PM           873,619 nrf52840_bitfields.h
+05/05/2017  09:10 PM             5,850 nrf52840_peripherals.h
+05/05/2017  09:10 PM           751,936 nrf52_bitfields.h
+05/05/2017  09:10 PM             3,776 nrf52_name_change.h
+05/05/2017  09:10 PM             4,550 nrf52_to_nrf52840.h
+              18 File(s)      2,546,791 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          adns2080
+08/09/2020  05:31 PM    <DIR>          cherry8x16
+08/09/2020  05:31 PM    <DIR>          ds1624
+08/09/2020  05:31 PM    <DIR>          max9850
+08/09/2020  05:31 PM    <DIR>          mcp4725
+08/09/2020  05:31 PM    <DIR>          mpu6050
+08/09/2020  05:31 PM    <DIR>          nrf6350
+08/09/2020  05:31 PM    <DIR>          synaptics_touchpad
+08/09/2020  05:31 PM    <DIR>          uda1380
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\adns2080
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,233 adns2080.c
+05/05/2017  10:10 PM            11,453 adns2080.h
+               2 File(s)         24,686 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\cherry8x16
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,792 cherry8x16.c
+05/05/2017  10:10 PM             5,049 cherry8x16.h
+               2 File(s)         22,841 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\ds1624
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,766 ds1624.c
+05/05/2017  10:10 PM             4,105 ds1624.h
+               2 File(s)          9,871 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\max9850
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,878 max9850.c
+05/05/2017  10:10 PM             4,851 max9850.h
+               2 File(s)          7,729 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\mcp4725
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,994 mcp4725.c
+05/05/2017  10:10 PM             3,320 mcp4725.h
+               2 File(s)          8,314 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\mpu6050
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,127 mpu6050.c
+05/05/2017  10:10 PM             4,008 mpu6050.h
+               2 File(s)          8,135 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\nrf6350
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            10,021 nrf6350.c
+05/05/2017  10:10 PM             5,325 nrf6350.h
+               2 File(s)         15,346 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\synaptics_touchpad
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,190 synaptics_touchpad.c
+05/05/2017  10:10 PM             6,086 synaptics_touchpad.h
+               2 File(s)         11,276 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_ext\uda1380
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,312 uda1380.c
+05/05/2017  10:10 PM             4,670 uda1380.h
+               2 File(s)          8,982 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          adc
+08/09/2020  05:31 PM    <DIR>          ble_flash
+08/09/2020  05:31 PM    <DIR>          clock
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          comp
+08/09/2020  05:31 PM    <DIR>          delay
+08/09/2020  05:31 PM    <DIR>          gpiote
+08/09/2020  05:31 PM    <DIR>          hal
+08/09/2020  05:31 PM    <DIR>          i2s
+08/09/2020  05:31 PM    <DIR>          lpcomp
+08/09/2020  05:31 PM    <DIR>          nrf_soc_nosd
+08/09/2020  05:31 PM    <DIR>          pdm
+08/09/2020  05:31 PM    <DIR>          power
+08/09/2020  05:31 PM    <DIR>          ppi
+08/09/2020  05:31 PM    <DIR>          pwm
+08/09/2020  05:31 PM    <DIR>          qdec
+08/09/2020  05:31 PM    <DIR>          qspi
+08/09/2020  05:31 PM    <DIR>          radio_config
+08/09/2020  05:31 PM    <DIR>          rng
+08/09/2020  05:31 PM    <DIR>          rtc
+08/09/2020  05:31 PM    <DIR>          saadc
+08/09/2020  05:31 PM    <DIR>          sdio
+08/09/2020  05:31 PM    <DIR>          spi_master
+08/09/2020  05:31 PM    <DIR>          spi_slave
+08/09/2020  05:31 PM    <DIR>          swi
+08/09/2020  05:31 PM    <DIR>          systick
+08/09/2020  05:31 PM    <DIR>          timer
+08/09/2020  05:31 PM    <DIR>          twis_slave
+08/09/2020  05:31 PM    <DIR>          twi_master
+08/09/2020  05:31 PM    <DIR>          uart
+08/09/2020  05:31 PM    <DIR>          usbd
+08/09/2020  05:31 PM    <DIR>          wdt
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\adc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            10,912 nrf_drv_adc.c
+05/05/2017  10:10 PM            10,994 nrf_drv_adc.h
+               2 File(s)         21,906 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\ble_flash
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,783 ble_flash.c
+05/05/2017  10:10 PM             7,530 ble_flash.h
+               2 File(s)         17,313 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\clock
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            18,849 nrf_drv_clock.c
+05/05/2017  10:10 PM            12,579 nrf_drv_clock.h
+               2 File(s)         31,428 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,137 nrf_drv_common.c
+05/05/2017  10:10 PM            12,115 nrf_drv_common.h
+               2 File(s)         21,252 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\comp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,707 nrf_drv_comp.c
+05/05/2017  10:10 PM            10,279 nrf_drv_comp.h
+               2 File(s)         18,986 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\delay
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,308 nrf_delay.h
+               1 File(s)          6,308 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\gpiote
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            25,827 nrf_drv_gpiote.c
+05/05/2017  10:10 PM            15,072 nrf_drv_gpiote.h
+               2 File(s)         40,899 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\hal
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,917 nrf_adc.c
+05/05/2017  10:10 PM            14,234 nrf_adc.h
+05/05/2017  10:10 PM            15,871 nrf_clock.h
+05/05/2017  10:10 PM            15,773 nrf_comp.h
+05/05/2017  10:10 PM             3,383 nrf_ecb.c
+05/05/2017  10:10 PM             3,645 nrf_ecb.h
+05/05/2017  10:10 PM            15,673 nrf_egu.h
+05/05/2017  10:10 PM            26,286 nrf_gpio.h
+05/05/2017  10:10 PM            17,122 nrf_gpiote.h
+05/05/2017  10:10 PM            20,741 nrf_i2s.h
+05/05/2017  10:10 PM            16,434 nrf_lpcomp.h
+05/05/2017  10:10 PM             4,516 nrf_nvmc.c
+05/05/2017  10:10 PM             3,944 nrf_nvmc.h
+05/05/2017  10:10 PM            11,763 nrf_pdm.h
+05/05/2017  10:10 PM             2,569 nrf_peripherals.h
+05/05/2017  10:10 PM            38,760 nrf_power.h
+05/05/2017  10:10 PM            15,456 nrf_ppi.h
+05/05/2017  10:10 PM            28,805 nrf_pwm.h
+05/05/2017  10:10 PM            15,756 nrf_qdec.h
+05/05/2017  10:10 PM            31,288 nrf_qspi.h
+05/05/2017  10:10 PM             7,521 nrf_rng.h
+05/05/2017  10:10 PM            12,124 nrf_rtc.h
+05/05/2017  10:10 PM             3,124 nrf_saadc.c
+05/05/2017  10:10 PM            23,874 nrf_saadc.h
+05/05/2017  10:10 PM            12,714 nrf_spi.h
+05/05/2017  10:10 PM            19,547 nrf_spim.h
+05/05/2017  10:10 PM            19,256 nrf_spis.h
+05/05/2017  10:10 PM             6,462 nrf_systick.h
+05/05/2017  10:10 PM             3,425 nrf_temp.h
+05/05/2017  10:10 PM            25,374 nrf_timer.h
+05/05/2017  10:10 PM            15,493 nrf_twi.h
+05/05/2017  10:10 PM            18,294 nrf_twim.h
+05/05/2017  10:10 PM            23,246 nrf_twis.h
+05/05/2017  10:10 PM            19,581 nrf_uart.h
+05/05/2017  10:10 PM            20,736 nrf_uarte.h
+05/05/2017  10:10 PM            47,516 nrf_usbd.h
+05/05/2017  10:10 PM             9,968 nrf_wdt.h
+              37 File(s)        594,191 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\i2s
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,880 nrf_drv_i2s.c
+05/05/2017  10:10 PM            11,828 nrf_drv_i2s.h
+               2 File(s)         27,708 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\lpcomp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,488 nrf_drv_lpcomp.c
+05/05/2017  10:10 PM             6,636 nrf_drv_lpcomp.h
+               2 File(s)         14,124 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\nrf_soc_nosd
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,430 nrf_error.h
+05/05/2017  10:10 PM             3,807 nrf_nvic.c
+05/05/2017  10:10 PM             6,148 nrf_nvic.h
+05/05/2017  10:10 PM             2,225 nrf_soc.c
+05/05/2017  10:10 PM             3,623 nrf_soc.h
+               5 File(s)         20,233 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\pdm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,592 nrf_drv_pdm.c
+05/05/2017  10:10 PM             7,533 nrf_drv_pdm.h
+               2 File(s)         17,125 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\power
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,463 nrf_drv_power.c
+05/05/2017  10:10 PM            11,009 nrf_drv_power.h
+               2 File(s)         19,472 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\ppi
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,055 nrf_drv_ppi.c
+05/05/2017  10:10 PM            12,882 nrf_drv_ppi.h
+               2 File(s)         29,937 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\pwm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,536 nrf_drv_pwm.c
+05/05/2017  10:10 PM            20,803 nrf_drv_pwm.h
+               2 File(s)         35,339 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\qdec
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,377 nrf_drv_qdec.c
+05/05/2017  10:10 PM             7,368 nrf_drv_qdec.h
+               2 File(s)         15,745 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\qspi
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,565 nrf_drv_qspi.c
+05/05/2017  10:10 PM            14,526 nrf_drv_qspi.h
+               2 File(s)         24,091 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\radio_config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,750 radio_config.c
+05/05/2017  10:10 PM             2,559 radio_config.h
+               2 File(s)         10,309 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\rng
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,988 nrf_drv_rng.c
+05/05/2017  10:10 PM             5,728 nrf_drv_rng.h
+               2 File(s)         14,716 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\rtc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,678 nrf_drv_rtc.c
+05/05/2017  10:10 PM            16,229 nrf_drv_rtc.h
+               2 File(s)         29,907 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\saadc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            23,829 nrf_drv_saadc.c
+05/05/2017  10:10 PM            13,179 nrf_drv_saadc.h
+               2 File(s)         37,008 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\sdio
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          config
+05/05/2017  10:10 PM             7,076 sdio.c
+05/05/2017  10:10 PM             3,691 sdio.h
+               2 File(s)         10,767 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\sdio\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,295 sdio_config.h
+               1 File(s)          2,295 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\spi_master
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            23,431 nrf_drv_spi.c
+05/05/2017  10:10 PM            17,850 nrf_drv_spi.h
+05/05/2017  10:10 PM            23,781 spi_5W_master.c
+05/05/2017  10:10 PM             9,259 spi_5W_master.h
+               4 File(s)         74,321 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\spi_slave
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,386 nrf_drv_spis.c
+05/05/2017  10:10 PM            12,346 nrf_drv_spis.h
+               2 File(s)         28,732 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\swi
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            12,384 nrf_drv_swi.c
+05/05/2017  10:10 PM             6,364 nrf_drv_swi.h
+               2 File(s)         18,748 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\systick
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,683 nrf_drv_systick.c
+05/05/2017  10:10 PM             4,842 nrf_drv_systick.h
+               2 File(s)         10,525 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\timer
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            12,705 nrf_drv_timer.c
+05/05/2017  10:10 PM            15,950 nrf_drv_timer.h
+               2 File(s)         28,655 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\twis_slave
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            34,762 nrf_drv_twis.c
+05/05/2017  10:10 PM            15,357 nrf_drv_twis.h
+05/05/2017  09:10 PM               424 nrf_drv_twis_inst.def
+               3 File(s)         50,543 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\twi_master
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          deprecated
+05/05/2017  10:10 PM            42,690 nrf_drv_twi.c
+05/05/2017  10:10 PM            20,822 nrf_drv_twi.h
+               2 File(s)         63,512 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\twi_master\deprecated
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          config
+05/05/2017  10:10 PM            11,867 twi_hw_master.c
+05/05/2017  10:10 PM             6,420 twi_master.h
+05/05/2017  10:10 PM            14,784 twi_sw_master.c
+               3 File(s)         33,071 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\twi_master\deprecated\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,321 twi_master_config.h
+               1 File(s)          2,321 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\uart
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            33,702 nrf_drv_uart.c
+05/05/2017  10:10 PM            17,986 nrf_drv_uart.h
+               2 File(s)         51,688 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\usbd
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            55,894 nrf_drv_usbd.c
+05/05/2017  10:10 PM            23,734 nrf_drv_usbd.h
+               2 File(s)         79,628 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\drivers_nrf\wdt
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,702 nrf_drv_wdt.c
+05/05/2017  10:10 PM             5,809 nrf_drv_wdt.h
+               2 File(s)         11,511 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          atomic
+08/09/2020  05:31 PM    <DIR>          atomic_fifo
+08/09/2020  05:31 PM    <DIR>          balloc
+08/09/2020  05:31 PM    <DIR>          block_dev
+08/09/2020  05:31 PM    <DIR>          bootloader
+08/09/2020  05:31 PM    <DIR>          bsp
+08/09/2020  05:31 PM    <DIR>          button
+08/09/2020  05:31 PM    <DIR>          crc16
+08/09/2020  05:31 PM    <DIR>          crc32
+08/09/2020  05:31 PM    <DIR>          crypto
+08/09/2020  05:31 PM    <DIR>          csense
+08/09/2020  05:31 PM    <DIR>          csense_drv
+08/09/2020  05:31 PM    <DIR>          ecc
+08/09/2020  05:31 PM    <DIR>          eddystone
+08/09/2020  05:31 PM    <DIR>          experimental_section_vars
+08/09/2020  05:31 PM    <DIR>          fds
+08/09/2020  05:31 PM    <DIR>          fifo
+08/09/2020  05:31 PM    <DIR>          fstorage
+08/09/2020  05:31 PM    <DIR>          gpiote
+08/09/2020  05:31 PM    <DIR>          hardfault
+08/09/2020  05:31 PM    <DIR>          hci
+08/09/2020  05:31 PM    <DIR>          ic_info
+08/09/2020  05:31 PM    <DIR>          led_softblink
+08/09/2020  05:31 PM    <DIR>          log
+08/09/2020  05:31 PM    <DIR>          low_power_pwm
+08/09/2020  05:31 PM    <DIR>          mailbox
+08/09/2020  05:31 PM    <DIR>          mem_manager
+08/09/2020  05:31 PM    <DIR>          pwm
+08/09/2020  05:31 PM    <DIR>          pwr_mgmt
+08/09/2020  05:31 PM    <DIR>          queue
+08/09/2020  05:31 PM    <DIR>          scheduler
+08/09/2020  05:31 PM    <DIR>          sdcard
+08/09/2020  05:31 PM    <DIR>          sensorsim
+08/09/2020  05:31 PM    <DIR>          sha256
+08/09/2020  05:31 PM    <DIR>          simple_timer
+08/09/2020  05:31 PM    <DIR>          slip
+08/09/2020  05:31 PM    <DIR>          svc
+08/09/2020  05:31 PM    <DIR>          timer
+08/09/2020  05:31 PM    <DIR>          twi
+08/09/2020  05:31 PM    <DIR>          uart
+08/09/2020  05:31 PM    <DIR>          usbd
+08/09/2020  05:31 PM    <DIR>          util
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\atomic
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            10,126 nrf_atomic.h
+05/05/2017  10:10 PM             8,292 nrf_atomic_internal.h
+05/05/2017  10:10 PM             6,584 nrf_atomic_sanity_check.h
+               3 File(s)         25,002 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\atomic_fifo
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,008 app_atfifo.c
+05/05/2017  10:10 PM            17,206 app_atfifo.h
+05/05/2017  10:10 PM            22,706 app_atfifo_internal.h
+               3 File(s)         44,920 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\balloc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,831 nrf_balloc.c
+05/05/2017  10:10 PM            15,607 nrf_balloc.h
+               2 File(s)         27,438 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\block_dev
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          empty
+05/05/2017  10:10 PM            11,834 nrf_block_dev.h
+08/09/2020  05:31 PM    <DIR>          qspi
+08/09/2020  05:31 PM    <DIR>          ram
+08/09/2020  05:31 PM    <DIR>          sdc
+               1 File(s)         11,834 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\block_dev\empty
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,586 nrf_block_dev_empty.c
+05/05/2017  10:10 PM             5,129 nrf_block_dev_empty.h
+               2 File(s)         12,715 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\block_dev\qspi
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            25,722 nrf_block_dev_qspi.c
+05/05/2017  10:10 PM             7,158 nrf_block_dev_qspi.h
+05/05/2017  10:10 PM             2,760 nrf_serial_flash_params.c
+05/05/2017  10:10 PM             3,226 nrf_serial_flash_params.h
+               4 File(s)         38,866 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\block_dev\ram
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,494 nrf_block_dev_ram.c
+05/05/2017  10:10 PM             5,203 nrf_block_dev_ram.h
+               2 File(s)         12,697 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\block_dev\sdc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            12,628 nrf_block_dev_sdc.c
+05/05/2017  10:10 PM             5,115 nrf_block_dev_sdc.h
+               2 File(s)         17,743 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\bootloader
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ble_dfu
+08/09/2020  05:31 PM    <DIR>          dfu
+05/05/2017  10:10 PM             3,434 nrf_bootloader.c
+05/05/2017  10:10 PM             3,584 nrf_bootloader.h
+05/05/2017  10:10 PM            13,009 nrf_bootloader_app_start.c
+05/05/2017  10:10 PM             3,208 nrf_bootloader_app_start.h
+05/05/2017  10:10 PM             3,065 nrf_bootloader_info.c
+05/05/2017  10:10 PM             4,705 nrf_bootloader_info.h
+               6 File(s)         31,005 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\bootloader\ble_dfu
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            38,445 nrf_ble_dfu.c
+05/05/2017  10:10 PM             5,743 nrf_ble_dfu.h
+               2 File(s)         44,188 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\bootloader\dfu
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,008 nrf_dfu.c
+05/05/2017  10:10 PM             3,812 nrf_dfu.h
+05/05/2017  10:10 PM             9,309 nrf_dfu_flash.c
+05/05/2017  10:10 PM             7,453 nrf_dfu_flash.h
+05/05/2017  10:10 PM             4,220 nrf_dfu_mbr.c
+05/05/2017  10:10 PM             4,849 nrf_dfu_mbr.h
+05/05/2017  10:10 PM             8,704 nrf_dfu_req_handler.h
+05/05/2017  10:10 PM             8,820 nrf_dfu_settings.c
+05/05/2017  10:10 PM             3,115 nrf_dfu_settings.h
+05/05/2017  10:10 PM             3,686 nrf_dfu_transport.c
+05/05/2017  10:10 PM             5,131 nrf_dfu_transport.h
+05/05/2017  10:10 PM             8,947 nrf_dfu_types.h
+05/05/2017  10:10 PM            22,514 nrf_dfu_utils.c
+05/05/2017  10:10 PM             5,016 nrf_dfu_utils.h
+              14 File(s)        101,584 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\bsp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            21,162 bsp.c
+05/05/2017  10:10 PM            16,102 bsp.h
+05/05/2017  10:10 PM             6,384 bsp_btn_ant.c
+05/05/2017  10:10 PM             3,684 bsp_btn_ant.h
+05/05/2017  10:10 PM            10,563 bsp_btn_ble.c
+05/05/2017  10:10 PM             4,461 bsp_btn_ble.h
+05/05/2017  10:10 PM             5,614 bsp_config.h
+05/05/2017  10:10 PM             3,134 bsp_nfc.c
+05/05/2017  10:10 PM             4,477 bsp_nfc.h
+               9 File(s)         75,581 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\button
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,033 app_button.c
+05/05/2017  10:10 PM             6,305 app_button.h
+               2 File(s)         14,338 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\crc16
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,634 crc16.c
+05/05/2017  10:10 PM             3,183 crc16.h
+               2 File(s)          5,817 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\crc32
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,628 crc32.c
+05/05/2017  10:10 PM             3,104 crc32.h
+               2 File(s)          5,732 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\crypto
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,182 nrf_crypto.c
+05/05/2017  10:10 PM            12,418 nrf_crypto.h
+05/05/2017  10:10 PM             3,615 nrf_crypto_svc.c
+               3 File(s)         21,215 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\csense
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            21,052 nrf_csense.c
+05/05/2017  10:10 PM            17,983 nrf_csense.h
+05/05/2017  10:10 PM            21,693 nrf_csense_macros.h
+               3 File(s)         60,728 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\csense_drv
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,246 nrf_drv_csense.c
+05/05/2017  10:10 PM             6,390 nrf_drv_csense.h
+               2 File(s)         23,636 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\ecc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,072 ecc.c
+05/05/2017  10:10 PM             6,192 ecc.h
+               2 File(s)         12,264 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\eddystone
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,745 es.h
+05/05/2017  10:10 PM            10,450 es_adv.c
+05/05/2017  10:10 PM             4,967 es_adv.h
+05/05/2017  10:10 PM             4,363 es_adv_frame.c
+05/05/2017  10:10 PM             2,861 es_adv_frame.h
+05/05/2017  09:10 PM             8,254 es_adv_timing.c
+05/05/2017  10:10 PM             3,900 es_adv_timing.h
+05/05/2017  10:10 PM             6,036 es_adv_timing_resolver.c
+05/05/2017  10:10 PM             4,513 es_adv_timing_resolver.h
+05/05/2017  10:10 PM             2,577 es_battery_voltage.h
+05/05/2017  10:10 PM             4,600 es_battery_voltage_adc.c
+05/05/2017  10:10 PM             4,624 es_battery_voltage_saadc.c
+05/05/2017  10:10 PM            12,121 es_flash.c
+05/05/2017  10:10 PM             7,507 es_flash.h
+05/05/2017  10:10 PM             6,045 es_gatts.c
+05/05/2017  10:10 PM             4,965 es_gatts.h
+05/05/2017  10:10 PM             9,331 es_gatts_read.c
+05/05/2017  10:10 PM             3,110 es_gatts_read.h
+05/05/2017  10:10 PM             9,420 es_gatts_write.c
+05/05/2017  10:10 PM             3,123 es_gatts_write.h
+05/05/2017  10:10 PM            19,493 es_security.c
+05/05/2017  10:10 PM             9,574 es_security.h
+05/05/2017  10:10 PM             3,519 es_security_timing.c
+05/05/2017  10:10 PM             2,806 es_security_timing.h
+05/05/2017  10:10 PM            14,550 es_slot.c
+05/05/2017  10:10 PM             8,196 es_slot.h
+05/05/2017  10:10 PM             7,009 es_slot_reg.c
+05/05/2017  10:10 PM             3,652 es_slot_reg.h
+05/05/2017  10:10 PM             3,678 es_stopwatch.c
+05/05/2017  09:10 PM             2,944 es_stopwatch.h
+05/05/2017  09:10 PM             5,095 es_tlm.c
+05/05/2017  09:10 PM             2,883 es_tlm.h
+05/05/2017  09:10 PM             4,274 es_util.h
+05/05/2017  09:10 PM            14,955 nrf_ble_es.c
+05/05/2017  09:10 PM             3,985 nrf_ble_es.h
+              35 File(s)        229,125 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\experimental_section_vars
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,594 section_vars.h
+               1 File(s)          9,594 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\fds
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            62,384 fds.c
+05/05/2017  10:10 PM            34,745 fds.h
+05/05/2017  10:10 PM            12,521 fds_internal_defs.h
+               3 File(s)        109,650 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\fifo
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,140 app_fifo.c
+05/05/2017  10:10 PM             8,738 app_fifo.h
+               2 File(s)         14,878 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\fstorage
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            16,187 fstorage.c
+05/05/2017  10:10 PM            12,531 fstorage.h
+05/05/2017  10:10 PM             6,053 fstorage_internal_defs.h
+05/05/2017  10:10 PM             2,075 fstorage_nosd.c
+               4 File(s)         36,846 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\gpiote
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            10,600 app_gpiote.c
+05/05/2017  10:10 PM            10,511 app_gpiote.h
+               2 File(s)         21,111 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hardfault
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,839 hardfault.h
+05/05/2017  10:10 PM             3,699 hardfault_implementation.c
+08/09/2020  05:31 PM    <DIR>          nrf51
+08/09/2020  05:31 PM    <DIR>          nrf52
+               2 File(s)          7,538 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hardfault\nrf51
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          handler
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hardfault\nrf51\handler
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,861 hardfault_handler_gcc.c
+05/05/2017  10:10 PM             4,444 hardfault_handler_iar.c
+05/05/2017  10:10 PM             3,320 hardfault_handler_keil.c
+               3 File(s)         11,625 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hardfault\nrf52
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          handler
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hardfault\nrf52\handler
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,606 hardfault_handler_gcc.c
+05/05/2017  10:10 PM             4,236 hardfault_handler_iar.c
+05/05/2017  10:10 PM             3,094 hardfault_handler_keil.c
+               3 File(s)         10,936 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\hci
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,326 hci_mem_pool.c
+05/05/2017  10:10 PM             6,807 hci_mem_pool.h
+05/05/2017  10:10 PM            14,034 hci_slip.c
+05/05/2017  10:10 PM             7,816 hci_slip.h
+05/05/2017  10:10 PM            31,219 hci_transport.c
+05/05/2017  10:10 PM            11,327 hci_transport.h
+               6 File(s)         80,529 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\ic_info
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,748 nrf_ic_info.c
+05/05/2017  10:10 PM             3,501 nrf_ic_info.h
+               2 File(s)          7,249 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\led_softblink
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,166 led_softblink.c
+05/05/2017  10:10 PM             6,228 led_softblink.h
+               2 File(s)         14,394 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\log
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,822 nrf_log.h
+05/05/2017  10:10 PM             3,370 nrf_log_backend.h
+05/05/2017  10:10 PM             8,867 nrf_log_ctrl.h
+08/09/2020  05:31 PM    <DIR>          src
+               3 File(s)         20,059 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\log\src
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            15,280 nrf_log_backend_serial.c
+05/05/2017  10:10 PM             3,840 nrf_log_ctrl_internal.h
+05/05/2017  10:10 PM            30,471 nrf_log_frontend.c
+05/05/2017  10:10 PM            14,875 nrf_log_internal.h
+               4 File(s)         64,466 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\low_power_pwm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,291 low_power_pwm.c
+05/05/2017  10:10 PM             8,231 low_power_pwm.h
+               2 File(s)         16,522 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\mailbox
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,833 app_mailbox.c
+05/05/2017  10:10 PM             6,917 app_mailbox.h
+05/05/2017  10:10 PM             3,256 app_mailbox_local.h
+               3 File(s)         16,006 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\mem_manager
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            35,381 mem_manager.c
+05/05/2017  10:10 PM             7,731 mem_manager.h
+               2 File(s)         43,112 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\pwm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            36,628 app_pwm.c
+05/05/2017  10:10 PM            13,579 app_pwm.h
+               2 File(s)         50,207 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\pwr_mgmt
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,673 nrf_pwr_mgmt.c
+05/05/2017  10:10 PM             5,563 nrf_pwr_mgmt.h
+               2 File(s)         19,236 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\queue
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,733 nrf_queue.c
+05/05/2017  10:10 PM            18,830 nrf_queue.h
+               2 File(s)         32,563 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\scheduler
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,703 app_scheduler.c
+05/05/2017  10:10 PM             9,574 app_scheduler.h
+05/05/2017  10:10 PM            10,210 app_scheduler_serconn.c
+               3 File(s)         29,487 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\sdcard
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            43,798 app_sdcard.c
+05/05/2017  10:10 PM             8,021 app_sdcard.h
+               2 File(s)         51,819 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\sensorsim
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,494 sensorsim.c
+05/05/2017  10:10 PM             4,707 sensorsim.h
+               2 File(s)          8,201 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\sha256
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,209 sha256.c
+05/05/2017  10:10 PM             5,002 sha256.h
+               2 File(s)         13,211 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\simple_timer
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,625 app_simple_timer.c
+05/05/2017  10:10 PM             5,651 app_simple_timer.h
+               2 File(s)         12,276 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\slip
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,283 slip.c
+05/05/2017  10:10 PM             3,786 slip.h
+               2 File(s)          9,069 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\svc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,209 nrf_svci.h
+05/05/2017  10:10 PM             3,450 nrf_svc_function.h
+05/05/2017  10:10 PM            11,318 nrf_svc_handler.c
+               3 File(s)         22,977 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\timer
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            36,685 app_timer.c
+05/05/2017  10:10 PM            16,836 app_timer.h
+05/05/2017  10:10 PM             2,812 app_timer_appsh.c
+05/05/2017  10:10 PM             3,727 app_timer_appsh.h
+05/05/2017  10:10 PM            36,687 app_timer_ble_gzll.c
+05/05/2017  10:10 PM             8,645 app_timer_freertos.c
+05/05/2017  10:10 PM             9,324 app_timer_rtx.c
+               7 File(s)        114,716 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\twi
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,244 app_twi.c
+05/05/2017  10:10 PM            12,830 app_twi.h
+               2 File(s)         27,074 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\uart
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,998 app_uart.c
+05/05/2017  10:10 PM            14,037 app_uart.h
+05/05/2017  10:10 PM             9,085 app_uart_fifo.c
+05/05/2017  10:10 PM             4,527 retarget.c
+               4 File(s)         33,647 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            28,961 app_usbd.c
+05/05/2017  10:10 PM            13,879 app_usbd.h
+05/05/2017  10:10 PM            33,721 app_usbd_class_base.h
+05/05/2017  10:10 PM            42,130 app_usbd_core.c
+05/05/2017  10:10 PM            10,892 app_usbd_core.h
+05/05/2017  10:10 PM            16,543 app_usbd_descriptor.h
+05/05/2017  10:10 PM            20,166 app_usbd_langid.h
+05/05/2017  10:10 PM            16,195 app_usbd_request.h
+05/05/2017  10:10 PM             6,211 app_usbd_string_desc.c
+05/05/2017  10:10 PM             4,308 app_usbd_string_desc.h
+05/05/2017  10:10 PM             7,436 app_usbd_types.h
+08/09/2020  05:31 PM    <DIR>          class
+08/09/2020  05:31 PM    <DIR>          config
+              11 File(s)        200,442 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          audio
+08/09/2020  05:31 PM    <DIR>          cdc
+08/09/2020  05:31 PM    <DIR>          hid
+08/09/2020  05:31 PM    <DIR>          msc
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\audio
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            21,134 app_usbd_audio.c
+05/05/2017  10:10 PM             7,140 app_usbd_audio.h
+05/05/2017  10:10 PM            17,202 app_usbd_audio_desc.h
+05/05/2017  10:10 PM             8,381 app_usbd_audio_internal.h
+05/05/2017  10:10 PM            20,102 app_usbd_audio_types.h
+               5 File(s)         73,959 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\cdc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          acm
+05/05/2017  10:10 PM             9,917 app_usbd_cdc_desc.h
+05/05/2017  10:10 PM            24,161 app_usbd_cdc_types.h
+               2 File(s)         34,078 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\cdc\acm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            25,335 app_usbd_cdc_acm.c
+05/05/2017  10:10 PM            11,984 app_usbd_cdc_acm.h
+05/05/2017  10:10 PM             7,620 app_usbd_cdc_acm_internal.h
+               3 File(s)         44,939 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\hid
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            18,667 app_usbd_hid.c
+05/05/2017  10:10 PM            16,165 app_usbd_hid.h
+05/05/2017  10:10 PM            12,471 app_usbd_hid_types.h
+08/09/2020  05:31 PM    <DIR>          generic
+08/09/2020  05:31 PM    <DIR>          kbd
+08/09/2020  05:31 PM    <DIR>          mouse
+               3 File(s)         47,303 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\hid\generic
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,608 app_usbd_hid_generic.c
+05/05/2017  10:10 PM             8,852 app_usbd_hid_generic.h
+05/05/2017  10:10 PM             3,383 app_usbd_hid_generic_desc.h
+05/05/2017  10:10 PM             9,149 app_usbd_hid_generic_internal.h
+               4 File(s)         34,992 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\hid\kbd
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,310 app_usbd_hid_kbd.c
+05/05/2017  10:10 PM            14,845 app_usbd_hid_kbd.h
+05/05/2017  10:10 PM             6,588 app_usbd_hid_kbd_desc.h
+05/05/2017  10:10 PM             8,026 app_usbd_hid_kbd_internal.h
+               4 File(s)         42,769 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\hid\mouse
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,375 app_usbd_hid_mouse.c
+05/05/2017  10:10 PM             6,637 app_usbd_hid_mouse.h
+05/05/2017  10:10 PM             5,465 app_usbd_hid_mouse_desc.h
+05/05/2017  10:10 PM             7,995 app_usbd_hid_mouse_internal.h
+               4 File(s)         34,472 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\class\msc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            72,800 app_usbd_msc.c
+05/05/2017  10:10 PM             6,810 app_usbd_msc.h
+05/05/2017  10:10 PM             4,883 app_usbd_msc_desc.h
+05/05/2017  10:10 PM            11,327 app_usbd_msc_internal.h
+05/05/2017  10:10 PM            16,065 app_usbd_msc_scsi.h
+05/05/2017  10:10 PM             5,942 app_usbd_msc_types.h
+               6 File(s)        117,827 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\usbd\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,282 app_usbd_string_config.h
+               1 File(s)          5,282 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\libraries\util
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,354 app_error.c
+05/05/2017  10:10 PM            10,409 app_error.h
+05/05/2017  10:10 PM             2,688 app_error_weak.c
+05/05/2017  10:10 PM             3,555 app_error_weak.h
+05/05/2017  10:10 PM            41,173 app_util.h
+05/05/2017  10:10 PM            17,040 app_util_bds.h
+05/05/2017  10:10 PM             3,189 app_util_platform.c
+05/05/2017  10:10 PM             9,709 app_util_platform.h
+05/05/2017  10:10 PM             8,108 nordic_common.h
+05/05/2017  10:10 PM             2,479 nrf_assert.c
+05/05/2017  10:10 PM             4,882 nrf_assert.h
+05/05/2017  10:10 PM             5,475 nrf_bitmask.h
+05/05/2017  10:10 PM             2,794 sdk_common.h
+05/05/2017  10:10 PM             3,477 sdk_errors.c
+05/05/2017  10:10 PM             7,965 sdk_errors.h
+05/05/2017  10:10 PM             7,094 sdk_macros.h
+05/05/2017  10:10 PM             6,338 sdk_mapped_flags.c
+05/05/2017  10:10 PM             8,005 sdk_mapped_flags.h
+05/05/2017  10:10 PM             2,823 sdk_os.h
+05/05/2017  10:10 PM             3,933 sdk_resources.h
+              20 File(s)        156,490 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          experimental_t4t_lib
+08/09/2020  05:31 PM    <DIR>          ndef
+08/09/2020  05:31 PM    <DIR>          t2t_lib
+08/09/2020  05:31 PM    <DIR>          t2t_parser
+08/09/2020  05:31 PM    <DIR>          t4t_parser
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\experimental_t4t_lib
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          hal_t4t
+05/05/2017  09:10 PM             1,961 license.txt
+05/05/2017  10:10 PM             3,528 nfc_fixes.h
+05/05/2017  10:10 PM            14,266 nfc_t4t_lib.h
+05/05/2017  09:10 PM           800,914 nfc_t4t_lib_gcc.a
+05/05/2017  09:10 PM            43,694 nfc_t4t_lib_iar.a
+05/05/2017  09:10 PM            24,618 nfc_t4t_lib_keil.lib
+               6 File(s)        888,981 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\experimental_t4t_lib\hal_t4t
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            40,395 hal_nfc_t4t.c
+05/05/2017  10:10 PM             7,913 hal_nfc_t4t.h
+               2 File(s)         48,308 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          connection_handover
+08/09/2020  05:31 PM    <DIR>          generic
+08/09/2020  05:31 PM    <DIR>          launchapp
+08/09/2020  05:31 PM    <DIR>          parser
+08/09/2020  05:31 PM    <DIR>          text
+08/09/2020  05:31 PM    <DIR>          uri
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ac_rec
+08/09/2020  05:31 PM    <DIR>          ble_oob_advdata
+08/09/2020  05:31 PM    <DIR>          ble_pair_msg
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          ep_oob_rec
+08/09/2020  05:31 PM    <DIR>          hs_rec
+08/09/2020  05:31 PM    <DIR>          le_oob_rec
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\ac_rec
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,411 nfc_ac_rec.c
+05/05/2017  10:10 PM             9,646 nfc_ac_rec.h
+               2 File(s)         16,057 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\ble_oob_advdata
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,396 nfc_ble_oob_advdata.c
+05/05/2017  10:10 PM             8,758 nfc_ble_oob_advdata.h
+               2 File(s)         26,154 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\ble_pair_msg
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            22,880 nfc_ble_pair_msg.c
+05/05/2017  10:10 PM            15,220 nfc_ble_pair_msg.h
+               2 File(s)         38,100 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,390 nfc_ble_pair_common.c
+05/05/2017  10:10 PM             2,222 nfc_ble_pair_common.h
+               2 File(s)          4,612 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\ep_oob_rec
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,803 nfc_ep_oob_rec.c
+05/05/2017  10:10 PM             3,661 nfc_ep_oob_rec.h
+               2 File(s)         13,464 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\hs_rec
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,095 nfc_hs_rec.c
+05/05/2017  10:10 PM             7,460 nfc_hs_rec.h
+               2 File(s)         11,555 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\connection_handover\le_oob_rec
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,176 nfc_le_oob_rec.c
+05/05/2017  10:10 PM             3,661 nfc_le_oob_rec.h
+               2 File(s)          9,837 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\generic
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          message
+08/09/2020  05:31 PM    <DIR>          record
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\generic\message
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,800 nfc_ndef_msg.c
+05/05/2017  10:10 PM             9,033 nfc_ndef_msg.h
+               2 File(s)         14,833 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\generic\record
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,571 nfc_ndef_record.c
+05/05/2017  10:10 PM            15,951 nfc_ndef_record.h
+               2 File(s)         22,522 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\launchapp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             6,595 nfc_launchapp_msg.c
+05/05/2017  10:10 PM             4,459 nfc_launchapp_msg.h
+05/05/2017  10:10 PM             6,986 nfc_launchapp_rec.c
+05/05/2017  10:10 PM             4,307 nfc_launchapp_rec.h
+               4 File(s)         22,347 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\parser
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          message
+08/09/2020  05:31 PM    <DIR>          record
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\parser\message
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,749 nfc_ndef_msg_parser.c
+05/05/2017  10:10 PM             5,287 nfc_ndef_msg_parser.h
+05/05/2017  10:10 PM             6,251 nfc_ndef_msg_parser_local.c
+05/05/2017  10:10 PM             7,469 nfc_ndef_msg_parser_local.h
+               4 File(s)         22,756 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\parser\record
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             7,299 nfc_ndef_record_parser.c
+05/05/2017  10:10 PM             4,205 nfc_ndef_record_parser.h
+               2 File(s)         11,504 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\text
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,379 nfc_text_rec.c
+05/05/2017  10:10 PM             7,392 nfc_text_rec.h
+               2 File(s)         11,771 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\ndef\uri
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,307 nfc_uri_msg.c
+05/05/2017  10:10 PM             4,143 nfc_uri_msg.h
+05/05/2017  10:10 PM             4,974 nfc_uri_rec.c
+05/05/2017  10:10 PM             5,940 nfc_uri_rec.h
+               4 File(s)         20,364 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t2t_lib
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          hal_t2t
+05/05/2017  09:10 PM             1,961 license.txt
+05/05/2017  10:10 PM             3,528 nfc_fixes.h
+05/05/2017  10:10 PM            10,988 nfc_t2t_lib.h
+05/05/2017  09:10 PM           733,000 nfc_t2t_lib_gcc.a
+05/05/2017  09:10 PM            29,244 nfc_t2t_lib_iar.a
+05/05/2017  09:10 PM            13,152 nfc_t2t_lib_keil.lib
+               6 File(s)        791,873 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t2t_lib\hal_t2t
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            31,233 hal_nfc_t2t.c
+05/05/2017  10:10 PM             7,727 hal_nfc_t2t.h
+               2 File(s)         38,960 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t2t_parser
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            25,740 nfc_t2t_parser.c
+05/05/2017  10:10 PM             7,934 nfc_t2t_parser.h
+05/05/2017  10:10 PM             3,906 nfc_tlv_block.h
+               3 File(s)         37,580 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t4t_parser
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          apdu
+08/09/2020  05:31 PM    <DIR>          cc_file
+08/09/2020  05:31 PM    <DIR>          hl_detection_procedure
+08/09/2020  05:31 PM    <DIR>          tlv
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t4t_parser\apdu
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             8,969 nfc_t4t_apdu.c
+05/05/2017  10:10 PM             8,555 nfc_t4t_apdu.h
+               2 File(s)         17,524 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t4t_parser\cc_file
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,345 nfc_t4t_cc_file.c
+05/05/2017  10:10 PM             7,928 nfc_t4t_cc_file.h
+               2 File(s)         17,273 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t4t_parser\hl_detection_procedure
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            14,902 nfc_t4t_hl_detection_procedures.c
+05/05/2017  10:10 PM             9,086 nfc_t4t_hl_detection_procedures.h
+               2 File(s)         23,988 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\nfc\t4t_parser\tlv
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            13,410 nfc_t4t_tlv_block.c
+05/05/2017  10:10 PM             5,830 nfc_t4t_tlv_block.h
+               2 File(s)         19,240 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          esb
+08/09/2020  05:31 PM    <DIR>          gzll
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\esb
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            43,316 nrf_esb.c
+05/05/2017  10:10 PM            25,988 nrf_esb.h
+05/05/2017  10:10 PM             2,356 nrf_esb_error_codes.h
+05/05/2017  10:10 PM             3,014 nrf_esb_resources.h
+               4 File(s)         74,674 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\gzll
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          arm
+08/09/2020  05:31 PM    <DIR>          config
+08/09/2020  05:31 PM    <DIR>          gcc
+08/09/2020  05:31 PM    <DIR>          iar
+05/05/2017  10:10 PM            30,365 nrf_gzll.h
+05/05/2017  10:10 PM            11,059 nrf_gzll_constants.h
+05/05/2017  10:10 PM             3,106 nrf_gzll_error.h
+05/05/2017  10:10 PM             2,953 nrf_gzll_resources.h
+05/05/2017  10:10 PM            10,993 nrf_gzp.c
+05/05/2017  10:10 PM            23,472 nrf_gzp.h
+05/05/2017  10:10 PM            39,111 nrf_gzp_device.c
+05/05/2017  10:10 PM            23,267 nrf_gzp_host.c
+05/05/2017  10:10 PM             2,972 nrf_gzp_host_nrf5x.c
+               9 File(s)        147,298 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\gzll\arm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM           145,794 gzll_nrf51_arm.lib
+05/05/2017  09:10 PM           146,558 gzll_nrf51_sd_resources_arm.lib
+05/05/2017  09:10 PM           149,792 gzll_nrf52_arm.lib
+05/05/2017  09:10 PM           150,012 gzll_nrf52_sd_resources_arm.lib
+05/05/2017  10:10 PM             1,956 license.txt
+               5 File(s)        594,112 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\gzll\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,421 nrf_gzp_config.h
+               1 File(s)          5,421 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\gzll\gcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM            53,732 gzll_nrf51_gcc.a
+05/05/2017  09:10 PM            53,688 gzll_nrf51_sd_resources_gcc.a
+05/05/2017  09:10 PM            53,628 gzll_nrf52_gcc.a
+05/05/2017  09:10 PM            53,644 gzll_nrf52_sd_resources_gcc.a
+05/05/2017  10:10 PM             1,956 license.txt
+               5 File(s)        216,648 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\proprietary_rf\gzll\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM           134,116 gzll_nrf51_iar.a
+05/05/2017  09:10 PM           134,678 gzll_nrf51_sd_resource_iar.a
+05/05/2017  09:10 PM           131,304 gzll_nrf52_iar.a
+05/05/2017  09:10 PM           131,516 gzll_nrf52_sd_resource_iar.a
+05/05/2017  10:10 PM             1,956 license.txt
+               5 File(s)        533,570 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          application
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          connectivity
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          codecs
+08/09/2020  05:31 PM    <DIR>          hal
+08/09/2020  05:31 PM    <DIR>          transport
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\codecs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          s132
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\codecs\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,575 ble_dtm_app.c
+05/05/2017  10:10 PM             4,970 ble_dtm_app.h
+05/05/2017  10:10 PM             3,450 ble_dtm_init.c
+05/05/2017  10:10 PM             2,840 conn_systemreset.c
+05/05/2017  10:10 PM             2,900 conn_systemreset.h
+               5 File(s)         17,735 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\codecs\s132
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          middleware
+08/09/2020  05:31 PM    <DIR>          serializers
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\codecs\s132\middleware
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            20,815 app_mw_ble.c
+05/05/2017  10:10 PM            64,921 app_mw_ble_gap.c
+05/05/2017  10:10 PM            22,259 app_mw_ble_gattc.c
+05/05/2017  10:10 PM            29,356 app_mw_ble_gatts.c
+05/05/2017  10:10 PM             7,377 app_mw_ble_l2cap.c
+05/05/2017  10:10 PM             6,253 app_mw_nrf_soc.c
+               6 File(s)        150,981 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\codecs\s132\serializers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,470 app_ble_gap_sec_keys.c
+05/05/2017  10:10 PM             4,723 app_ble_gap_sec_keys.h
+05/05/2017  10:10 PM             3,520 app_ble_user_mem.c
+05/05/2017  10:10 PM             4,685 app_ble_user_mem.h
+05/05/2017  10:10 PM            15,922 ble_app.c
+05/05/2017  10:10 PM            24,038 ble_app.h
+05/05/2017  10:10 PM             9,081 ble_event.c
+05/05/2017  10:10 PM             5,906 ble_evt_app.c
+05/05/2017  10:10 PM             7,993 ble_evt_app.h
+05/05/2017  10:10 PM            31,823 ble_gap_app.c
+05/05/2017  10:10 PM            77,743 ble_gap_app.h
+05/05/2017  10:10 PM            13,149 ble_gap_evt_app.c
+05/05/2017  10:10 PM            25,340 ble_gap_evt_app.h
+05/05/2017  10:10 PM            11,613 ble_gattc_app.c
+05/05/2017  10:10 PM            26,518 ble_gattc_app.h
+05/05/2017  10:10 PM            10,992 ble_gattc_evt_app.c
+05/05/2017  10:10 PM            18,761 ble_gattc_evt_app.h
+05/05/2017  10:10 PM            16,394 ble_gatts_app.c
+05/05/2017  10:10 PM            37,421 ble_gatts_app.h
+05/05/2017  10:10 PM             7,716 ble_gatts_evt_app.c
+05/05/2017  10:10 PM            11,977 ble_gatts_evt_app.h
+05/05/2017  10:10 PM             5,631 ble_l2cap_app.c
+05/05/2017  10:10 PM             9,087 ble_l2cap_app.h
+05/05/2017  10:10 PM             2,693 ble_l2cap_evt_app.c
+05/05/2017  10:10 PM             3,920 ble_l2cap_evt_app.h
+05/05/2017  10:10 PM             3,878 nrf_soc_app.c
+05/05/2017  10:10 PM             6,923 nrf_soc_app.h
+              27 File(s)        400,917 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\hal
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             8,943 arm_startup_nrf51.s
+05/05/2017  10:10 PM             4,621 ser_app_hal.h
+05/05/2017  10:10 PM             5,405 ser_app_hal_nrf5x.c
+05/05/2017  10:10 PM             2,557 ser_app_power_system_off.c
+05/05/2017  10:10 PM             2,390 ser_app_power_system_off.h
+               5 File(s)         23,916 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\application\transport
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             9,862 ser_sd_transport.c
+05/05/2017  10:10 PM             8,789 ser_sd_transport.h
+05/05/2017  10:10 PM             6,804 ser_softdevice_handler.c
+05/05/2017  10:10 PM             2,959 ser_softdevice_handler.h
+               4 File(s)         28,414 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,774 ble_serialization.c
+05/05/2017  10:10 PM            56,793 ble_serialization.h
+05/05/2017  10:10 PM             3,861 cond_field_serialization.c
+05/05/2017  10:10 PM             5,359 cond_field_serialization.h
+05/05/2017  10:10 PM             7,318 ser_config.h
+05/05/2017  10:10 PM            12,889 ser_dbg_sd_str.c
+05/05/2017  10:10 PM             2,287 ser_dbg_sd_str.h
+08/09/2020  05:31 PM    <DIR>          struct_ser
+08/09/2020  05:31 PM    <DIR>          transport
+               7 File(s)        106,281 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common\struct_ser
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          s132
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common\struct_ser\s132
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            47,032 ble_gap_struct_serialization.c
+05/05/2017  10:10 PM            24,838 ble_gap_struct_serialization.h
+05/05/2017  10:10 PM            26,604 ble_gattc_struct_serialization.c
+05/05/2017  10:10 PM            15,605 ble_gattc_struct_serialization.h
+05/05/2017  10:10 PM            23,853 ble_gatts_struct_serialization.c
+05/05/2017  10:10 PM            12,026 ble_gatts_struct_serialization.h
+05/05/2017  10:10 PM             5,721 ble_gatt_struct_serialization.c
+05/05/2017  10:10 PM             3,895 ble_gatt_struct_serialization.h
+05/05/2017  10:10 PM            18,135 ble_struct_serialization.c
+05/05/2017  10:10 PM            10,792 ble_struct_serialization.h
+05/05/2017  10:10 PM             3,929 nrf_soc_struct_serialization.c
+05/05/2017  10:10 PM             3,268 nrf_soc_struct_serialization.h
+              12 File(s)        195,698 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common\transport
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,074 dtm_uart_params.h
+05/05/2017  10:10 PM            16,501 ser_hal_transport.c
+05/05/2017  10:10 PM            13,804 ser_hal_transport.h
+08/09/2020  05:31 PM    <DIR>          ser_phy
+05/05/2017  10:10 PM             7,036 ser_phy_debug_comm.h
+               4 File(s)         41,415 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common\transport\ser_phy
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          config
+05/05/2017  10:10 PM             3,327 ser_phy.c
+05/05/2017  10:10 PM            14,382 ser_phy.h
+05/05/2017  10:10 PM            54,713 ser_phy_hci.c
+05/05/2017  10:10 PM             8,239 ser_phy_hci.h
+05/05/2017  10:10 PM            19,424 ser_phy_hci_slip.c
+05/05/2017  10:10 PM            11,584 ser_phy_nohci.c
+05/05/2017  10:10 PM            25,910 ser_phy_spi_5W_master.c
+05/05/2017  10:10 PM            21,094 ser_phy_spi_5W_slave.c
+05/05/2017  10:10 PM            25,093 ser_phy_spi_master.c
+05/05/2017  10:10 PM            20,396 ser_phy_spi_slave.c
+05/05/2017  10:10 PM            15,057 ser_phy_uart.c
+              11 File(s)        219,219 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\common\transport\ser_phy\config
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,255 ser_config_5W_app.h
+05/05/2017  10:10 PM             4,831 ser_phy_config_app.h
+05/05/2017  10:10 PM             3,505 ser_phy_config_conn.h
+05/05/2017  10:10 PM             6,879 ser_phy_debug_app.h
+05/05/2017  10:10 PM             5,364 ser_phy_debug_conn.h
+               5 File(s)         22,834 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          codecs
+08/09/2020  05:31 PM    <DIR>          hal
+05/05/2017  10:10 PM             5,169 pstorage_platform.h
+05/05/2017  10:10 PM             4,937 ser_conn_cmd_decoder.c
+05/05/2017  10:10 PM             3,749 ser_conn_cmd_decoder.h
+05/05/2017  10:10 PM             4,491 ser_conn_dtm_cmd_decoder.c
+05/05/2017  10:10 PM             4,005 ser_conn_dtm_cmd_decoder.h
+05/05/2017  10:10 PM             5,046 ser_conn_error_handling.c
+05/05/2017  10:10 PM             4,426 ser_conn_event_encoder.c
+05/05/2017  10:10 PM             3,458 ser_conn_event_encoder.h
+05/05/2017  10:10 PM             6,141 ser_conn_handlers.c
+05/05/2017  10:10 PM             4,865 ser_conn_handlers.h
+05/05/2017  10:10 PM             4,278 ser_conn_pkt_decoder.c
+05/05/2017  10:10 PM             3,709 ser_conn_pkt_decoder.h
+05/05/2017  10:10 PM             2,240 ser_conn_reset_cmd_decoder.c
+05/05/2017  10:10 PM             3,181 ser_conn_reset_cmd_decoder.h
+08/09/2020  05:31 PM    <DIR>          startup
+              14 File(s)         59,695 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\codecs
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          s132
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\codecs\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             4,554 ble_dtm_conn.h
+05/05/2017  10:10 PM             3,452 ble_dtm_init.c
+05/05/2017  10:10 PM             4,340 conn_mw.c
+05/05/2017  10:10 PM             3,452 conn_mw.h
+               4 File(s)         15,798 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\codecs\s132
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          middleware
+08/09/2020  05:31 PM    <DIR>          serializers
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\codecs\s132\middleware
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             3,453 conn_mw.h
+05/05/2017  10:10 PM            13,535 conn_mw_ble.c
+05/05/2017  10:10 PM            11,105 conn_mw_ble.h
+05/05/2017  10:10 PM            39,057 conn_mw_ble_gap.c
+05/05/2017  10:10 PM            39,265 conn_mw_ble_gap.h
+05/05/2017  10:10 PM            14,987 conn_mw_ble_gattc.c
+05/05/2017  10:10 PM            13,818 conn_mw_ble_gattc.h
+05/05/2017  10:10 PM            19,522 conn_mw_ble_gatts.c
+05/05/2017  10:10 PM            16,877 conn_mw_ble_gatts.h
+05/05/2017  10:10 PM             4,925 conn_mw_ble_l2cap.c
+05/05/2017  10:10 PM             5,246 conn_mw_ble_l2cap.h
+05/05/2017  10:10 PM             7,381 conn_mw_items.c
+05/05/2017  10:10 PM             4,600 conn_mw_nrf_soc.c
+05/05/2017  10:10 PM             5,417 conn_mw_nrf_soc.h
+              14 File(s)        199,188 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\codecs\s132\serializers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            17,065 ble_conn.c
+05/05/2017  10:10 PM            23,679 ble_conn.h
+05/05/2017  10:10 PM             9,530 ble_event_enc.c
+05/05/2017  10:10 PM             4,677 ble_evt_conn.c
+05/05/2017  10:10 PM             6,558 ble_evt_conn.h
+05/05/2017  10:10 PM            33,892 ble_gap_conn.c
+05/05/2017  10:10 PM            70,746 ble_gap_conn.h
+05/05/2017  10:10 PM            12,837 ble_gap_evt_conn.c
+05/05/2017  10:10 PM            19,625 ble_gap_evt_conn.h
+05/05/2017  10:10 PM            12,204 ble_gattc_conn.c
+05/05/2017  10:10 PM            25,733 ble_gattc_conn.h
+05/05/2017  10:10 PM            10,509 ble_gattc_evt_conn.c
+05/05/2017  10:10 PM            14,727 ble_gattc_evt_conn.h
+05/05/2017  10:10 PM            16,601 ble_gatts_conn.c
+05/05/2017  10:10 PM            35,002 ble_gatts_conn.h
+05/05/2017  10:10 PM             7,192 ble_gatts_evt_conn.c
+05/05/2017  10:10 PM             9,661 ble_gatts_evt_conn.h
+05/05/2017  10:10 PM             5,974 ble_l2cap_conn.c
+05/05/2017  10:10 PM             8,565 ble_l2cap_conn.h
+05/05/2017  10:10 PM             2,702 ble_l2cap_evt_conn.c
+05/05/2017  10:10 PM             3,591 ble_l2cap_evt_conn.h
+05/05/2017  10:10 PM             3,406 conn_ble_gap_sec_keys.c
+05/05/2017  10:10 PM             5,502 conn_ble_gap_sec_keys.h
+05/05/2017  10:10 PM             3,604 conn_ble_user_mem.c
+05/05/2017  10:10 PM             4,656 conn_ble_user_mem.h
+05/05/2017  10:10 PM             3,850 nrf_soc_conn.c
+05/05/2017  10:10 PM             6,922 nrf_soc_conn.h
+              27 File(s)        379,010 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\hal
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM            11,165 dtm_uart.c
+05/05/2017  10:10 PM             2,472 dtm_uart.h
+               2 File(s)         13,637 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\startup
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          arm
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\serialization\connectivity\startup\arm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             8,940 arm_startup_nrf51.s
+               1 File(s)          8,940 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          common
+08/09/2020  05:31 PM    <DIR>          s130
+08/09/2020  05:31 PM    <DIR>          s132
+08/09/2020  05:31 PM    <DIR>          s212
+08/09/2020  05:31 PM    <DIR>          s332
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\common
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          softdevice_handler
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\common\softdevice_handler
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             5,008 ant_stack_handler_types.h
+05/05/2017  10:10 PM            15,587 app_ram_base.h
+05/05/2017  10:10 PM             4,837 ble_stack_handler_types.h
+05/05/2017  10:10 PM            19,807 softdevice_handler.c
+05/05/2017  10:10 PM            13,282 softdevice_handler.h
+05/05/2017  10:10 PM             2,437 softdevice_handler_appsh.c
+05/05/2017  10:10 PM             2,531 softdevice_handler_appsh.h
+               7 File(s)         63,489 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          doc
+08/09/2020  05:31 PM    <DIR>          headers
+08/09/2020  05:31 PM    <DIR>          hex
+08/09/2020  05:31 PM    <DIR>          toolchain
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\doc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+04/20/2016  11:57 PM             5,532 s130_nrf51822_2.0.1_licence_agreement.pdf
+04/21/2016  10:35 PM               303 s130_nrf51822_2.0.1_readme.txt
+04/21/2016  08:53 PM            51,579 s130_nrf51822_2.0.1_releasenotes.pdf
+04/21/2016  10:35 PM             6,925 s130_nrf51_2.0.1_licence_agreement.txt
+04/21/2016  10:50 PM            45,493 s13x_nrf5x_2.0.1_migration_document.pdf
+               5 File(s)        109,832 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\headers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+04/20/2016  11:57 PM            32,077 ble.h
+04/20/2016  11:57 PM             3,626 ble_err.h
+04/20/2016  11:57 PM            96,508 ble_gap.h
+04/20/2016  11:57 PM            11,970 ble_gatt.h
+04/20/2016  11:57 PM            30,349 ble_gattc.h
+04/20/2016  11:57 PM            43,884 ble_gatts.h
+04/20/2016  11:57 PM             6,172 ble_hci.h
+04/20/2016  11:57 PM             7,455 ble_l2cap.h
+04/20/2016  11:57 PM             5,243 ble_ranges.h
+04/20/2016  11:57 PM            11,950 ble_types.h
+08/09/2020  05:31 PM    <DIR>          nrf51
+04/20/2016  11:57 PM             4,526 nrf_error.h
+04/20/2016  11:57 PM             2,768 nrf_error_sdm.h
+04/20/2016  11:57 PM             3,575 nrf_error_soc.h
+04/20/2016  11:57 PM            14,864 nrf_nvic.h
+04/20/2016  11:57 PM            12,847 nrf_sdm.h
+05/05/2017  10:10 PM             2,718 nrf_sd_def.h
+04/20/2016  11:57 PM            42,497 nrf_soc.h
+04/20/2016  11:57 PM             3,526 nrf_svc.h
+              18 File(s)        336,555 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\headers\nrf51
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+04/20/2016  11:57 PM             7,823 nrf_mbr.h
+               1 File(s)          7,823 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\hex
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+04/21/2016  10:35 PM             6,925 s130_nrf51_2.0.1_licence-agreement.txt
+04/20/2016  11:57 PM           305,057 s130_nrf51_2.0.1_softdevice.hex
+               2 File(s)        311,982 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\toolchain
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          armgcc
+08/09/2020  05:31 PM    <DIR>          iar
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\toolchain\armgcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM               548 armgcc_s130_nrf51422_xxaa.ld
+05/05/2017  09:12 PM               548 armgcc_s130_nrf51422_xxac.ld
+05/05/2017  09:12 PM               548 armgcc_s130_nrf51822_xxaa.ld
+05/05/2017  09:12 PM               547 armgcc_s130_nrf51822_xxab.ld
+               4 File(s)          2,191 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s130\toolchain\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM             1,483 iar_s130_nrf51422_xxaa.icf
+05/05/2017  09:12 PM             1,483 iar_s130_nrf51422_xxac.icf
+05/05/2017  09:12 PM             1,483 iar_s130_nrf51822_xxaa.icf
+05/05/2017  09:12 PM             1,483 iar_s130_nrf51822_xxab.icf
+               4 File(s)          5,932 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          doc
+08/09/2020  05:31 PM    <DIR>          headers
+08/09/2020  05:31 PM    <DIR>          hex
+08/09/2020  05:31 PM    <DIR>          toolchain
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\doc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+07/25/2016  07:25 PM             5,532 s132_nrf52_3.0.0_licence_agreement.pdf
+07/25/2016  07:35 PM             6,925 s132_nrf52_3.0.0_licence_agreement.txt
+07/29/2016  01:53 AM            71,996 s132_nrf52_3.0.0_migration_document.pdf
+07/29/2016  01:57 AM               336 s132_nrf52_3.0.0_readme.txt
+07/29/2016  02:05 AM            55,456 s132_nrf52_3.0.0_releasenotes.pdf
+               5 File(s)        140,245 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\headers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM            35,418 ble.h
+05/05/2017  09:10 PM             3,626 ble_err.h
+05/05/2017  09:10 PM           107,216 ble_gap.h
+05/05/2017  09:10 PM            12,517 ble_gatt.h
+05/05/2017  09:10 PM            35,290 ble_gattc.h
+05/05/2017  09:10 PM            47,181 ble_gatts.h
+05/05/2017  09:10 PM             6,172 ble_hci.h
+05/05/2017  09:10 PM             7,455 ble_l2cap.h
+05/05/2017  09:10 PM             5,291 ble_ranges.h
+05/05/2017  09:10 PM            11,953 ble_types.h
+08/09/2020  05:31 PM    <DIR>          nrf52
+05/05/2017  09:10 PM             4,526 nrf_error.h
+05/05/2017  09:10 PM             2,768 nrf_error_sdm.h
+05/05/2017  09:10 PM             3,575 nrf_error_soc.h
+05/05/2017  09:10 PM            15,034 nrf_nvic.h
+05/05/2017  09:10 PM            16,580 nrf_sdm.h
+05/05/2017  10:10 PM             2,718 nrf_sd_def.h
+05/05/2017  09:10 PM            43,262 nrf_soc.h
+05/05/2017  09:10 PM             3,526 nrf_svc.h
+              18 File(s)        364,108 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\headers\nrf52
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             9,034 nrf_mbr.h
+               1 File(s)          9,034 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\hex
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+07/25/2016  07:35 PM             6,925 s132_nrf52_3.0.0_licence-agreement.txt
+07/25/2016  07:25 PM           346,118 s132_nrf52_3.0.0_softdevice.hex
+               2 File(s)        353,043 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\toolchain
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          armgcc
+08/09/2020  05:31 PM    <DIR>          iar
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\toolchain\armgcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM               548 armgcc_s132_nrf52832_xxaa.ld
+               1 File(s)            548 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s132\toolchain\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM             1,483 iar_s132_nrf52832_xxaa.icf
+               1 File(s)          1,483 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s212
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          headers
+08/09/2020  05:31 PM    <DIR>          toolchain
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s212\headers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,717 nrf_sd_def.h
+               1 File(s)          2,717 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s212\toolchain
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          armgcc
+08/09/2020  05:31 PM    <DIR>          iar
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s212\toolchain\armgcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM               548 armgcc_s212_nrf52832_xxaa.ld
+               1 File(s)            548 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s212\toolchain\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM             1,483 iar_s212_nrf52832_xxaa.icf
+               1 File(s)          1,483 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s332
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          headers
+08/09/2020  05:31 PM    <DIR>          toolchain
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s332\headers
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  10:10 PM             2,717 nrf_sd_def.h
+               1 File(s)          2,717 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s332\toolchain
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          armgcc
+08/09/2020  05:31 PM    <DIR>          iar
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s332\toolchain\armgcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM               548 armgcc_s332_nrf52832_xxaa.ld
+               1 File(s)            548 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\softdevice\s332\toolchain\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:12 PM             1,483 iar_s332_nrf52832_xxaa.icf
+               1 File(s)          1,483 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          arm
+08/09/2020  05:31 PM    <DIR>          cmsis
+08/09/2020  05:31 PM    <DIR>          gcc
+08/09/2020  05:31 PM    <DIR>          iar
+05/05/2017  09:10 PM             6,114 system_nrf51.c
+05/05/2017  09:10 PM             2,340 system_nrf51.h
+05/05/2017  10:10 PM             5,391 system_nrf51422.c
+05/05/2017  09:10 PM            12,953 system_nrf52.c
+05/05/2017  09:10 PM             2,340 system_nrf52.h
+05/05/2017  09:10 PM             9,230 system_nrf52840.c
+05/05/2017  09:10 PM             2,349 system_nrf52840.h
+               7 File(s)         40,717 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\arm
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             9,469 arm_startup_nrf51.s
+05/05/2017  09:10 PM            23,069 arm_startup_nrf52.s
+05/05/2017  09:10 PM            23,366 arm_startup_nrf52840.s
+05/05/2017  10:10 PM             7,472 uicr_config.h
+               4 File(s)         63,376 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\cmsis
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          dsp
+08/09/2020  05:31 PM    <DIR>          include
+               0 File(s)              0 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\cmsis\dsp
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+08/09/2020  05:31 PM    <DIR>          ARM
+08/09/2020  05:31 PM    <DIR>          GCC
+05/05/2017  09:10 PM             1,620 license.txt
+               1 File(s)          1,620 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\cmsis\dsp\ARM
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM        13,943,636 arm_cortexM4lf_math.lib
+05/05/2017  09:10 PM        13,787,724 arm_cortexM4l_math.lib
+               2 File(s)     27,731,360 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\cmsis\dsp\GCC
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM         3,144,804 libarm_cortexM4lf_math.a
+05/05/2017  09:10 PM         3,192,576 libarm_cortexM4l_math.a
+               2 File(s)      6,337,380 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\cmsis\include
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             7,265 arm_common_tables.h
+05/05/2017  09:10 PM             3,942 arm_const_structs.h
+05/05/2017  09:10 PM           252,480 arm_math.h
+05/05/2017  09:10 PM            24,423 cmsis_armcc.h
+05/05/2017  09:10 PM            55,083 cmsis_armcc_V6.h
+05/05/2017  09:10 PM            41,435 cmsis_gcc.h
+05/05/2017  09:10 PM            37,219 core_cm0.h
+05/05/2017  09:10 PM            44,797 core_cm0plus.h
+05/05/2017  09:10 PM           103,910 core_cm3.h
+05/05/2017  09:10 PM           114,499 core_cm4.h
+05/05/2017  09:10 PM           139,666 core_cm7.h
+05/05/2017  09:10 PM             3,620 core_cmFunc.h
+05/05/2017  09:10 PM             3,636 core_cmInstr.h
+05/05/2017  09:10 PM             3,662 core_cmSimd.h
+05/05/2017  09:10 PM            45,263 core_sc000.h
+05/05/2017  09:10 PM           102,810 core_sc300.h
+              16 File(s)        983,710 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\gcc
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM                30 file_list.mk
+05/05/2017  09:10 PM             3,835 gcc_nrf51_common.ld
+05/05/2017  09:10 PM             8,814 gcc_startup_nrf51.S
+05/05/2017  09:10 PM            20,615 gcc_startup_nrf52.S
+05/05/2017  09:10 PM            20,633 gcc_startup_nrf52840.S
+05/05/2017  09:10 PM             5,187 Makefile.common
+05/05/2017  09:10 PM               112 Makefile.posix
+05/05/2017  09:10 PM               129 Makefile.windows
+05/05/2017  09:10 PM             4,311 nrf51_common.ld
+05/05/2017  09:10 PM               247 nrf51_xxaa.ld
+05/05/2017  09:10 PM               247 nrf51_xxab.ld
+05/05/2017  09:10 PM               247 nrf51_xxac.ld
+05/05/2017  09:10 PM               249 nrf52840_xxaa.ld
+05/05/2017  09:10 PM             4,311 nrf52_common.ld
+05/05/2017  09:10 PM               248 nrf52_xxaa.ld
+05/05/2017  09:10 PM             4,311 nrf5x_common.ld
+              16 File(s)         73,526 bytes
+
+ Directory of C:\1234\PCB drone project\nRF5_SDK_12.3.0_d7731ad\components\toolchain\iar
+
+08/09/2020  05:31 PM    <DIR>          .
+08/09/2020  05:31 PM    <DIR>          ..
+05/05/2017  09:10 PM             1,402 iar_nrf51_blank_xxaa.icf
+05/05/2017  09:10 PM             1,402 iar_nrf51_blank_xxac.icf
+05/05/2017  09:10 PM             9,578 iar_startup_nrf51.s
+05/05/2017  09:10 PM            22,024 iar_startup_nrf52.s
+05/05/2017  09:10 PM            22,597 iar_startup_nrf52840.s
+               5 File(s)         57,003 bytes
+
+     Total Files Listed:
+            1021 File(s)     51,956,585 bytes
+             845 Dir(s)  315,438,657,536 bytes free

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<JScopeProject>
+    <FileVersion major="1" minor="1" />
+    <Project>
+        <Configuration>
+            <JLink>
+                <Options IsRTTSession="0" IsRTTWithTimeStamp="1" SamplingPeriod="100" Connection="1" SerialNo="0" IP="" TargetDevice="unspecified" TargetInterface="SWD" InterfaceSpeed="4000" />
+            </JLink>
+            <ElfFile Name="C:\1234\PCB drone project\STM32LIB_TEST\STM32LIB\MDK-ARM\Output\STM32LIB External\Exe\STM32LIB.elf" />
+            <DataFile Name="" />
+            <RawFile Name="" />
+            <Scope>
+                <Options TimeResolutionUs="500000" />
+            </Scope>
+        </Configuration>
+        <Windows>
+            <Graph Show="1" />
+            <Watch Show="1" />
+        </Windows>
+        <SelectedSymbols>
+            <Symbol>
+                <Options Name="syslinkPacket[2]" Address="0x200006E0" Type="char" TypeID="6" Size="1" GraphColorRed="255" GraphColorGreen="215" GraphColorBlue="0" YMinSampled="0" YMaxSampled="252" YAvgSampled="121" Offset="4" ShowInGraph="1" YOffset="200" IsAutoConfig="1" YResolution="50" MaxValue="257" File="../Src\uart_syslink.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+            <Symbol>
+                <Options Name="syslinkPacket[3]" Address="0x200006E1" Type="char" TypeID="6" Size="1" GraphColorRed="0" GraphColorGreen="255" GraphColorBlue="0" YMinSampled="0" YMaxSampled="251" YAvgSampled="182" Offset="5" ShowInGraph="1" YOffset="200" IsAutoConfig="1" YResolution="50" MaxValue="257" File="../Src\uart_syslink.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+            <Symbol>
+                <Options Name="syslinkPacket[1]" Address="0x200006DF" Type="char" TypeID="6" Size="1" GraphColorRed="0" GraphColorGreen="0" GraphColorBlue="255" YMinSampled="49" YMaxSampled="98" YAvgSampled="69" Offset="6" ShowInGraph="1" YOffset="200" IsAutoConfig="1" YResolution="20" MaxValue="103" File="../Src\uart_syslink.c" Scope="0" DrawStyle="0" />
+            </Symbol>
+        </SelectedSymbols>
+    </Project>
+</JScopeProject>

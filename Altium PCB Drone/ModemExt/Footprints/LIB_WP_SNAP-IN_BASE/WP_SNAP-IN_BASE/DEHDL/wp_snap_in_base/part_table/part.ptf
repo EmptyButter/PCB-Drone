@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'WP_SNAP_IN_BASE'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "SIERRA WIRELESS", "WP SNAP-IN BASE" (!) = "", "WPSNAPINBASE", "Other", "WP SNAP-IN BASE", "", "", "", "SIERRA WIRELESS - WP SNAP-IN BASE - SNAP-IN SOCKET BASE FOR WP SERIES MCU", "http://farnell.com//datasheets/2611080.pdf", "4 mm"
+END_PART
+
+END.

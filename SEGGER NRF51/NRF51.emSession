@@ -1,0 +1,119 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks>
+  <BookmarkItem objectName="" line="839" column="0" path="C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Source/nrf_esb.c" number="1" extra="void RADIO_IRQHandler()" color="5"/>
+  <BookmarkItem objectName="" line="962" column="0" path="C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Source/nrf_esb.c" number="6" extra="void ESB_EVT_IRQHandler(void)" color="5"/>
+ </Bookmarks>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_2" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="STM32" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="NRF51" radix="16" sizeText="sizeof " addressText="&amp;"/>
+ </Memory1>
+ <Memory2>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_2" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="STM32" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="NRF51" radix="16" sizeText="" addressText=""/>
+ </Memory2>
+ <Memory3>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_2" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="STM32" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="NRF51" radix="16" sizeText="" addressText=""/>
+ </Memory3>
+ <Memory4>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_1" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="Executable_2" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="STM32" radix="16" sizeText="" addressText=""/>
+  <MemoryWindow addressSpace="" dataSize="1" autoEvaluate="0" viewMode="0" addressOrder="0" columnsText="" refreshPeriod="0" name="NRF51" radix="16" sizeText="" addressText=""/>
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="NRF51"/>
+  <ProjectSessionItem path="NRF51;NRF51"/>
+  <ProjectSessionItem path="NRF51;NRF51;CMSIS Files"/>
+  <ProjectSessionItem path="NRF51;NRF51;drv_include"/>
+  <ProjectSessionItem path="NRF51;NRF51;Script Files"/>
+  <ProjectSessionItem path="NRF51;NRF51;Source Files"/>
+  <ProjectSessionItem path="NRF51;NRF51;System Files"/>
+  <SourceCodeControlLogin password="F9BB6682F5D56822" user="David Yi &lt;emptyex3@gmail.com>"/>
+ </Project>
+ <Register1>
+  <RegisterWindow visibleNodes="GPIO/OUT;GPIO/OUTSET;GPIO/OUTCLR;GPIO/IN;GPIO/DIR;GPIO/DIRSET;GPIO/DIRCLR;GPIO/PIN_CNF[0];GPIO/PIN_CNF[1];GPIO/PIN_CNF[2];GPIO/PIN_CNF[3];GPIO/PIN_CNF[4];GPIO/PIN_CNF[5];GPIO/PIN_CNF[6];GPIO/PIN_CNF[7];GPIO/PIN_CNF[8];GPIO/PIN_CNF[9];GPIO/PIN_CNF[10];GPIO/PIN_CNF[11];GPIO/PIN_CNF[12];GPIO/PIN_CNF[13];GPIO/PIN_CNF[14];GPIO/PIN_CNF[15];GPIO/PIN_CNF[16];GPIO/PIN_CNF[17];GPIO/PIN_CNF[18];GPIO/PIN_CNF[19];GPIO/PIN_CNF[20];GPIO/PIN_CNF[21];GPIO/PIN_CNF[22];GPIO/PIN_CNF[23];GPIO/PIN_CNF[24];GPIO/PIN_CNF[25];GPIO/PIN_CNF[26];GPIO/PIN_CNF[27];GPIO/PIN_CNF[28];GPIO/PIN_CNF[29];GPIO/PIN_CNF[30];GPIO/PIN_CNF[31];CLOCK/TASKS_HFCLKSTART;CLOCK/TASKS_HFCLKSTOP;CLOCK/TASKS_LFCLKSTART;CLOCK/TASKS_LFCLKSTOP;CLOCK/TASKS_CAL;CLOCK/TASKS_CTSTART;CLOCK/TASKS_CTSTOP;CLOCK/EVENTS_HFCLKSTARTED;CLOCK/EVENTS_LFCLKSTARTED;CLOCK/EVENTS_DONE;CLOCK/EVENTS_CTTO;CLOCK/INTENSET;CLOCK/INTENCLR;CLOCK/HFCLKRUN;CLOCK/HFCLKSTAT;CLOCK/LFCLKRUN;CLOCK/LFCLKSTAT;CLOCK/LFCLKSRCCOPY;CLOCK/LFCLKSRC;CLOCK/CTIV;CLOCK/XTALFREQ;POWER/TASKS_CONSTLAT;POWER/TASKS_LOWPWR;POWER/EVENTS_POFWARN;POWER/INTENSET;POWER/INTENCLR;POWER/RESETREAS;POWER/RAMSTATUS;POWER/SYSTEMOFF;POWER/POFCON;POWER/GPREGRET;POWER/RAMON;POWER/RESET;POWER/RAMONB;POWER/DCDCEN;POWER/DCDCFORCE" binaryNodes="" asciiNodes="" openNodes="POWER" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="VFP (System)/fpscr" binaryNodes="" asciiNodes="" openNodes="" name="Executable_2" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="STM32" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="NVIC/NVIC_ISER0;NVIC/NVIC_ICER0;NVIC/NVIC_ISPR0;NVIC/NVIC_ICPR0;NVIC/NVIC_IPR0;NVIC/NVIC_IPR1;NVIC/NVIC_IPR2;NVIC/NVIC_IPR3;NVIC/NVIC_IPR4;NVIC/NVIC_IPR5;NVIC/NVIC_IPR6;NVIC/NVIC_IABR0;ADC/TASKS_START;ADC/TASKS_STOP;ADC/EVENTS_END;ADC/INTENSET;ADC/INTENCLR;ADC/BUSY;ADC/ENABLE;ADC/CONFIG;ADC/RESULT;ADC/POWER;TIMER1/TASKS_START;TIMER1/TASKS_STOP;TIMER1/TASKS_COUNT;TIMER1/TASKS_CLEAR;TIMER1/TASKS_SHUTDOWN;TIMER1/TASKS_CAPTURE[0];TIMER1/TASKS_CAPTURE[1];TIMER1/TASKS_CAPTURE[2];TIMER1/TASKS_CAPTURE[3];TIMER1/EVENTS_COMPARE[0];TIMER1/EVENTS_COMPARE[1];TIMER1/EVENTS_COMPARE[2];TIMER1/EVENTS_COMPARE[3];TIMER1/SHORTS;TIMER1/INTENSET;TIMER1/INTENCLR;TIMER1/MODE;TIMER1/BITMODE;TIMER1/PRESCALER;TIMER1/CC[0];TIMER1/CC[1];TIMER1/CC[2];TIMER1/CC[3];TIMER1/POWER;TIMER2/TASKS_START;TIMER2/TASKS_STOP;TIMER2/TASKS_COUNT;TIMER2/TASKS_CLEAR;TIMER2/TASKS_SHUTDOWN;TIMER2/TASKS_CAPTURE[0];TIMER2/TASKS_CAPTURE[1];TIMER2/TASKS_CAPTURE[2];TIMER2/TASKS_CAPTURE[3];TIMER2/EVENTS_COMPARE[0];TIMER2/EVENTS_COMPARE[1];TIMER2/EVENTS_COMPARE[2];TIMER2/EVENTS_COMPARE[3];TIMER2/SHORTS;TIMER2/INTENSET;TIMER2/INTENCLR;TIMER2/MODE;TIMER2/BITMODE;TIMER2/PRESCALER;TIMER2/CC[0];TIMER2/CC[1];TIMER2/CC[2];TIMER2/CC[3];TIMER2/POWER;GPIO/OUT;GPIO/OUTSET;GPIO/OUTCLR;GPIO/IN;GPIO/DIR;GPIO/DIRSET;GPIO/DIRCLR;GPIO/PIN_CNF[0];GPIO/PIN_CNF[1];GPIO/PIN_CNF[2];GPIO/PIN_CNF[3];GPIO/PIN_CNF[4];GPIO/PIN_CNF[5];GPIO/PIN_CNF[6];GPIO/PIN_CNF[7];GPIO/PIN_CNF[8];GPIO/PIN_CNF[9];GPIO/PIN_CNF[10];GPIO/PIN_CNF[11];GPIO/PIN_CNF[12];GPIO/PIN_CNF[13];GPIO/PIN_CNF[14];GPIO/PIN_CNF[15];GPIO/PIN_CNF[16];GPIO/PIN_CNF[17];GPIO/PIN_CNF[18];GPIO/PIN_CNF[19];GPIO/PIN_CNF[20];GPIO/PIN_CNF[21];GPIO/PIN_CNF[22];GPIO/PIN_CNF[23];GPIO/PIN_CNF[24];GPIO/PIN_CNF[25];GPIO/PIN_CNF[26];GPIO/PIN_CNF[27];GPIO/PIN_CNF[28];GPIO/PIN_CNF[29];GPIO/PIN_CNF[30];GPIO/PIN_CNF[31]" binaryNodes="" asciiNodes="" openNodes="ADC;ADC/CONFIG;ADC/RESULT;GPIO/PIN_CNF[0];GPIO/PIN_CNF[5];GPIO/PIN_CNF[13]" name="NRF51" decimalNodes="ADC/RESULT" octalNodes="" unsignedNodes=""/>
+ </Register1>
+ <Register2>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_2" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="STM32" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="NRF51" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register2>
+ <Register3>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_2" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="STM32" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="NRF51" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register3>
+ <Register4>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_1" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="Executable_2" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="STM32" decimalNodes="" octalNodes="" unsignedNodes=""/>
+  <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/msp;CPU/psp;CPU/cfbp;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="NRF51" decimalNodes="" octalNodes="" unsignedNodes=""/>
+ </Register4>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="cksum_a" name="cksum_a" radix="16" linenumber="129" filename="syslink.c"/>
+   <Watchpoint expression="cksum_b" name="cksum_b" radix="-1" linenumber="130" filename="syslink.c"/>
+   <Watchpoint expression="event_handler" name="event_handler" radix="16" linenumber="90" filename="nRF/Device/SDK_Driver/drv_Source/nrf_drv_adc.c"/>
+   <Watchpoint expression="ret_code" name="ret_code" radix="16" linenumber="107" filename="main.c"/>
+   <Watchpoint expression="rx_payload" name="rx_payload" radix="10" linenumber="8" filename="main.c"/>
+   <Watchpoint expression="sysPacket" name="sysPacket" radix="10" linenumber="9" filename="main.c"/>
+   <Watchpoint expression="uint32asBytes" name="uint32asBytes" radix="16" linenumber="193" filename="main.c"/>
+   <Watchpoint expression="volts" name="volts" radix="16" linenumber="185" filename="main.c"/>
+   <Watchpoint expression="* p_value" name="* p_value" radix="-1" linenumber="173" filename="nRF/Device/SDK_Driver/drv_Source/nrf_drv_adc.c"/>
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="14" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="pinout.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="5" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="systick.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="10" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/main.c" useBinaryEdit="0" left="0" path="systick.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="104" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="syslink.c" selected="0" top="102" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="39" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/main.c" useBinaryEdit="0" left="0" path="uart.c" selected="0" top="39" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="230" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF/Device/Startup/ses_startup_nrf51.s" selected="0" top="198" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="104" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="nRF/Device/Startup/ses_startup_nrf_common.s" selected="0" top="95" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/main.c" useBinaryEdit="0" left="0" path="nRF/Device/SDK_Driver/drv_Include/nrf_gpio.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="194" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/main.c" useBinaryEdit="0" left="0" path="pm.c" selected="0" top="166" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="182" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="main.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="195" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="nRF/Device/SDK_Driver/drv_Source/nrf_drv_adc.c" selected="0" top="171" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="71" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="nRF/Device/SDK_Driver/drv_Include/nrf_drv_adc.h" selected="0" top="54" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="262" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Source/nrf_drv_adc.c" useBinaryEdit="0" left="0" path="nRF/Device/SDK_Driver/drv_Include/nrf_adc.h" selected="0" top="245" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="1079" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/main.c" useBinaryEdit="0" left="0" path="nRF/Device/SDK_Driver/drv_Source/nrf_esb.c" selected="0" top="1077" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditRight" x="0" y="17" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="0" path="pm.h" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditRight" x="0" y="0" useTextEdit="1" openedFrom="C:/1234/PCB drone project/SEGGER NRF51/pm.c" useBinaryEdit="0" left="18" path="syslink.h" selected="0" top="0" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="NRF51" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Include/nrf_esb.c&#xa;C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Source/nrf_esb.c" fileDialogInitialDirectory="C:/1234/PCB drone project/SEGGER NRF51/nRF/Device/SDK_Driver/drv_Source" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

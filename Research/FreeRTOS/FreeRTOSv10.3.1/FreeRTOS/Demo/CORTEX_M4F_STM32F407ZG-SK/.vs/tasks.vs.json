@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-CORTEX_M4F_STM32F407ZG-SK",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

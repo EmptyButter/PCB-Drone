@@ -1,0 +1,191 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="STM32LIB" target="8" version="2">
+  <project Name="STM32LIB">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00100000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="STM32F405RG"
+      arm_target_interface_type="SWD"
+      debug_start_from_entry_point_symbol="No"
+      debug_target_connection="J-Link"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000"
+      project_directory=""
+      project_type="Externally Built Executable" />
+    <configuration
+      BUILD_OPTIONS="ARM CLANG"
+      Name="External Keil ARMCLANG"
+      build_generic_options_file_name="$(StudioDir)/targets/ARMCLANG_build_options.xml" />
+    <configuration
+      CMSIS_CORE="Yes"
+      Name="STM32LIB"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M4"
+      arm_endian="Little"
+      arm_fpu_type="FPv4-SP-D16"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00100000,FFFFFFFF;RWX 20000000,00020000,CDCDCDCD"
+      arm_target_device_name="STM32F405RG"
+      c_preprocessor_definitions="USE_HAL_DRIVER;STM32F405xx"
+      c_user_include_directories="../Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include"
+      linker_section_placements_segments="FLASH1 RX 0x08000000 0x00100000;RAM1 RWX 0x20000000 0x00020000" />
+    <configuration
+      Name="External Keil"
+      build_intermediate_directory="STM32LIB"
+      build_output_directory="STM32LIB"
+      build_output_file_name="STM32LIB/STM32LIB.axf" />
+    <folder Name="Application/MDK-ARM">
+      <file file_name="startup_stm32f405xx.s">
+        <configuration Name="Internal" build_exclude_from_build="Yes" />
+      </file>
+    </folder>
+    <folder Name="::CMSIS" />
+    <folder Name="Application/User">
+      <file file_name="../Src/bmi088_accel.c" />
+      <file file_name="../Src/bmi088_fifo.c" />
+      <file file_name="../Src/bmi088_gyro.c" />
+      <file file_name="../Src/dma.c" />
+      <file file_name="../Src/gpio.c" />
+      <file file_name="../Src/i2c.c" />
+      <file file_name="../Src/main.c" />
+      <file file_name="../Src/sensor.c" />
+      <file file_name="../Src/stm32f4xx_hal_msp.c" />
+      <file file_name="../Src/stm32f4xx_it.c" />
+      <file file_name="../Src/tim.c" />
+      <file file_name="../Src/uart_syslink.c" />
+      <file file_name="../Src/usart.c" />
+      <file file_name="../Src/stateEstimator.c" />
+      <file file_name="../Src/controller.c" />
+      <file file_name="../Src/num.c" />
+      <file file_name="../Src/motor_pwr_out.c" />
+      <file file_name="../Src/spi.c" />
+      <file file_name="../Src/LED_sequence.c" />
+      <file file_name="../Src/bmp3.c" />
+      <file file_name="../Src/Zrange.c" />
+      <file file_name="../Src/LEDflow.c" />
+      <file file_name="../Src/modemExp.c" />
+    </folder>
+    <folder Name="Drivers/STM32F4xx_HAL_Driver">
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" />
+      <file file_name="../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" />
+    </folder>
+    <folder Name="Drivers/CMSIS">
+      <file file_name="../Src/system_stm32f4xx.c" />
+    </folder>
+    <configuration
+      Name="STM32LIB External"
+      armasm_cl_cpu="Cortex-M4"
+      armclang_cl_cpu="Cortex-M4"
+      armclang_cl_enable_debug_info="Yes"
+      armclang_cl_optimization_level="Level 3"
+      asm_additional_options="--pd;&quot;__MICROLIB SETA 1&quot;"
+      asm_additional_options_backup="--cpu=Cortex-M4;--pd;&quot;__MICROLIB SETA 1&quot;"
+      c_additional_options="-D__MICROLIB"
+      c_additional_options_backup="-mcpu=Cortex-M4;-D__MICROLIB;-O3;-g"
+      c_user_include_directories="../Inc;../Src;../SEGGER_RTT;../VL53L0X/core/inc;../VL53L0X/core/src;../VL53L0X/platform/inc;../VL53L0X/platform/src"
+      debug_register_definition_file="C:/1234/PCB drone project/STM32LIB_TEST/STM32LIB/STM32F40x.svd"
+      link_additional_options_backup="--cpu=Cortex-M4;--ro_base=0x08000000;--rw_base=0x20000000;--first=__Vectors;--library_type=microlib"
+      linker_additional_options="--ro_base=0x08000000;--rw_base=0x20000000;--first=__Vectors;--library_type=microlib" />
+    <folder Name="inc">
+      <file file_name="../Inc/bmi088.h" />
+      <file file_name="../Inc/bmi088_defs.h" />
+      <file file_name="../Inc/bmi088_fifo.h" />
+      <file file_name="../Inc/controller.h" />
+      <file file_name="../Inc/dma.h" />
+      <file file_name="../Inc/gpio.h" />
+      <file file_name="../Inc/i2c.h" />
+      <file file_name="../Inc/main.h" />
+      <file file_name="../Inc/sensor.h" />
+      <file file_name="../Inc/stabilizer_typedef.h" />
+      <file file_name="../Inc/stateEstimator.h" />
+      <file file_name="../Inc/stm32f4xx_hal_conf.h" />
+      <file file_name="../Inc/stm32f4xx_it.h" />
+      <file file_name="../Inc/syslink.h" />
+      <file file_name="../Inc/tim.h" />
+      <file file_name="../Inc/uart_syslink.h" />
+      <file file_name="../Inc/usart.h" />
+      <file file_name="../Inc/num.h" />
+      <file file_name="../Inc/motor_pwr_out.h" />
+      <file file_name="../Inc/spi.h" />
+      <file file_name="../Inc/LED_sequence.h" />
+      <file file_name="../Inc/bmp3.h" />
+      <file file_name="../Inc/bmp3_defs.h" />
+      <file file_name="../Inc/Zrange.h" />
+      <file file_name="../Inc/LEDflow.h" />
+      <file file_name="../Inc/modemExp.h" />
+    </folder>
+    <folder Name="SEGGER">
+      <file file_name="../SEGGER_RTT/SEGGER_RTT.c" />
+      <file file_name="../SEGGER_RTT/SEGGER_RTT.h" />
+      <file file_name="../SEGGER_RTT/SEGGER_RTT_Conf.h" />
+      <file file_name="../SEGGER_RTT/SEGGER_RTT_printf.c" />
+      <file file_name="../SEGGER_RTT/SEGGER_RTT_SES.c">
+        <configuration
+          Name="STM32LIB External"
+          build_exclude_from_build="Yes" />
+      </file>
+    </folder>
+    <folder Name="VL53L0x">
+      <folder Name="core">
+        <folder Name="inc">
+          <file file_name="../VL53L0X/core/inc/vl53l0x_api.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_api_calibration.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_api_core.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_api_ranging.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_api_strings.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_def.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_device.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_interrupt_threshold_settings.h" />
+          <file file_name="../VL53L0X/core/inc/vl53l0x_tuning.h" />
+        </folder>
+        <folder Name="src">
+          <file file_name="../VL53L0X/core/src/vl53l0x_api.c" />
+          <file file_name="../VL53L0X/core/src/vl53l0x_api.c.bak" />
+          <file file_name="../VL53L0X/core/src/vl53l0x_api_calibration.c" />
+          <file file_name="../VL53L0X/core/src/vl53l0x_api_core.c" />
+          <file file_name="../VL53L0X/core/src/vl53l0x_api_ranging.c" />
+          <file file_name="../VL53L0X/core/src/vl53l0x_api_strings.c" />
+        </folder>
+      </folder>
+      <folder Name="platform">
+        <folder Name="inc">
+          <file file_name="../VL53L0X/platform/inc/vl53l0x_i2c_platform.h" />
+          <file file_name="../VL53L0X/platform/inc/vl53l0x_platform.h" />
+          <file file_name="../VL53L0X/platform/inc/vl53l0x_platform_log.h" />
+          <file file_name="../VL53L0X/platform/inc/vl53l0x_types.h" />
+        </folder>
+        <folder Name="src">
+          <file file_name="../VL53L0X/platform/src/vl53l0x_i2c_platform.c" />
+          <file file_name="../VL53L0X/platform/src/vl53l0x_platform.c" />
+        </folder>
+      </folder>
+    </folder>
+  </project>
+  <configuration
+    Name="External Keil ARMCLANG"
+    hidden="Yes"
+    macros="KEIL_TOOLKIT_DIR=C:/Keil_v5/ARM" />
+  <configuration Name="STM32LIB" hidden="Yes" />
+  <configuration
+    Name="STM32LIB External"
+    inherited_configurations="External Keil ARMCLANG;STM32LIB" />
+</solution>

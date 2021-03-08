@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\VL53L0X_1.0.2",
+    "\\VL53L0X_1.0.2\\Api",
+    "\\VL53L0X_1.0.2\\ApiExample",
+    "\\VL53L0X_1.0.2\\ApiExample\\examples",
+    "\\VL53L0X_1.0.2\\ApiExample\\examples\\src",
+    "\\VL53L0X_1.0.2\\Api\\platform",
+    "\\VL53L0X_1.0.2\\Api\\platform\\inc",
+    "\\VL53L0X_1.0.2\\Api\\platform\\src"
+  ],
+  "SelectedNode": "\\VL53L0X_1.0.2\\ApiExample\\examples\\src\\vl53l0x_ContinuousRanging_Example.c",
+  "PreviewInSolutionExplorer": false
+}

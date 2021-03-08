@@ -1,0 +1,48 @@
+*PADS-LIBRARY-PART-TYPES-V9*
+
+PMW3901MB-TXQT PMW3901MBTXQT I ANA 9 1 0 0 0
+TIMESTAMP 2020.07.18.03.15.38
+"Manufacturer_Name" PixArt Imaging Inc.
+"Manufacturer_Part_Number" PMW3901MB-TXQT
+"Arrow Part Number" PMW3901MB-TXQT
+"Arrow Price/Stock" 
+"Mouser Part Number" 
+"Mouser Price/Stock" 
+"Description" PMW3901MB-TXQT
+"Datasheet Link" http://www.pixart.com.tw/upload/POT0189-PMW3901MB-TXQT-DS-R1.10-200617%20(NonNDA)_20170720181537_20170802183402.pdf
+"Geometry.Height" 2.36mm
+GATE 1 29 0
+PMW3901MB-TXQT
+1 0 U GND_1
+2 0 U VDD
+3 0 U VDDIO
+4 0 U VREG
+5 0 U NC_1
+6 0 U NC_2
+7 0 U NRESET
+8 0 U NC_3
+9 0 U NC_4
+10 0 U NC_5
+11 0 U NC_6
+12 0 U NC_7
+13 0 U NC_8
+14 0 U NC_9
+15 0 U MOTION
+16 0 U MOSI
+17 0 U SCLK
+18 0 U MISO
+19 0 U NCS
+20 0 U LED_N
+21 0 U GND_2
+22 0 U NC_10
+23 0 U NC_11
+24 0 U NC_12
+25 0 U NC_13
+26 0 U NC_14
+27 0 U NC_15
+28 0 U NC_16
+29 0 U EP
+
+*END*
+*REMARK* SamacSys ECAD Model
+1431800/281303/2.47/29/4/Integrated Circuit

@@ -1,0 +1,18 @@
+.AMCA31-2R450G-S1F-T3 :1 ;ABRACON - AMCA31-2R450G-S1F-T3 - ANTENNA, CHIP, 2.45GHZ, 50 OHM, 1206
+ANTC3216X140N
+*STM ANT
+*NGS
+*PLB 1="FEED" 2="NC"
+*MXP 2
+*DFN AMCA31-2R450G-S1F-T3
+~!Manufacturer_Name (ABRACON)
+~!Manufacturer_Part_Number (AMCA31-2R450G-S1F-T3)
+~!Arrow Part Number (AMCA31-2R450G-S1F-T3)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/amca31-2r450g-s1f-t3/abracon)
+~!Mouser Part Number (815-CA312R450GS1FT3)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/ABRACON/AMCA31-2R450G-S1F-T3?qs=AAveGqk956GLuOddQEK40Q%3D%3D)
+~!Link Datasheet (http://www.abracon.com/chip-antenna/AMCA31-2R450G-S1F-T.pdf)
+~!Height (1.4mm)
+~!3D_Model (AMCA31-2R450G-S1F-T3)
+AMCA31-2R450G-S1F-T3
+1.1!I 2.1!U 

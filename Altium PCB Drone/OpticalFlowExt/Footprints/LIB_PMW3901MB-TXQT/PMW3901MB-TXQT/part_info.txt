@@ -1,0 +1,9 @@
+Manufacturer=PixArt Imaging Inc.
+PartNumber=PMW3901MB-TXQT
+PartCategory=Integrated Circuit
+PackageCategory=Other
+PinCount=29
+Version=1.2
+Released=2018-09-16 14:19:28
+Downloaded=2020-07-18 03:15:38
+3D=Y

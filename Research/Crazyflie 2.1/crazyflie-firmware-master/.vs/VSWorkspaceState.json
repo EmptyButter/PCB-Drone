@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\init",
+    "\\vendor\\FreeRTOS-Kernel-82e80521124c6e96e5fdb3538a2533f994e2db8f"
+  ],
+  "SelectedNode": "\\src\\init\\main.c",
+  "PreviewInSolutionExplorer": false
+}

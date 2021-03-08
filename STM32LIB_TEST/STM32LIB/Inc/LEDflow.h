@@ -1,0 +1,29 @@
+#ifndef __LEDFLOW_H__
+#define __LEDFLOW_H__
+
+#define LP55231SQX_I2C_ADDR 0x32
+
+#define LP55231_I2C_TIMEOUT 10
+
+#define LP5_REG_ENGINE1_PC 0x37
+#define LP5_REG_ENGINE2_PC 0x38
+#define LP5_REG_ENGINE3_PC 0x39
+#define LP5_REG_STATUS 0x3A
+#define LP5_REG_ENG1_PROG_START_ADDR 0x4C
+#define LP5_REG_ENG2_PROG_START_ADDR 0x4D
+#define LP5_REG_ENG3_PROG_START_ADDR 0x4E
+#define LP5_REG_PROG_MEM_PAGE_SEL 0x4F
+#define LP5_REG_PROG_MEM_BASE 0x50
+
+#define LP5_STATUS_ENG1INT_msk 0x00
+#define LP5_STATUS_ENG2INT_msk 0x01
+#define LP5_STATUS_ENG3INT_msk (0x01 << 1)
+#define LP5_STATUS_EXT_CLK_USED_msk (0x01 << 2)
+#define LP5_STATUS_ENGINE_BUSY_msk (0x01 << 3)
+#define LP5_STATUS_STARTUP_BUSY_msk (0x01 << 4)
+#define LP5_STATUS_MASK_BUSY_msk (0x01 << 5)
+#define LP5_STATUS_LEDTEST_MEAS_DONE_msk (0x01 << 6)
+
+void lp55231_Init(void);
+
+#endif //__LEDFLOW_H__

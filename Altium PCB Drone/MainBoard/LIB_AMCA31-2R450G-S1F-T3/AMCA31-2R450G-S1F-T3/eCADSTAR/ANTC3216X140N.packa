@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "AMCA31-2R450G-S1F-T3"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-06-06-11:10:45)
+    (mountForm default
+        (footprintRef "ANTC3216X140N")
+        (spec "System")
+    )
+)

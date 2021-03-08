@@ -1,0 +1,29 @@
+PCAD Importer Log
+Project : 3313J-1-503E.LibPkg
+
+Section : C:\1234\PCB drone project\Altium PCB Drone\ModemExt\Footprints\Trimmer Pot\3313J-1-503E.lia
+    Section : PCB Library - 3313J-1-503E.PcbLib
+        Section : Load Messages
+            Warning - 1 : Skipping Token 3313J-1-503E On Line 135
+            Warning - 1 : Skipping Token attachedSymbol On Line 195
+        EndSection
+
+        Section : Import Messages
+        EndSection
+    EndSection
+
+    Section : SCH Library - 3313J-1-503E.SchLib
+        Section : Parsing Messages
+            Warning - 1 : Skipping Token padStyleDef On Line 9
+            Warning - 1 : Skipping Token padStyleDef On Line 21
+            Warning - 1 : Skipping Token multiLayer On Line 96
+            Warning - 1 : Skipping Token layerContents On Line 101
+            Warning - 1 : Skipping Token layerContents On Line 107
+            Warning - 1 : Skipping Token layerContents On Line 116
+            Warning - 1 : Skipping Token layerContents On Line 125
+        EndSection
+
+        Section : Generating SCH Library - 3313J-1-503E.SchLib
+        EndSection
+    EndSection
+EndSection

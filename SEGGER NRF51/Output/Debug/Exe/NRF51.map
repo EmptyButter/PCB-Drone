@@ -1,0 +1,2108 @@
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                LINK INFORMATION                                 ***
+***                                                                                 ***
+***************************************************************************************
+
+Copyright (c) 2017-2019 SEGGER Microcontroller GmbH    www.segger.com
+SEGGER Linker 2.34a compiled May 15 2020 19:07:30
+
+Command line:
+  --add-region
+  FLASH1=0x00040000@0x00000000
+  --add-region
+  RAM1=0x00008000@0x20000000
+  --defsym=__STACKSIZE__=2048
+  --defsym=__STACKSIZE_PROCESS__=0
+  --defsym=__HEAPSIZE__=2048
+  --full-section-headers
+  -eReset_Handler
+  --defsym=__vfprintf=__vfprintf_short_float_long
+  --defsym=__vfscanf=__vfscanf_int
+  --silent
+  --list-all-undefineds
+  --fatal-warnings
+  -EL
+  -mcpu=cortex-m0
+  --gc-sections
+  -TC:/1234/PCB drone project/SEGGER NRF51/ses_nrf51822_xxac.icf
+  -Map
+  Output/Debug/Exe/NRF51.map
+  -u_vectors
+  -o
+  Output/Debug/Exe/NRF51.elf
+  --emit-relocs
+  --start-group
+  Output/NRF51 Debug/Obj/system_nrf51.o
+  Output/NRF51 Debug/Obj/SEGGER_RTT.o
+  Output/NRF51 Debug/Obj/SEGGER_RTT_SES.o
+  Output/NRF51 Debug/Obj/main.o
+  Output/NRF51 Debug/Obj/nrf_esb.o
+  Output/NRF51 Debug/Obj/syslink.o
+  Output/NRF51 Debug/Obj/uart.o
+  Output/NRF51 Debug/Obj/nrf_drv_adc.o
+  Output/NRF51 Debug/Obj/nrf_drv_common.o
+  Output/NRF51 Debug/Obj/nrf_drv_clock.o
+  Output/NRF51 Debug/Obj/nrf_drv_power.o
+  Output/NRF51 Debug/Obj/nrf_adc.o
+  Output/NRF51 Debug/Obj/nrf_drv_systick.o
+  Output/NRF51 Debug/Obj/systick.o
+  Output/NRF51 Debug/Obj/pm.o
+  Output/NRF51 Debug/Obj/SEGGER_THUMB_Startup.o
+  Output/NRF51 Debug/Obj/ses_startup_nrf_common.o
+  Output/NRF51 Debug/Obj/ses_startup_nrf51.o
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libdebugio_mempoll_v6m_t_le_eabi.a
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libm_v6m_t_le_eabi.a
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libc_v6m_t_le_eabi.a
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libcpp_v6m_t_le_eabi.a
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libdebugio_v6m_t_le_eabi.a
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libvfprintf_v6m_t_le_eabi.o
+  C:/Program Files/SEGGER/SEGGER Embedded Studio for ARM 4.52c/lib/libvfscanf_v6m_t_le_eabi.o
+  --end-group
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINKER SCRIPT                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+Read linker script from 'C:/1234/PCB drone project/SEGGER NRF51/ses_nrf51822_xxac.icf':
+  
+  // **********************************************************************
+  // *                    SEGGER Microcontroller GmbH                     *
+  // *                        The Embedded Experts                        *
+  // **********************************************************************
+  // *                                                                    *
+  // *            (c) 2014 - 2020 SEGGER Microcontroller GmbH             *
+  // *            (c) 2001 - 2020 Rowley Associates Limited               *
+  // *                                                                    *
+  // *           www.segger.com     Support: support@segger.com           *
+  // *                                                                    *
+  // **********************************************************************
+  // *                                                                    *
+  // * All rights reserved.                                               *
+  // *                                                                    *
+  // * Redistribution and use in source and binary forms, with or         *
+  // * without modification, are permitted provided that the following    *
+  // * conditions are met:                                                *
+  // *                                                                    *
+  // * - Redistributions of source code must retain the above copyright   *
+  // *   notice, this list of conditions and the following disclaimer.    *
+  // *                                                                    *
+  // * - Neither the name of SEGGER Microcontroller GmbH                  *
+  // *   nor the names of its contributors may be used to endorse or      *
+  // *   promote products derived from this software without specific     *
+  // *   prior written permission.                                        *
+  // *                                                                    *
+  // * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND             *
+  // * CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,        *
+  // * INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF           *
+  // * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE           *
+  // * DISCLAIMED.                                                        *
+  // * IN NO EVENT SHALL SEGGER Microcontroller GmbH BE LIABLE FOR        *
+  // * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR           *
+  // * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT  *
+  // * OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;    *
+  // * OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF      *
+  // * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT          *
+  // * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE  *
+  // * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH   *
+  // * DAMAGE.                                                            *
+  // *                                                                    *
+  // **********************************************************************
+  
+  define memory with size = 4G;
+  
+  //
+  // Combined regions per memory type
+  //
+  define region FLASH = FLASH1;
+  define region RAM   = RAM1;
+  
+  //
+  // Block definitions
+  //
+  define block vectors                        { section .vectors };
+  define block vectors_ram                    { section .vectors_ram };
+  define block ctors                          { section .ctors,     section .ctors.*, block with         alphabetical order { init_array } };
+  define block dtors                          { section .dtors,     section .dtors.*, block with reverse alphabetical order { fini_array } };
+  define block exidx                          { section .ARM.exidx, section .ARM.exidx.* };
+  define block tbss                           { section .tbss,      section .tbss.*  };
+  define block tdata                          { section .tdata,     section .tdata.* };
+  define block tls                            { block tbss, block tdata };
+  define block tdata_load                     { copy of block tdata };
+  define block heap  with size = __HEAPSIZE__,  alignment = 8, /* fill =0x00, */ readwrite access { };
+  define block stack with size = __STACKSIZE__, alignment = 8, /* fill =0xCD, */ readwrite access { };
+  
+  //
+  // Explicit initialization settings for sections
+  //
+  do not initialize                           { section .non_init, section .non_init.*, section .*.non_init, section .*.non_init.* };
+  initialize by copy /* with packing=auto */  { section .data, section .data.*, section .*.data, section .*.data.* };
+  initialize by copy /* with packing=auto */  { section .fast, section .fast.* };
+  
+  //
+  // Explicit placement in FLASHn
+  //
+  place in FLASH1                             { section .FLASH1, section .FLASH1.* };
+  
+  //
+  // FLASH Placement
+  //
+  place at start of FLASH                     { block vectors };                         // Vector table section
+  place in FLASH with minimum size order      { section .init,   section .init.*,        // Init code section
+                                                section .init_rodata, section .init_rodata.*, // Init read-only section
+                                                section .text,   section .text.*,        // Code section
+                                                section .rodata, section .rodata.*,      // Read-only data section
+                                                section .segger.*,                       // Auto-generated initialization
+                                                block exidx,                             // ARM exception unwinding block
+                                                block ctors,                             // Constructors block
+                                                block dtors };                           // Destructors block
+  place in FLASH                              { block tdata_load };                      // Thread-local-storage load image
+  
+  //
+  // Explicit placement in RAMn
+  //
+  place in RAM1                               { section .RAM1, section .RAM1.* };
+  
+  
+  //
+  // RAM Placement
+  //
+  place at start of RAM                       { block vectors_ram };
+  place in RAM                                { section .non_init, section .non_init.*,  // No initialization section
+                                                block tls };                             // Thread-local-storage block
+  place in RAM with auto order                { section .fast, section .fast.*,          // "ramfunc" section
+                                                section .data, section .data.*,          // Initialized data section
+                                                section .bss, section .bss.*
+                                              };          // Static data section
+  place in RAM                                { block heap };           // Heap reserved block
+  place at end of RAM                         { block stack };          // Stack reserved block at the end
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                PLACEMENT SUMMARY                                ***
+***                                                                                 ***
+***************************************************************************************
+
+place at 0x00000000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .vectors                 Code  00000000      0xc0      4  ses_startup_nrf51.o
+
+place at 0x20000000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+place at 0x20008000
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+"<#3> at line 77, col 45": place in [0x00000000 to 0x0003ffff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+"<#5> at line 83, col 45": place in [0x00000000 to 0x0003ffff] with maximum packing
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .rodata.libc.ipow10      Cnst  000000c0      0xa0      8  libvfprintf_v6m_t_le_eabi.o
+  .init.SystemCoreClockUpdate
+                           Code  00000160      0x14      4  system_nrf51.o
+  .init.SystemInit         Code  00000174      0x74      4  system_nrf51.o
+  .text._DoInit            Code  000001e8      0x9c      4  SEGGER_RTT.o
+  .text.SEGGER_RTT_Write   Code  00000284      0x44      4  SEGGER_RTT.o
+  .text.SEGGER_RTT_WriteNoLock
+                           Code  000002c8      0xac      4  SEGGER_RTT.o
+  .text.esb_init_txrx      Code  00000374      0xe4      4  main.o
+  .text.Radio_Task         Code  00000458      0x88      4  main.o
+  .text.gpio_init          Code  000004e0      0x4c      4  main.o
+  .text.nrf_gpio_port_out_clear
+                           Code  0000052c      0x18      4  main.o
+  .text.nrf_esb_event_handler
+                           Code  00000544      0xa0      4  main.o
+  .text.update_radio_parameters
+                           Code  000005e4      0x2c      4  nrf_esb.o
+  .text.rx_fifo_push_rfbuf
+                           Code  00000610      0xf0      4  nrf_esb.o
+  .text.update_rf_payload_format_esb_dpl
+                           Code  00000700      0x3c      4  nrf_esb.o
+  .text.update_radio_protocol
+                           Code  0000073c      0x40      4  nrf_esb.o
+  .text.initialize_fifos   Code  0000077c      0x74      4  nrf_esb.o
+  .text.update_radio_addresses
+                           Code  000007f0      0x98      4  nrf_esb.o
+  .text.sys_timer_init     Code  00000888      0x2c      4  nrf_esb.o
+  .text.on_radio_disabled_rx
+                           Code  000008b4     0x28c      4  nrf_esb.o
+  .text.update_radio_tx_power
+                           Code  00000b40      0x1c      4  nrf_esb.o
+  .text.on_radio_disabled_rx_ack
+                           Code  00000b5c      0x54      4  nrf_esb.o
+  .text.reset_fifos        Code  00000bb0      0x30      4  nrf_esb.o
+  .text.update_radio_crc   Code  00000be0      0x60      4  nrf_esb.o
+  .text.nrf_esb_get_clear_interrupts
+                           Code  00000c40      0x4c      4  nrf_esb.o
+  .text.clear_events_restart_rx
+                           Code  00000c8c      0x74      4  nrf_esb.o
+  .text.update_rf_payload_format_esb
+                           Code  00000d00      0x44      4  nrf_esb.o
+  .text.ppi_init           Code  00000d44      0x80      4  nrf_esb.o
+  .text.bytewise_bit_swap  Code  00000dc4      0x68      4  nrf_esb.o
+  .text.update_radio_bitrate
+                           Code  00000e2c      0x58      4  nrf_esb.o
+  .text.__NVIC_EnableIRQ   Code  00000e84      0x34      4  nrf_esb.o
+  .text.__NVIC_SetPendingIRQ
+                           Code  00000eb8      0x38      4  nrf_esb.o
+  .text.__NVIC_ClearPendingIRQ
+                           Code  00000ef0      0x38      4  nrf_esb.o
+  .text.__NVIC_SetPriority
+                           Code  00000f28      0xec      4  nrf_esb.o
+  .text.__NVIC_DisableIRQ  Code  00001014      0x44      4  nrf_esb.o
+  .text.nrf_esb_set_prefixes
+                           Code  00001058      0x7c      4  nrf_esb.o
+  .text.nrf_esb_init       Code  000010d4      0xc8      4  nrf_esb.o
+  .text.nrf_esb_read_rx_payload
+                           Code  0000119c      0xc8      4  nrf_esb.o
+  .text.nrf_esb_disable    Code  00001264      0x5c      4  nrf_esb.o
+  .text.nrf_esb_set_base_address_0
+                           Code  000012c0      0x40      4  nrf_esb.o
+  .text.nrf_esb_set_rf_channel
+                           Code  00001300      0x34      4  nrf_esb.o
+  .text.SWI0_IRQHandler    Code  00001334      0x7c      4  nrf_esb.o
+  .text.RADIO_IRQHandler   Code  000013b0      0x9c      4  nrf_esb.o
+  .text.nrf_esb_start_rx   Code  0000144c      0xbc      4  nrf_esb.o
+  .text.nrf_esb_set_base_address_1
+                           Code  00001508      0x40      4  nrf_esb.o
+  .text.UART0_IRQHandler   Code  00001548      0x84      4  uart.o
+  .text.uartInit           Code  000015cc     0x114      4  uart.o
+  .text.uartPutc           Code  000016e0      0x50      4  uart.o
+  .text.__NVIC_SetPriority
+                           Code  00001730      0xec      4  uart.o
+  .text.__NVIC_EnableIRQ   Code  0000181c      0x34      4  uart.o
+  .text.nrf_adc_start      Code  00001850      0x10      4  nrf_drv_adc.o
+  .text.nrf_adc_config_set
+                           Code  00001860      0x1c      4  nrf_drv_adc.o
+  .text.nrf_adc_result_get
+                           Code  0000187c      0x10      4  nrf_drv_adc.o
+  .text.nrf_adc_event_clear
+                           Code  0000188c      0x24      4  nrf_drv_adc.o
+  .text.nrf_adc_event_check
+                           Code  000018b0      0x28      4  nrf_drv_adc.o
+  .text.nrf_adc_int_enable
+                           Code  000018d8      0x18      4  nrf_drv_adc.o
+  .text.nrf_adc_task_trigger
+                           Code  000018f0      0x24      4  nrf_drv_adc.o
+  .text.nrf_drv_adc_sample_convert
+                           Code  00001914      0x94      4  nrf_drv_adc.o
+  .text.nrf_drv_adc_channel_enable
+                           Code  000019a8      0x40      4  nrf_drv_adc.o
+  .text.nrf_drv_adc_init   Code  000019e8      0x60      4  nrf_drv_adc.o
+  .text.ADC_IRQHandler     Code  00001a48      0x84      4  nrf_drv_adc.o
+  .text.nrf_adc_enable     Code  00001acc      0x14      4  nrf_drv_adc.o
+  .text.adc_sample_process
+                           Code  00001ae0      0xa0      4  nrf_drv_adc.o
+  .text.nrf_adc_disable    Code  00001b80      0x14      4  nrf_drv_adc.o
+  .text.nrf_adc_int_disable
+                           Code  00001b94      0x18      4  nrf_drv_adc.o
+  .text.__NVIC_EnableIRQ   Code  00001bac      0x34      4  nrf_drv_common.o
+  .text.__NVIC_ClearPendingIRQ
+                           Code  00001be0      0x38      4  nrf_drv_common.o
+  .text.__NVIC_SetPriority
+                           Code  00001c18      0xec      4  nrf_drv_common.o
+  .text.SPI0_TWI0_IRQHandler
+                           Code  00001d04      0x10      4  nrf_drv_common.o
+  .text.SPI1_TWI1_IRQHandler
+                           Code  00001d14      0x10      4  nrf_drv_common.o
+  .text.LPCOMP_IRQHandler  Code  00001d24      0x10      4  nrf_drv_common.o
+  .text.nrf_drv_clock_onIRQ
+                           Code  00001d34      0x60      4  nrf_drv_clock.o
+  .text.clock_clk_started_notify
+                           Code  00001d94      0x54      4  nrf_drv_clock.o
+  .text.nrf_drv_power_onIRQ
+                           Code  00001de8      0x34      4  nrf_drv_power.o
+  .text.systickInit        Code  00001e1c      0x50      4  systick.o
+  .text.__NVIC_SetPriority
+                           Code  00001e6c      0xec      4  systick.o
+  .text.TIMER1_IRQHandler  Code  00001f58      0x20      4  systick.o
+  .text.__NVIC_EnableIRQ   Code  00001f78      0x34      4  systick.o
+  .text.systick_GetTick_ms
+                           Code  00001fac       0xc      4  systick.o
+  .text.isBattOK           Code  00001fb8      0x34      4  pm.o
+  .text.Debugfunction      Code  00001fec      0x4c      4  pm.o
+  .text.pmProcess          Code  00002038     0x110      4  pm.o
+  .text.OperatingMode      Code  00002148      0x60      4  pm.o
+  .text.nrf_gpio_port_out_clear
+                           Code  000021a8      0x18      4  pm.o
+  .text.adc_event_handler  Code  000021c0      0x4c      4  pm.o
+  .text.pm_adc_init        Code  0000220c      0x68      4  pm.o
+  .text.__aeabi_read_tp    Code  00002274       0x8      4  SEGGER_THUMB_Startup.o
+  .text.__aeabi_fcmple     Code  0000227c      0x34      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fdiv       Code  000022b0      0x94      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fmul       Code  00002344      0xb8      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fsub       Code  000023fc      0x10      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fcmpge     Code  0000240c      0x34      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_dcmpge     Code  00002440      0x44      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fcmpeq     Code  00002484      0x20      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fcmplt     Code  000024a4      0x30      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fadd       Code  000024d4     0x13c      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_fcmpgt     Code  00002610      0x30      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_i2f        Code  00002640      0x28      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_d2f        Code  00002668      0x64      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__float32_signbit  Code  000026cc       0x8      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.frexpf             Code  000026d4      0x24      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__float32_isinf    Code  000026f8      0x10      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_ui2f       Code  00002708      0x20      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_f2uiz      Code  00002728      0x28      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.fabsf              Code  00002750       0x8      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.floorf             Code  00002758      0x54      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__float32_isnan    Code  000027ac      0x10      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.__aeabi_f2d        Code  000027bc      0x44      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.ldexpf             Code  00002800      0x24      4  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .text.libc.modff         Code  00002824      0x48      4  libm2.o (libm_v6m_t_le_eabi.a)
+  .text.libc.fmodf         Code  0000286c     0x100      4  libm2.o (libm_v6m_t_le_eabi.a)
+  .text.libc.__RAL_pow10f  Code  0000296c      0x4c      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__aeabi_errno_addr
+                           Code  000029b8      0x10      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__vfprintf_short_float_long
+                           Code  000029c8     0xd54      4  libvfprintf_v6m_t_le_eabi.o
+  .rodata.libc.__RAL_hex_lc
+                           Cnst  0000371c      0x10      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .rodata.libc.__RAL_hex_uc
+                           Cnst  0000372c      0x10      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .rodata.libc.powerf      Cnst  0000373c      0x18      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .rodata.libc.__aeabi_EDOM
+                           Cnst  00003754       0x4      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .rodata.libc.__vfprintf_short_float_long
+                           Cnst  00003758     0x2c0      4  libvfprintf_v6m_t_le_eabi.o
+  .rodata.libc.__vfprintf_float_long.str1.4
+                           Cnst  00003a18      0x28      4  libvfprintf_v6m_t_le_eabi.o
+  .init                    Code  00003a40      0x28      4  ses_startup_nrf51.o
+  .init                    Code  00003a68      0x64      4  SEGGER_THUMB_Startup.o
+  .init                    Code  00003acc      0x2c      4  ses_startup_nrf_common.o
+  .rodata                  Cnst  00003af8      0xa4      4  main.o
+  .segger.init.table       Cnst  000046c0      0x68      4  - Linker created -
+  .segger.init.data        Cnst  00004728      0x20      4  - Linker created -
+  .rodata.m_default_config
+                           Cnst  00003b9c       0x1      4  nrf_drv_adc.o
+  .init.nrf51_errata_59    Code  00003b9e       0x6      2  system_nrf51.o
+  .rodata.libc.__vfprintf_int.str1.4
+                           Cnst  00003ba4       0x7      4  libvfprintf_v6m_t_le_eabi.o
+  .rodata                  Cnst  00003bac      0x17      4  SEGGER_RTT.o
+  .rodata                  Cnst  00003bc4      0x7f      4  pm.o
+  .init.nrf51_errata_26    Code  00003c44       0x6      2  system_nrf51.o
+  .init.nrf51_errata_76    Code  00003c4a       0x6      2  system_nrf51.o
+  .text.printf             Code  00003c50      0x32      2  SEGGER_RTT_SES.o
+  .text.nrf_gpio_port_in_read
+                           Code  00003c82      0x12      2  main.o
+  .text.Switch_Task        Code  00003c94      0x32      2  main.o
+  .text.nrf_gpio_port_out_set
+                           Code  00003cc6      0x16      2  main.o
+  .text.clocks_start       Code  00003cdc      0x2a      2  main.o
+  .text.nrf_gpio_cfg       Code  00003d06      0x6e      2  main.o
+  .text.nrf_gpio_pin_port_decode
+                           Code  00003d74       0xe      2  main.o
+  .text.PM_Task            Code  00003d82       0xa      2  main.o
+  .text.syslinkSend        Code  00003d8c      0xf6      2  syslink.o
+  .text.POWER_CLOCK_IRQHandler
+                           Code  00003e82       0xe      2  nrf_drv_common.o
+  .text.nrf_clock_event_check
+                           Code  00003e90      0x26      2  nrf_drv_clock.o
+  .text.nrf_clock_event_clear
+                           Code  00003eb6      0x22      2  nrf_drv_clock.o
+  .text.nrf_clock_int_disable
+                           Code  00003ed8      0x16      2  nrf_drv_clock.o
+  .text.nrf_power_event_get_and_clear
+                           Code  00003eee      0x42      2  nrf_drv_power.o
+  .text.nrf_power_int_enable_get
+                           Code  00003f30       0xe      2  nrf_drv_power.o
+  .text.pmInit             Code  00003f3e      0x56      2  pm.o
+  .text.nrf_gpio_cfg       Code  00003f94      0x6e      2  pm.o
+  .text.nrf_gpio_port_in_read
+                           Code  00004002      0x12      2  pm.o
+  .text.nrf_gpio_port_out_set
+                           Code  00004014      0x16      2  pm.o
+  .text.nrf_gpio_pin_port_decode
+                           Code  0000402a       0xe      2  pm.o
+  .text.libc.__aeabi_uidivmod
+                           Code  00004038      0x2a      2  libc_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__RAL_pre_padding
+                           Code  00004062      0x16      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.memcpy        Code  00004078      0x16      2  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.memset        Code  0000408e      0x12      2  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.strlen        Code  000040a0       0xe      2  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  .segger.init.__SEGGER_init_copy
+                           Code  00004748      0x1a      2  SEGGER_THUMB_Startup.o
+  .segger.init.__SEGGER_init_zero
+                           Code  00004762      0x16      2  SEGGER_THUMB_Startup.o
+  .text._WriteBlocking     Code  000040ae      0xb0      2  SEGGER_RTT.o
+  .text._WriteNoCheck      Code  0000415e      0x7c      2  SEGGER_RTT.o
+  .text._GetAvailWriteSpace
+                           Code  000041da      0x3c      2  SEGGER_RTT.o
+  .text.nrf_gpio_cfg_output
+                           Code  00004216      0x20      2  main.o
+  .text.nrf_gpio_pin_read  Code  00004236      0x2c      2  main.o
+  .text.main               Code  00004262      0x2c      2  main.o
+  .text.nrf_gpio_pin_set   Code  0000428e      0x28      2  main.o
+  .text.nrf_gpio_pin_clear
+                           Code  000042b6      0x28      2  main.o
+  .text.nrf_gpio_cfg_input
+                           Code  000042de      0x2c      2  main.o
+  .text.addr_conv          Code  0000430a      0x1c      2  nrf_esb.o
+  .text.nrf_drv_common_irq_enable
+                           Code  00004326      0x4c      2  nrf_drv_common.o
+  .text.item_dequeue       Code  00004372      0x20      2  nrf_drv_clock.o
+  .text.nrf_power_event_clear
+                           Code  00004392      0x24      2  nrf_drv_power.o
+  .text.nrf_power_event_check
+                           Code  000043b6      0x28      2  nrf_drv_power.o
+  .text.nrf_power_regptr_get
+                           Code  000043de      0x14      2  nrf_drv_power.o
+  .text.nrf_power_regptr_get_c
+                           Code  000043f2      0x14      2  nrf_drv_power.o
+  .text.pmUSBPower         Code  00004406      0x14      2  pm.o
+  .text.pmIsCharging       Code  0000441a      0x14      2  pm.o
+  .text.nrf_gpio_pin_set   Code  0000442e      0x28      2  pm.o
+  .text.nrf_gpio_pin_read  Code  00004456      0x2c      2  pm.o
+  .text.nrf_gpio_cfg_output
+                           Code  00004482      0x20      2  pm.o
+  .text.ChargingManagement
+                           Code  000044a2      0x44      2  pm.o
+  .text.nrf_gpio_cfg_input
+                           Code  000044e6      0x2c      2  pm.o
+  .text.nrf_gpio_pin_clear
+                           Code  00004512      0x28      2  pm.o
+  .text.DisableCharging    Code  0000453a      0x18      2  pm.o
+  .text.EnableCharging     Code  00004552      0x18      2  pm.o
+  .text.libc.__int32_div   Code  0000456a      0x3c      2  libc_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__uint32_div  Code  000045a6      0x28      2  libc_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__putc        Code  000045ce      0x3c      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__RAL_print_padding
+                           Code  0000460a      0x18      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.__aeabi_idivmod
+                           Code  00004622      0x40      2  libc_asm.o (libc_v6m_t_le_eabi.a)
+  .text.libc.abs           Code  00004662       0x8      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.strnlen       Code  0000466a      0x28      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.vsnprintf     Code  00004692      0x1c      2  libc2.o (libc_v6m_t_le_eabi.a)
+  .text.libc.strcpy        Code  000046ae      0x10      2  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  .rodata.block.tdata.copy
+                           Cnst  00003b9d                1  - Linker created -
+
+"<#6> at line 91, col 45": place in [0x00000000 to 0x0003ffff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+"<#7> at line 96, col 45": place in [0x20000000 to 0x20007fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+"<#9> at line 103, col 45": place in [0x20000000 to 0x20007fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .tbss.errno_val          Zero  20000000       0x4      4  libc2.o (libc_v6m_t_le_eabi.a)
+
+"<#10> at line 105, col 45": place in [0x20000000 to 0x20007fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+  .data.m_esb_addr         Init  20000004      0x14      4  nrf_esb.o
+  .data.m_channel_config   Init  20000018       0x8      4  pm.o
+  .data.SystemCoreClock    Init  20000020       0x4      4  system_nrf51.o
+  .bss._acUpBuffer         Zero  20000024     0x400      4  SEGGER_RTT.o
+  .bss.m_rx_fifo_payload   Zero  20000424     0x128      4  nrf_esb.o
+  .bss.m_tx_fifo_payload   Zero  2000054c     0x128      4  nrf_esb.o
+  .bss.rxq                 Zero  20000674      0x80      4  uart.o
+  .bss._SEGGER_RTT         Zero  200006f4      0x78      4  SEGGER_RTT.o
+  .bss.m_tx_fifo           Zero  2000076c      0x2c      4  nrf_esb.o
+  .bss.m_rx_fifo           Zero  20000798      0x2c      4  nrf_esb.o
+  .bss.tx_payload          Zero  200007c4      0x25      4  main.o
+  .bss.rx_payload          Zero  200007ec      0x25      4  main.o
+  .bss.m_rx_pipe_info      Zero  20000814      0x24      4  nrf_esb.o
+  .bss.sysPacket           Zero  20000838      0x22      4  main.o
+  .bss.m_tx_payload_buffer
+                           Zero  2000085c      0x22      4  nrf_esb.o
+  .bss.m_rx_payload_buffer
+                           Zero  20000880      0x22      4  nrf_esb.o
+  .bss.sysPacket           Zero  200008a4      0x22      4  pm.o
+  .bss.m_config_local      Zero  200008c8      0x18      4  nrf_esb.o
+  .bss.m_cb                Zero  200008e0      0x14      4  nrf_drv_adc.o
+  .bss.m_clock_cb          Zero  200008f4      0x14      4  nrf_drv_clock.o
+  .bss._acDownBuffer       Zero  20000908      0x10      4  SEGGER_RTT.o
+  .bss.m_pids              Zero  20000918       0x9      4  nrf_esb.o
+  .bss.m_serial_box_0      Zero  20000924       0x8      4  nrf_drv_common.o
+  .bss.m_serial_box_1      Zero  2000092c       0x8      4  nrf_drv_common.o
+  .bss.m_comp_lpcomp       Zero  20000934       0x8      4  nrf_drv_common.o
+  .bss.on_radio_disabled   Zero  2000093c       0x4      4  nrf_esb.o
+  .bss.on_radio_end        Zero  20000940       0x4      4  nrf_esb.o
+  .bss.m_event_handler     Zero  20000944       0x4      4  nrf_esb.o
+  .bss.mp_current_payload  Zero  20000948       0x4      4  nrf_esb.o
+  .bss.update_rf_payload_format
+                           Zero  2000094c       0x4      4  nrf_esb.o
+  .bss.m_wait_for_ack_timeout_us
+                           Zero  20000950       0x4      4  nrf_esb.o
+  .bss.m_last_tx_attempts  Zero  20000954       0x4      4  nrf_esb.o
+  .bss.m_interrupt_flags   Zero  20000958       0x4      4  nrf_esb.o
+  .bss.head                Zero  2000095c       0x4      4  uart.o
+  .bss.tail                Zero  20000960       0x4      4  uart.o
+  .bss.dropped             Zero  20000964       0x4      4  uart.o
+  .bss.m_pofwarn_handler   Zero  20000968       0x4      4  nrf_drv_power.o
+  .bss.mstick              Zero  2000096c       0x4      4  systick.o
+  .bss.Vbatt               Zero  20000970       0x4      4  pm.o
+  .bss.uint32asBytes       Zero  20000974       0x4      4  pm.o
+  .bss.msTick.5769         Zero  20000978       0x4      4  pm.o
+  .bss.libc.__user_format_extender
+                           Zero  2000097c       0x4      4  libc2.o (libc_v6m_t_le_eabi.a)
+  .bss.received            Zero  200007e9       0x1      1  main.o
+  .bss.transmitted         Zero  200007ea       0x1      1  main.o
+  .bss.m_esb_initialized   Zero  200007eb       0x1      1  nrf_esb.o
+  .bss.m_nrf_esb_mainstate
+                           Zero  20000811       0x1      1  nrf_esb.o
+  .bss.isInit              Zero  20000812       0x1      1  uart.o
+  .bss.dummy               Zero  20000813       0x1      1  uart.o
+
+"<#11> at line 109, col 45": place in [0x20000000 to 0x20007fff] with auto order
+
+  Section                  Type  Address       Size  Align  Object
+  -------                  ----  -------       ----  -----  ------
+
+
+***************************************************************************************
+***                                                                                 ***
+***                              INITIALIZATION TABLE                               ***
+***                                                                                 ***
+***************************************************************************************
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x4
+          [0x20000000 to 0x20000003]
+    1 initialized sections:
+          [0x20000000 to 0x20000003]  section .tbss.errno_val from libc2.o (libc_v6m_t_le_eabi.a), align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x836
+          [0x20000024 to 0x20000859]
+    17 initialized sections:
+          [0x20000024 to 0x20000423]  section .bss._acUpBuffer from SEGGER_RTT.o, align=4
+          [0x20000424 to 0x2000054b]  section .bss.m_rx_fifo_payload from nrf_esb.o, align=4
+          [0x2000054c to 0x20000673]  section .bss.m_tx_fifo_payload from nrf_esb.o, align=4
+          [0x20000674 to 0x200006f3]  section .bss.rxq from uart.o, align=4
+          [0x200006f4 to 0x2000076b]  section .bss._SEGGER_RTT from SEGGER_RTT.o, align=4
+          [0x2000076c to 0x20000797]  section .bss.m_tx_fifo from nrf_esb.o, align=4
+          [0x20000798 to 0x200007c3]  section .bss.m_rx_fifo from nrf_esb.o, align=4
+          [0x200007c4 to 0x200007e8]  section .bss.tx_payload from main.o, align=4
+          [0x200007e9 to 0x200007e9]  section .bss.received from main.o, align=1
+          [0x200007ea to 0x200007ea]  section .bss.transmitted from main.o, align=1
+          [0x200007eb to 0x200007eb]  section .bss.m_esb_initialized from nrf_esb.o, align=1
+          [0x200007ec to 0x20000810]  section .bss.rx_payload from main.o, align=4
+          [0x20000811 to 0x20000811]  section .bss.m_nrf_esb_mainstate from nrf_esb.o, align=1
+          [0x20000812 to 0x20000812]  section .bss.isInit from uart.o, align=1
+          [0x20000813 to 0x20000813]  section .bss.dummy from uart.o, align=1
+          [0x20000814 to 0x20000837]  section .bss.m_rx_pipe_info from nrf_esb.o, align=4
+          [0x20000838 to 0x20000859]  section .bss.sysPacket from main.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x22
+          [0x2000085c to 0x2000087d]
+    1 initialized sections:
+          [0x2000085c to 0x2000087d]  section .bss.m_tx_payload_buffer from nrf_esb.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x22
+          [0x20000880 to 0x200008a1]
+    1 initialized sections:
+          [0x20000880 to 0x200008a1]  section .bss.m_rx_payload_buffer from nrf_esb.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x22
+          [0x200008a4 to 0x200008c5]
+    1 initialized sections:
+          [0x200008a4 to 0x200008c5]  section .bss.sysPacket from pm.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x59
+          [0x200008c8 to 0x20000920]
+    5 initialized sections:
+          [0x200008c8 to 0x200008df]  section .bss.m_config_local from nrf_esb.o, align=4
+          [0x200008e0 to 0x200008f3]  section .bss.m_cb from nrf_drv_adc.o, align=4
+          [0x200008f4 to 0x20000907]  section .bss.m_clock_cb from nrf_drv_clock.o, align=4
+          [0x20000908 to 0x20000917]  section .bss._acDownBuffer from SEGGER_RTT.o, align=4
+          [0x20000918 to 0x20000920]  section .bss.m_pids from nrf_esb.o, align=4
+
+Zero (__SEGGER_init_zero)
+    1 destination range, total size 0x5c
+          [0x20000924 to 0x2000097f]
+    20 initialized sections:
+          [0x20000924 to 0x2000092b]  section .bss.m_serial_box_0 from nrf_drv_common.o, align=4
+          [0x2000092c to 0x20000933]  section .bss.m_serial_box_1 from nrf_drv_common.o, align=4
+          [0x20000934 to 0x2000093b]  section .bss.m_comp_lpcomp from nrf_drv_common.o, align=4
+          [0x2000093c to 0x2000093f]  section .bss.on_radio_disabled from nrf_esb.o, align=4
+          [0x20000940 to 0x20000943]  section .bss.on_radio_end from nrf_esb.o, align=4
+          [0x20000944 to 0x20000947]  section .bss.m_event_handler from nrf_esb.o, align=4
+          [0x20000948 to 0x2000094b]  section .bss.mp_current_payload from nrf_esb.o, align=4
+          [0x2000094c to 0x2000094f]  section .bss.update_rf_payload_format from nrf_esb.o, align=4
+          [0x20000950 to 0x20000953]  section .bss.m_wait_for_ack_timeout_us from nrf_esb.o, align=4
+          [0x20000954 to 0x20000957]  section .bss.m_last_tx_attempts from nrf_esb.o, align=4
+          [0x20000958 to 0x2000095b]  section .bss.m_interrupt_flags from nrf_esb.o, align=4
+          [0x2000095c to 0x2000095f]  section .bss.head from uart.o, align=4
+          [0x20000960 to 0x20000963]  section .bss.tail from uart.o, align=4
+          [0x20000964 to 0x20000967]  section .bss.dropped from uart.o, align=4
+          [0x20000968 to 0x2000096b]  section .bss.m_pofwarn_handler from nrf_drv_power.o, align=4
+          [0x2000096c to 0x2000096f]  section .bss.mstick from systick.o, align=4
+          [0x20000970 to 0x20000973]  section .bss.Vbatt from pm.o, align=4
+          [0x20000974 to 0x20000977]  section .bss.uint32asBytes from pm.o, align=4
+          [0x20000978 to 0x2000097b]  section .bss.msTick.5769 from pm.o, align=4
+          [0x2000097c to 0x2000097f]  section .bss.libc.__user_format_extender from libc2.o (libc_v6m_t_le_eabi.a), align=4
+
+Copy packing=copy (__SEGGER_init_copy)
+    1 source range, total size 0x20 (100% of destination)
+          [0x00004728 to 0x00004747]
+    1 destination range, total size 0x20
+          [0x20000004 to 0x20000023]
+    3 initialized sections:
+          [0x20000004 to 0x20000017]  section .data.m_esb_addr from nrf_esb.o, align=4
+          [0x20000018 to 0x2000001f]  section .data.m_channel_config from pm.o, align=4
+          [0x20000020 to 0x20000023]  section .data.SystemCoreClock from system_nrf51.o, align=4
+
+Totals:
+    Initialization table:     0x68 bytes
+    Source image:             0x20 bytes
+    Destination image:        0x20 bytes
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                 MODULE SUMMARY                                  ***
+***                                                                                 ***
+***************************************************************************************
+
+                                            Object      Code  RO Data  RW Data  ZI Data
+---------------------------------------------------------------------------------------
+                                      SEGGER_RTT.o       756       23              1160 
+                                  SEGGER_RTT_SES.o        50                            
+                            SEGGER_THUMB_Startup.o       156                            
+                    libc2.o (libc_v6m_t_le_eabi.a)       274       60                 8 
+                libc2_asm.o (libc_v6m_t_le_eabi.a)        70                            
+                 libc_asm.o (libc_v6m_t_le_eabi.a)       206                            
+                    libm2.o (libm_v6m_t_le_eabi.a)       328                            
+                 libm_asm.o (libm_v6m_t_le_eabi.a)      1448                            
+                       libvfprintf_v6m_t_le_eabi.o      3412      911                   
+                                            main.o      1134      164               110 
+                                     nrf_drv_adc.o       860        1                20 
+                                   nrf_drv_clock.o       306                         20 
+                                  nrf_drv_common.o       482                         24 
+                                   nrf_drv_power.o       248                          4 
+                                         nrf_esb.o      3968                20      851 
+                                              pm.o      1306      127        8       46 
+                               ses_startup_nrf51.o       232                            
+                          ses_startup_nrf_common.o        44                            
+                                         syslink.o       246                            
+                                    system_nrf51.o       154                 4          
+                                         systick.o       412                          4 
+                                            uart.o       776                        142 
+                                                    ===================================
+                                            Total:     16868     1286       32     2389
+                                                    ===================================
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                   SYMBOL LIST                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Symbols by value
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  _vectors                 00000000      0xc0      4  Code  Gb  ses_startup_nrf51.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  __vectors_start__        00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  vectors$$Base            00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  __vectors_start          00000000                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  - Linker created -
+  __tls_size               00000004                   ----  Gb  - Linker created -
+  __tbss_size__            00000004                   ----  Gb  - Linker created -
+  tbss$$Length             00000004                   ----  Gb  - Linker created -
+  tls$$Length              00000004                   ----  Gb  - Linker created -
+  __tbss_size              00000004                   ----  Gb  - Linker created -
+  __tls_size__             00000004                   ----  Gb  - Linker created -
+  _vectors_end             000000c0      0xc0      4  Code  Lc  ses_startup_nrf51.o
+  ipow10                   000000c0      0xa0      8  Cnst  Lc  libvfprintf_v6m_t_le_eabi.o
+  __vectors_end            000000c0                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  __vectors_end__          000000c0                   ----  Gb  - Linker created -
+  vectors$$Limit           000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  SystemCoreClockUpdate    00000161      0x14      4  Code  Gb  system_nrf51.o
+  SystemInit               00000175      0x74      4  Code  Gb  system_nrf51.o
+  _DoInit                  000001e9      0x9c      4  Code  Lc  SEGGER_RTT.o
+  SEGGER_RTT_Write         00000285      0x44      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_WriteNoLock   000002c9      0xac      4  Code  Gb  SEGGER_RTT.o
+  esb_init_txrx            00000375      0xe4      4  Code  Gb  main.o
+  Radio_Task               00000459      0x88      4  Code  Gb  main.o
+  gpio_init                000004e1      0x4c      4  Code  Gb  main.o
+  nrf_gpio_port_out_clear  0000052d      0x18      4  Code  Lc  main.o
+  nrf_esb_event_handler    00000545      0xa0      4  Code  Gb  main.o
+  update_radio_parameters  000005e5      0x2c      4  Code  Lc  nrf_esb.o
+  rx_fifo_push_rfbuf       00000611      0xf0      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format_esb_dpl
+                           00000701      0x3c      4  Code  Lc  nrf_esb.o
+  update_radio_protocol    0000073d      0x40      4  Code  Lc  nrf_esb.o
+  initialize_fifos         0000077d      0x74      4  Code  Lc  nrf_esb.o
+  update_radio_addresses   000007f1      0x98      4  Code  Lc  nrf_esb.o
+  __STACKSIZE__            00000800                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000800                   ----  Gb  - Linker created -
+  stack$$Length            00000800                   ----  Gb  - Linker created -
+  __heap_size__            00000800                   ----  Gb  - Linker created -
+  __stack_size             00000800                   ----  Gb  - Linker created -
+  __stack_size__           00000800                   ----  Gb  - Linker created -
+  __heap_size              00000800                   ----  Gb  - Linker created -
+  heap$$Length             00000800                   ----  Gb  - Linker created -
+  sys_timer_init           00000889      0x2c      4  Code  Lc  nrf_esb.o
+  on_radio_disabled_rx     000008b5     0x28c      4  Code  Lc  nrf_esb.o
+  update_radio_tx_power    00000b41      0x1c      4  Code  Lc  nrf_esb.o
+  on_radio_disabled_rx_ack
+                           00000b5d      0x54      4  Code  Lc  nrf_esb.o
+  reset_fifos              00000bb1      0x30      4  Code  Lc  nrf_esb.o
+  update_radio_crc         00000be1      0x60      4  Code  Lc  nrf_esb.o
+  nrf_esb_get_clear_interrupts
+                           00000c41      0x4c      4  Code  Lc  nrf_esb.o
+  clear_events_restart_rx  00000c8d      0x74      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format_esb
+                           00000d01      0x44      4  Code  Lc  nrf_esb.o
+  ppi_init                 00000d45      0x80      4  Code  Lc  nrf_esb.o
+  bytewise_bit_swap        00000dc5      0x68      4  Code  Lc  nrf_esb.o
+  update_radio_bitrate     00000e2d      0x58      4  Code  Lc  nrf_esb.o
+  __NVIC_EnableIRQ         00000e85      0x34      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPendingIRQ     00000eb9      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_ClearPendingIRQ   00000ef1      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPriority       00000f29      0xec      4  Code  Lc  nrf_esb.o
+  __NVIC_DisableIRQ        00001015      0x44      4  Code  Lc  nrf_esb.o
+  nrf_esb_set_prefixes     00001059      0x7c      4  Code  Gb  nrf_esb.o
+  nrf_esb_init             000010d5      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_read_rx_payload  0000119d      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_disable          00001265      0x5c      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_0
+                           000012c1      0x40      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_rf_channel   00001301      0x34      4  Code  Gb  nrf_esb.o
+  SWI0_IRQHandler          00001335      0x7c      4  Code  Gb  nrf_esb.o
+  RADIO_IRQHandler         000013b1      0x9c      4  Code  Gb  nrf_esb.o
+  nrf_esb_start_rx         0000144d      0xbc      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_1
+                           00001509      0x40      4  Code  Gb  nrf_esb.o
+  UART0_IRQHandler         00001549      0x84      4  Code  Gb  uart.o
+  uartInit                 000015cd     0x114      4  Code  Gb  uart.o
+  uartPutc                 000016e1      0x50      4  Code  Gb  uart.o
+  __NVIC_SetPriority       00001731      0xec      4  Code  Lc  uart.o
+  __NVIC_EnableIRQ         0000181d      0x34      4  Code  Lc  uart.o
+  nrf_adc_start            00001851      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_config_set       00001861      0x1c      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_result_get       0000187d      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_clear      0000188d      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_check      000018b1      0x28      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_enable       000018d9      0x18      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_task_trigger     000018f1      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_drv_adc_sample_convert
+                           00001915      0x94      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_channel_enable
+                           000019a9      0x40      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_init         000019e9      0x60      4  Code  Gb  nrf_drv_adc.o
+  ADC_IRQHandler           00001a49      0x84      4  Code  Gb  nrf_drv_adc.o
+  nrf_adc_enable           00001acd      0x14      4  Code  Lc  nrf_drv_adc.o
+  adc_sample_process       00001ae1      0xa0      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_disable          00001b81      0x14      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_disable      00001b95      0x18      4  Code  Lc  nrf_drv_adc.o
+  __NVIC_EnableIRQ         00001bad      0x34      4  Code  Lc  nrf_drv_common.o
+  __NVIC_ClearPendingIRQ   00001be1      0x38      4  Code  Lc  nrf_drv_common.o
+  __NVIC_SetPriority       00001c19      0xec      4  Code  Lc  nrf_drv_common.o
+  SPI0_TWI0_IRQHandler     00001d05      0x10      4  Code  Gb  nrf_drv_common.o
+  SPI1_TWI1_IRQHandler     00001d15      0x10      4  Code  Gb  nrf_drv_common.o
+  LPCOMP_IRQHandler        00001d25      0x10      4  Code  Gb  nrf_drv_common.o
+  nrf_drv_clock_onIRQ      00001d35      0x60      4  Code  Gb  nrf_drv_clock.o
+  clock_clk_started_notify
+                           00001d95      0x54      4  Code  Lc  nrf_drv_clock.o
+  nrf_drv_power_onIRQ      00001de9      0x34      4  Code  Gb  nrf_drv_power.o
+  systickInit              00001e1d      0x50      4  Code  Gb  systick.o
+  __NVIC_SetPriority       00001e6d      0xec      4  Code  Lc  systick.o
+  TIMER1_IRQHandler        00001f59      0x20      4  Code  Gb  systick.o
+  __NVIC_EnableIRQ         00001f79      0x34      4  Code  Lc  systick.o
+  systick_GetTick_ms       00001fad       0xc      4  Code  Gb  systick.o
+  isBattOK                 00001fb9      0x34      4  Code  Lc  pm.o
+  Debugfunction            00001fed      0x4c      4  Code  Gb  pm.o
+  pmProcess                00002039     0x110      4  Code  Gb  pm.o
+  OperatingMode            00002149      0x60      4  Code  Lc  pm.o
+  nrf_gpio_port_out_clear  000021a9      0x18      4  Code  Lc  pm.o
+  adc_event_handler        000021c1      0x4c      4  Code  Lc  pm.o
+  pm_adc_init              0000220d      0x68      4  Code  Gb  pm.o
+  __aeabi_read_tp          00002274       0x8      4  Code  Wk  SEGGER_THUMB_Startup.o
+  __aeabi_fcmple           0000227d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fdiv             000022b1      0x94      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fmul             00002345      0xb8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fsub             000023fd      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpge           0000240d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_dcmpge           00002441      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpeq           00002485      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmplt           000024a5      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fadd             000024d5     0x13c      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  .L__aeabi_fadd_fast_entry
+                           000024d9     0x13c      4  Code  Lc  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpgt           00002611      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_i2f              00002641      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_d2f              00002669      0x64      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_signbit        000026cd       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  frexpf                   000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5frexpfPi              000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_isinf          000026f9      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_ui2f             00002709      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_f2uiz            00002729      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  fabsf                    00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z4fabsf                 00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5floorf                00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  floorf                   00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_isnan          000027ad      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_f2d              000027bd      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  ldexpf                   00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5ldexpfi               00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  modff                    00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  _Z4modffPf               00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  _Z4fmodff                0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  fmodf                    0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  __RAL_pow10f             0000296d      0x4c      4  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_errno_addr       000029b9      0x10      4  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  __vfprintf_short_float_long
+                           000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  __vfprintf               000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  __RAL_hex_lc             0000371c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_hex_uc             0000372c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  powerf                   0000373c      0x18      4  Cnst  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_EDOM             00003754       0x4      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  NMI_Handler              00003a41      0x28      4  Code  Wk  ses_startup_nrf51.o
+  HardFault_Handler        00003a43      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SVC_Handler              00003a45      0x28      4  Code  Wk  ses_startup_nrf51.o
+  PendSV_Handler           00003a47      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SysTick_Handler          00003a49      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TEMP_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RNG_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER0_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI5_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  CCM_AAR_IRQHandler       00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  ADC_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SPI1_TWI1_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER2_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  QDEC_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  WDT_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  GPIOTE_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RADIO_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  ECB_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  LPCOMP_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SPI0_TWI0_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI2_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI3_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI4_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  UART0_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  Dummy_Handler            00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  POWER_CLOCK_IRQHandler   00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER1_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  nRFInitialize            00003a4d      0x28      4  Code  Gb  ses_startup_nrf51.o
+  _start                   00003a69      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_loop                00003a90      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_end                 00003aa0      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    00003aa7      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit_loop                00003aae      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00003aaf      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  Reset_Handler            00003acd      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  afterInitialize          00003ace      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  m_default_config         00003b9c       0x1      4  Cnst  Lc  nrf_drv_adc.o
+  __ctors_start__          00003b9d                   ----  Gb  - Linker created -
+  __ctors_end__            00003b9d                   ----  Gb  - Linker created -
+  __ctors_start            00003b9d                   ----  Gb  - Linker created -
+  ctors$$Base              00003b9d                   ----  Gb  - Linker created -
+  __dtors_end__            00003b9d                   ----  Gb  - Linker created -
+  __dtors_start            00003b9d                   ----  Gb  - Linker created -
+  exidx$$Base              00003b9d                   ----  Gb  - Linker created -
+  dtors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  __dtors_start__          00003b9d                   ----  Gb  - Linker created -
+  __dtors_end              00003b9d                   ----  Gb  - Linker created -
+  exidx$$Limit             00003b9d                   ----  Gb  - Linker created -
+  __ctors_end              00003b9d                   ----  Gb  - Linker created -
+  dtors$$Base              00003b9d                   ----  Gb  - Linker created -
+  ctors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  __exidx_start__          00003b9d                   ----  Gb  - Linker created -
+  __exidx_start            00003b9d                   ----  Gb  - Linker created -
+  tdata_load$$Limit        00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_end__       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_start__     00003b9d                   ----  Gb  - Linker created -
+  __exidx_end__            00003b9d                   ----  Gb  - Linker created -
+  tdata_load$$Base         00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_start       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_end         00003b9d                   ----  Gb  - Linker created -
+  __exidx_end              00003b9d                   ----  Gb  - Linker created -
+  nrf51_errata_59          00003b9f       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_26          00003c45       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_76          00003c4b       0x6      2  Code  Lc  system_nrf51.o
+  printf                   00003c51      0x32      2  Code  Gb  SEGGER_RTT_SES.o
+  nrf_gpio_port_in_read    00003c83      0x12      2  Code  Lc  main.o
+  Switch_Task              00003c95      0x32      2  Code  Gb  main.o
+  nrf_gpio_port_out_set    00003cc7      0x16      2  Code  Lc  main.o
+  clocks_start             00003cdd      0x2a      2  Code  Gb  main.o
+  nrf_gpio_cfg             00003d07      0x6e      2  Code  Lc  main.o
+  nrf_gpio_pin_port_decode
+                           00003d75       0xe      2  Code  Lc  main.o
+  PM_Task                  00003d83       0xa      2  Code  Gb  main.o
+  syslinkSend              00003d8d      0xf6      2  Code  Gb  syslink.o
+  POWER_CLOCK_IRQHandler   00003e83       0xe      2  Code  Gb  nrf_drv_common.o
+  nrf_clock_event_check    00003e91      0x26      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_event_clear    00003eb7      0x22      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_int_disable    00003ed9      0x16      2  Code  Lc  nrf_drv_clock.o
+  nrf_power_event_get_and_clear
+                           00003eef      0x42      2  Code  Lc  nrf_drv_power.o
+  nrf_power_int_enable_get
+                           00003f31       0xe      2  Code  Lc  nrf_drv_power.o
+  pmInit                   00003f3f      0x56      2  Code  Gb  pm.o
+  nrf_gpio_cfg             00003f95      0x6e      2  Code  Lc  pm.o
+  nrf_gpio_port_in_read    00004003      0x12      2  Code  Lc  pm.o
+  nrf_gpio_port_out_set    00004015      0x16      2  Code  Lc  pm.o
+  nrf_gpio_pin_port_decode
+                           0000402b       0xe      2  Code  Lc  pm.o
+  __int32_udivmod          00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_uidivmod         00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __RAL_pre_padding        00004063      0x16      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy8          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  memcpy                   00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy           00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy4          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  memset                   0000408f      0x12      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  strlen                   000040a1       0xe      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  _WriteBlocking           000040af      0xb0      2  Code  Lc  SEGGER_RTT.o
+  _WriteNoCheck            0000415f      0x7c      2  Code  Lc  SEGGER_RTT.o
+  _GetAvailWriteSpace      000041db      0x3c      2  Code  Lc  SEGGER_RTT.o
+  nrf_gpio_cfg_output      00004217      0x20      2  Code  Lc  main.o
+  nrf_gpio_pin_read        00004237      0x2c      2  Code  Lc  main.o
+  main                     00004263      0x2c      2  Code  Gb  main.o
+  nrf_gpio_pin_set         0000428f      0x28      2  Code  Lc  main.o
+  nrf_gpio_pin_clear       000042b7      0x28      2  Code  Lc  main.o
+  nrf_gpio_cfg_input       000042df      0x2c      2  Code  Lc  main.o
+  addr_conv                0000430b      0x1c      2  Code  Lc  nrf_esb.o
+  nrf_drv_common_irq_enable
+                           00004327      0x4c      2  Code  Gb  nrf_drv_common.o
+  item_dequeue             00004373      0x20      2  Code  Lc  nrf_drv_clock.o
+  nrf_power_event_clear    00004393      0x24      2  Code  Lc  nrf_drv_power.o
+  nrf_power_event_check    000043b7      0x28      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get     000043df      0x14      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get_c   000043f3      0x14      2  Code  Lc  nrf_drv_power.o
+  pmUSBPower               00004407      0x14      2  Code  Lc  pm.o
+  pmIsCharging             0000441b      0x14      2  Code  Gb  pm.o
+  nrf_gpio_pin_set         0000442f      0x28      2  Code  Lc  pm.o
+  nrf_gpio_pin_read        00004457      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_cfg_output      00004483      0x20      2  Code  Lc  pm.o
+  ChargingManagement       000044a3      0x44      2  Code  Lc  pm.o
+  nrf_gpio_cfg_input       000044e7      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_pin_clear       00004513      0x28      2  Code  Lc  pm.o
+  DisableCharging          0000453b      0x18      2  Code  Lc  pm.o
+  EnableCharging           00004553      0x18      2  Code  Lc  pm.o
+  __aeabi_idiv             0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __int32_div              0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __divsi3                 0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_uidiv            000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __uint32_div             000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __udivsi3                000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __putc                   000045cf      0x3c      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_print_padding      0000460b      0x18      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_idivmod          00004623      0x40      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  abs                      00004663       0x8      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  strnlen                  0000466b      0x28      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  vsnprintf                00004693      0x1c      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  strcpy                   000046af      0x10      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __SEGGER_init_table__    000046c0      0x68      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_data__     00004728      0x20      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_copy       00004749      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero       00004763      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __FLASH_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00008000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    00040000                   ----  Gb  - Linker created -
+  __FLASH1_segment_end__   00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00040000                   ----  Gb  - Linker created -
+  .LANCHOR7                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  errno_val                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  m_esb_addr               20000004      0x14      4  Data  Lc  nrf_esb.o
+  __tdata_start            20000004                   ----  Gb  - Linker created -
+  tls$$Limit               20000004                   ----  Gb  - Linker created -
+  __tls_end                20000004                   ----  Gb  - Linker created -
+  __tbss_end               20000004                   ----  Gb  - Linker created -
+  __tdata_end__            20000004                   ----  Gb  - Linker created -
+  tdata$$Base              20000004                   ----  Gb  - Linker created -
+  __tls_end__              20000004                   ----  Gb  - Linker created -
+  tdata$$Limit             20000004                   ----  Gb  - Linker created -
+  __tdata_start__          20000004                   ----  Gb  - Linker created -
+  tbss$$Limit              20000004                   ----  Gb  - Linker created -
+  __tdata_end              20000004                   ----  Gb  - Linker created -
+  __tbss_end__             20000004                   ----  Gb  - Linker created -
+  m_channel_config         20000018       0x8      4  Data  Lc  pm.o
+  SystemCoreClock          20000020       0x4      4  Data  Gb  system_nrf51.o
+  _acUpBuffer              20000024     0x400      4  Data  Lc  SEGGER_RTT.o
+  m_rx_fifo_payload        20000424     0x128      4  Data  Lc  nrf_esb.o
+  m_tx_fifo_payload        2000054c     0x128      4  Data  Lc  nrf_esb.o
+  rxq                      20000674      0x80      4  Data  Lc  uart.o
+  _SEGGER_RTT              200006f4      0x78      4  Data  Gb  SEGGER_RTT.o
+  m_tx_fifo                2000076c      0x2c      4  Data  Lc  nrf_esb.o
+  m_rx_fifo                20000798      0x2c      4  Data  Lc  nrf_esb.o
+  tx_payload               200007c4      0x25      4  Data  Gb  main.o
+  received                 200007e9       0x1         Data  Gb  main.o
+  transmitted              200007ea       0x1         Data  Gb  main.o
+  m_esb_initialized        200007eb       0x1         Data  Lc  nrf_esb.o
+  rx_payload               200007ec      0x25      4  Data  Gb  main.o
+  m_nrf_esb_mainstate      20000811       0x1         Data  Lc  nrf_esb.o
+  isInit                   20000812       0x1         Data  Lc  uart.o
+  dummy                    20000813       0x1         Data  Lc  uart.o
+  m_rx_pipe_info           20000814      0x24      4  Data  Lc  nrf_esb.o
+  sysPacket                20000838      0x22      4  Data  Lc  main.o
+  m_tx_payload_buffer      2000085c      0x22      4  Data  Lc  nrf_esb.o
+  m_rx_payload_buffer      20000880      0x22      4  Data  Lc  nrf_esb.o
+  sysPacket                200008a4      0x22      4  Data  Lc  pm.o
+  m_config_local           200008c8      0x18      4  Data  Lc  nrf_esb.o
+  m_cb                     200008e0      0x14      4  Data  Lc  nrf_drv_adc.o
+  m_clock_cb               200008f4      0x14      4  Data  Lc  nrf_drv_clock.o
+  _acDownBuffer            20000908      0x10      4  Data  Lc  SEGGER_RTT.o
+  m_pids                   20000918       0x9      4  Data  Lc  nrf_esb.o
+  m_serial_box_0           20000924       0x8      4  Data  Lc  nrf_drv_common.o
+  m_serial_box_1           2000092c       0x8      4  Data  Lc  nrf_drv_common.o
+  m_comp_lpcomp            20000934       0x8      4  Data  Lc  nrf_drv_common.o
+  on_radio_disabled        2000093c       0x4      4  Data  Lc  nrf_esb.o
+  on_radio_end             20000940       0x4      4  Data  Lc  nrf_esb.o
+  m_event_handler          20000944       0x4      4  Data  Lc  nrf_esb.o
+  mp_current_payload       20000948       0x4      4  Data  Lc  nrf_esb.o
+  update_rf_payload_format
+                           2000094c       0x4      4  Data  Lc  nrf_esb.o
+  m_wait_for_ack_timeout_us
+                           20000950       0x4      4  Data  Lc  nrf_esb.o
+  m_last_tx_attempts       20000954       0x4      4  Data  Lc  nrf_esb.o
+  m_interrupt_flags        20000958       0x4      4  Data  Lc  nrf_esb.o
+  head                     2000095c       0x4      4  Data  Lc  uart.o
+  tail                     20000960       0x4      4  Data  Lc  uart.o
+  dropped                  20000964       0x4      4  Data  Lc  uart.o
+  m_pofwarn_handler        20000968       0x4      4  Data  Lc  nrf_drv_power.o
+  mstick                   2000096c       0x4      4  Data  Lc  systick.o
+  Vbatt                    20000970       0x4      4  Data  Lc  pm.o
+  uint32asBytes            20000974       0x4      4  Data  Gb  pm.o
+  msTick.5769              20000978       0x4      4  Data  Lc  pm.o
+  __user_format_extender   2000097c       0x4      4  Data  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __heap_start__           20000980                   ----  Gb  - Linker created -
+  __heap_start             20000980                   ----  Gb  - Linker created -
+  heap$$Base               20000980                   ----  Gb  - Linker created -
+  __heap_end               20001180                   ----  Gb  - Linker created -
+  __heap_end__             20001180                   ----  Gb  - Linker created -
+  heap$$Limit              20001180                   ----  Gb  - Linker created -
+  stack$$Base              20007800                   ----  Gb  - Linker created -
+  __stack_start__          20007800                   ----  Gb  - Linker created -
+  __stack_start            20007800                   ----  Gb  - Linker created -
+  stack$$Limit             20008000                   ----  Gb  - Linker created -
+  __stack_end__            20008000                   ----  Gb  - Linker created -
+  __stack_end              20008000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_end__     20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+
+Symbols by name
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  .LANCHOR7                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  .L__aeabi_fadd_fast_entry
+                           000024d9     0x13c      4  Code  Lc  libm_asm.o (libm_v6m_t_le_eabi.a)
+  ADC_IRQHandler           00001a49      0x84      4  Code  Gb  nrf_drv_adc.o
+  ADC_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  CCM_AAR_IRQHandler       00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  ChargingManagement       000044a3      0x44      2  Code  Lc  pm.o
+  Debugfunction            00001fed      0x4c      4  Code  Gb  pm.o
+  DisableCharging          0000453b      0x18      2  Code  Lc  pm.o
+  Dummy_Handler            00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  ECB_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  EnableCharging           00004553      0x18      2  Code  Lc  pm.o
+  GPIOTE_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  HardFault_Handler        00003a43      0x28      4  Code  Wk  ses_startup_nrf51.o
+  LPCOMP_IRQHandler        00001d25      0x10      4  Code  Gb  nrf_drv_common.o
+  LPCOMP_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  NMI_Handler              00003a41      0x28      4  Code  Wk  ses_startup_nrf51.o
+  OperatingMode            00002149      0x60      4  Code  Lc  pm.o
+  PM_Task                  00003d83       0xa      2  Code  Gb  main.o
+  POWER_CLOCK_IRQHandler   00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  POWER_CLOCK_IRQHandler   00003e83       0xe      2  Code  Gb  nrf_drv_common.o
+  PendSV_Handler           00003a47      0x28      4  Code  Wk  ses_startup_nrf51.o
+  QDEC_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RADIO_IRQHandler         000013b1      0x9c      4  Code  Gb  nrf_esb.o
+  RADIO_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RNG_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  Radio_Task               00000459      0x88      4  Code  Gb  main.o
+  Reset_Handler            00003acd      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  SEGGER_RTT_Write         00000285      0x44      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_WriteNoLock   000002c9      0xac      4  Code  Gb  SEGGER_RTT.o
+  SPI0_TWI0_IRQHandler     00001d05      0x10      4  Code  Gb  nrf_drv_common.o
+  SPI0_TWI0_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SPI1_TWI1_IRQHandler     00001d15      0x10      4  Code  Gb  nrf_drv_common.o
+  SPI1_TWI1_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SVC_Handler              00003a45      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI0_IRQHandler          00001335      0x7c      4  Code  Gb  nrf_esb.o
+  SWI0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI2_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI3_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI4_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI5_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  Switch_Task              00003c95      0x32      2  Code  Gb  main.o
+  SysTick_Handler          00003a49      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SystemCoreClock          20000020       0x4      4  Data  Gb  system_nrf51.o
+  SystemCoreClockUpdate    00000161      0x14      4  Code  Gb  system_nrf51.o
+  SystemInit               00000175      0x74      4  Code  Gb  system_nrf51.o
+  TEMP_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER0_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER1_IRQHandler        00001f59      0x20      4  Code  Gb  systick.o
+  TIMER1_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER2_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  UART0_IRQHandler         00001549      0x84      4  Code  Gb  uart.o
+  UART0_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  Vbatt                    20000970       0x4      4  Data  Lc  pm.o
+  WDT_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  _DoInit                  000001e9      0x9c      4  Code  Lc  SEGGER_RTT.o
+  _GetAvailWriteSpace      000041db      0x3c      2  Code  Lc  SEGGER_RTT.o
+  _SEGGER_RTT              200006f4      0x78      4  Data  Gb  SEGGER_RTT.o
+  _WriteBlocking           000040af      0xb0      2  Code  Lc  SEGGER_RTT.o
+  _WriteNoCheck            0000415f      0x7c      2  Code  Lc  SEGGER_RTT.o
+  _Z4fabsf                 00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z4fmodff                0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  _Z4modffPf               00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  _Z5floorf                00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5frexpfPi              000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5ldexpfi               00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __FLASH1_segment_end__   00040000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00040000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000800                   ----  Gb  - Linker created -
+  __NVIC_ClearPendingIRQ   00000ef1      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_ClearPendingIRQ   00001be1      0x38      4  Code  Lc  nrf_drv_common.o
+  __NVIC_DisableIRQ        00001015      0x44      4  Code  Lc  nrf_esb.o
+  __NVIC_EnableIRQ         00000e85      0x34      4  Code  Lc  nrf_esb.o
+  __NVIC_EnableIRQ         0000181d      0x34      4  Code  Lc  uart.o
+  __NVIC_EnableIRQ         00001bad      0x34      4  Code  Lc  nrf_drv_common.o
+  __NVIC_EnableIRQ         00001f79      0x34      4  Code  Lc  systick.o
+  __NVIC_SetPendingIRQ     00000eb9      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPriority       00000f29      0xec      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPriority       00001731      0xec      4  Code  Lc  uart.o
+  __NVIC_SetPriority       00001c19      0xec      4  Code  Lc  nrf_drv_common.o
+  __NVIC_SetPriority       00001e6d      0xec      4  Code  Lc  systick.o
+  __RAL_hex_lc             0000371c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_hex_uc             0000372c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_pow10f             0000296d      0x4c      4  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_pre_padding        00004063      0x16      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_print_padding      0000460b      0x18      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAM1_segment_end__     20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20008000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00008000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __SEGGER_init_copy       00004749      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_data__     00004728      0x20      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_table__    000046c0      0x68      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_zero       00004763      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  __STACKSIZE__            00000800                   ----  Gb  - Linker created -
+  __aeabi_EDOM             00003754       0x4      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_d2f              00002669      0x64      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_dcmpge           00002441      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_errno_addr       000029b9      0x10      4  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_f2d              000027bd      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_f2uiz            00002729      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fadd             000024d5     0x13c      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpeq           00002485      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpge           0000240d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpgt           00002611      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmple           0000227d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmplt           000024a5      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fdiv             000022b1      0x94      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fmul             00002345      0xb8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fsub             000023fd      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_i2f              00002641      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_idiv             0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_idivmod          00004623      0x40      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy           00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy4          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy8          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_read_tp          00002274       0x8      4  Code  Wk  SEGGER_THUMB_Startup.o
+  __aeabi_ui2f             00002709      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_uidiv            000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_uidivmod         00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __ctors_end              00003b9d                   ----  Gb  - Linker created -
+  __ctors_end__            00003b9d                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  __ctors_start            00003b9d                   ----  Gb  - Linker created -
+  __ctors_start__          00003b9d                   ----  Gb  - Linker created -
+  __divsi3                 0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __dtors_end              00003b9d                   ----  Gb  - Linker created -
+  __dtors_end__            00003b9d                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_start            00003b9d                   ----  Gb  - Linker created -
+  __dtors_start__          00003b9d                   ----  Gb  - Linker created -
+  __exidx_end              00003b9d                   ----  Gb  - Linker created -
+  __exidx_end__            00003b9d                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_start            00003b9d                   ----  Gb  - Linker created -
+  __exidx_start__          00003b9d                   ----  Gb  - Linker created -
+  __float32_isinf          000026f9      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_isnan          000027ad      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_signbit        000026cd       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __heap_end               20001180                   ----  Gb  - Linker created -
+  __heap_end__             20001180                   ----  Gb  - Linker created -
+  __heap_size              00000800                   ----  Gb  - Linker created -
+  __heap_size__            00000800                   ----  Gb  - Linker created -
+  __heap_start             20000980                   ----  Gb  - Linker created -
+  __heap_start__           20000980                   ----  Gb  - Linker created -
+  __int32_div              0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __int32_udivmod          00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __putc                   000045cf      0x3c      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __stack_end              20008000                   ----  Gb  - Linker created -
+  __stack_end__            20008000                   ----  Gb  - Linker created -
+  __stack_size             00000800                   ----  Gb  - Linker created -
+  __stack_size__           00000800                   ----  Gb  - Linker created -
+  __stack_start            20007800                   ----  Gb  - Linker created -
+  __stack_start__          20007800                   ----  Gb  - Linker created -
+  __tbss_end               20000004                   ----  Gb  - Linker created -
+  __tbss_end__             20000004                   ----  Gb  - Linker created -
+  __tbss_size              00000004                   ----  Gb  - Linker created -
+  __tbss_size__            00000004                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  __tdata_end              20000004                   ----  Gb  - Linker created -
+  __tdata_end__            20000004                   ----  Gb  - Linker created -
+  __tdata_load_end         00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_end__       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  __tdata_load_start       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_start__     00003b9d                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_start            20000004                   ----  Gb  - Linker created -
+  __tdata_start__          20000004                   ----  Gb  - Linker created -
+  __tls_end                20000004                   ----  Gb  - Linker created -
+  __tls_end__              20000004                   ----  Gb  - Linker created -
+  __tls_size               00000004                   ----  Gb  - Linker created -
+  __tls_size__             00000004                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __udivsi3                000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __uint32_div             000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __user_format_extender   2000097c       0x4      4  Data  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __vectors_end            000000c0                   ----  Gb  - Linker created -
+  __vectors_end__          000000c0                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  __vectors_start          00000000                   ----  Gb  - Linker created -
+  __vectors_start__        00000000                   ----  Gb  - Linker created -
+  __vfprintf               000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  __vfprintf_short_float_long
+                           000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  _acDownBuffer            20000908      0x10      4  Data  Lc  SEGGER_RTT.o
+  _acUpBuffer              20000024     0x400      4  Data  Lc  SEGGER_RTT.o
+  _start                   00003a69      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  _vectors                 00000000      0xc0      4  Code  Gb  ses_startup_nrf51.o
+  _vectors_end             000000c0      0xc0      4  Code  Lc  ses_startup_nrf51.o
+  abs                      00004663       0x8      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  adc_event_handler        000021c1      0x4c      4  Code  Lc  pm.o
+  adc_sample_process       00001ae1      0xa0      4  Code  Lc  nrf_drv_adc.o
+  addr_conv                0000430b      0x1c      2  Code  Lc  nrf_esb.o
+  afterInitialize          00003ace      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  bytewise_bit_swap        00000dc5      0x68      4  Code  Lc  nrf_esb.o
+  clear_events_restart_rx  00000c8d      0x74      4  Code  Lc  nrf_esb.o
+  clock_clk_started_notify
+                           00001d95      0x54      4  Code  Lc  nrf_drv_clock.o
+  clocks_start             00003cdd      0x2a      2  Code  Gb  main.o
+  ctor_end                 00003aa0      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00003a90      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctors$$Base              00003b9d                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  ctors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  dropped                  20000964       0x4      4  Data  Lc  uart.o
+  dtors$$Base              00003b9d                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  dtors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  dummy                    20000813       0x1         Data  Lc  uart.o
+  errno_val                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  esb_init_txrx            00000375      0xe4      4  Code  Gb  main.o
+  exidx$$Base              00003b9d                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  exidx$$Limit             00003b9d                   ----  Gb  - Linker created -
+  exit                     00003aaf      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00003aae      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  fabsf                    00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  floorf                   00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  fmodf                    0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  frexpf                   000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  gpio_init                000004e1      0x4c      4  Code  Gb  main.o
+  head                     2000095c       0x4      4  Data  Lc  uart.o
+  heap$$Base               20000980                   ----  Gb  - Linker created -
+  heap$$Length             00000800                   ----  Gb  - Linker created -
+  heap$$Limit              20001180                   ----  Gb  - Linker created -
+  initialize_fifos         0000077d      0x74      4  Code  Lc  nrf_esb.o
+  ipow10                   000000c0      0xa0      8  Cnst  Lc  libvfprintf_v6m_t_le_eabi.o
+  isBattOK                 00001fb9      0x34      4  Code  Lc  pm.o
+  isInit                   20000812       0x1         Data  Lc  uart.o
+  item_dequeue             00004373      0x20      2  Code  Lc  nrf_drv_clock.o
+  ldexpf                   00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  m_cb                     200008e0      0x14      4  Data  Lc  nrf_drv_adc.o
+  m_channel_config         20000018       0x8      4  Data  Lc  pm.o
+  m_clock_cb               200008f4      0x14      4  Data  Lc  nrf_drv_clock.o
+  m_comp_lpcomp            20000934       0x8      4  Data  Lc  nrf_drv_common.o
+  m_config_local           200008c8      0x18      4  Data  Lc  nrf_esb.o
+  m_default_config         00003b9c       0x1      4  Cnst  Lc  nrf_drv_adc.o
+  m_esb_addr               20000004      0x14      4  Data  Lc  nrf_esb.o
+  m_esb_initialized        200007eb       0x1         Data  Lc  nrf_esb.o
+  m_event_handler          20000944       0x4      4  Data  Lc  nrf_esb.o
+  m_interrupt_flags        20000958       0x4      4  Data  Lc  nrf_esb.o
+  m_last_tx_attempts       20000954       0x4      4  Data  Lc  nrf_esb.o
+  m_nrf_esb_mainstate      20000811       0x1         Data  Lc  nrf_esb.o
+  m_pids                   20000918       0x9      4  Data  Lc  nrf_esb.o
+  m_pofwarn_handler        20000968       0x4      4  Data  Lc  nrf_drv_power.o
+  m_rx_fifo                20000798      0x2c      4  Data  Lc  nrf_esb.o
+  m_rx_fifo_payload        20000424     0x128      4  Data  Lc  nrf_esb.o
+  m_rx_payload_buffer      20000880      0x22      4  Data  Lc  nrf_esb.o
+  m_rx_pipe_info           20000814      0x24      4  Data  Lc  nrf_esb.o
+  m_serial_box_0           20000924       0x8      4  Data  Lc  nrf_drv_common.o
+  m_serial_box_1           2000092c       0x8      4  Data  Lc  nrf_drv_common.o
+  m_tx_fifo                2000076c      0x2c      4  Data  Lc  nrf_esb.o
+  m_tx_fifo_payload        2000054c     0x128      4  Data  Lc  nrf_esb.o
+  m_tx_payload_buffer      2000085c      0x22      4  Data  Lc  nrf_esb.o
+  m_wait_for_ack_timeout_us
+                           20000950       0x4      4  Data  Lc  nrf_esb.o
+  main                     00004263      0x2c      2  Code  Gb  main.o
+  memcpy                   00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  memset                   0000408f      0x12      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  modff                    00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  mp_current_payload       20000948       0x4      4  Data  Lc  nrf_esb.o
+  msTick.5769              20000978       0x4      4  Data  Lc  pm.o
+  mstick                   2000096c       0x4      4  Data  Lc  systick.o
+  nRFInitialize            00003a4d      0x28      4  Code  Gb  ses_startup_nrf51.o
+  nrf51_errata_26          00003c45       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_59          00003b9f       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_76          00003c4b       0x6      2  Code  Lc  system_nrf51.o
+  nrf_adc_config_set       00001861      0x1c      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_disable          00001b81      0x14      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_enable           00001acd      0x14      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_check      000018b1      0x28      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_clear      0000188d      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_disable      00001b95      0x18      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_enable       000018d9      0x18      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_result_get       0000187d      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_start            00001851      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_task_trigger     000018f1      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_clock_event_check    00003e91      0x26      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_event_clear    00003eb7      0x22      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_int_disable    00003ed9      0x16      2  Code  Lc  nrf_drv_clock.o
+  nrf_drv_adc_channel_enable
+                           000019a9      0x40      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_init         000019e9      0x60      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_sample_convert
+                           00001915      0x94      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_clock_onIRQ      00001d35      0x60      4  Code  Gb  nrf_drv_clock.o
+  nrf_drv_common_irq_enable
+                           00004327      0x4c      2  Code  Gb  nrf_drv_common.o
+  nrf_drv_power_onIRQ      00001de9      0x34      4  Code  Gb  nrf_drv_power.o
+  nrf_esb_disable          00001265      0x5c      4  Code  Gb  nrf_esb.o
+  nrf_esb_event_handler    00000545      0xa0      4  Code  Gb  main.o
+  nrf_esb_get_clear_interrupts
+                           00000c41      0x4c      4  Code  Lc  nrf_esb.o
+  nrf_esb_init             000010d5      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_read_rx_payload  0000119d      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_0
+                           000012c1      0x40      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_1
+                           00001509      0x40      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_prefixes     00001059      0x7c      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_rf_channel   00001301      0x34      4  Code  Gb  nrf_esb.o
+  nrf_esb_start_rx         0000144d      0xbc      4  Code  Gb  nrf_esb.o
+  nrf_gpio_cfg             00003d07      0x6e      2  Code  Lc  main.o
+  nrf_gpio_cfg             00003f95      0x6e      2  Code  Lc  pm.o
+  nrf_gpio_cfg_input       000042df      0x2c      2  Code  Lc  main.o
+  nrf_gpio_cfg_input       000044e7      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_cfg_output      00004217      0x20      2  Code  Lc  main.o
+  nrf_gpio_cfg_output      00004483      0x20      2  Code  Lc  pm.o
+  nrf_gpio_pin_clear       000042b7      0x28      2  Code  Lc  main.o
+  nrf_gpio_pin_clear       00004513      0x28      2  Code  Lc  pm.o
+  nrf_gpio_pin_port_decode
+                           00003d75       0xe      2  Code  Lc  main.o
+  nrf_gpio_pin_port_decode
+                           0000402b       0xe      2  Code  Lc  pm.o
+  nrf_gpio_pin_read        00004237      0x2c      2  Code  Lc  main.o
+  nrf_gpio_pin_read        00004457      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_pin_set         0000428f      0x28      2  Code  Lc  main.o
+  nrf_gpio_pin_set         0000442f      0x28      2  Code  Lc  pm.o
+  nrf_gpio_port_in_read    00003c83      0x12      2  Code  Lc  main.o
+  nrf_gpio_port_in_read    00004003      0x12      2  Code  Lc  pm.o
+  nrf_gpio_port_out_clear  0000052d      0x18      4  Code  Lc  main.o
+  nrf_gpio_port_out_clear  000021a9      0x18      4  Code  Lc  pm.o
+  nrf_gpio_port_out_set    00003cc7      0x16      2  Code  Lc  main.o
+  nrf_gpio_port_out_set    00004015      0x16      2  Code  Lc  pm.o
+  nrf_power_event_check    000043b7      0x28      2  Code  Lc  nrf_drv_power.o
+  nrf_power_event_clear    00004393      0x24      2  Code  Lc  nrf_drv_power.o
+  nrf_power_event_get_and_clear
+                           00003eef      0x42      2  Code  Lc  nrf_drv_power.o
+  nrf_power_int_enable_get
+                           00003f31       0xe      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get     000043df      0x14      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get_c   000043f3      0x14      2  Code  Lc  nrf_drv_power.o
+  on_radio_disabled        2000093c       0x4      4  Data  Lc  nrf_esb.o
+  on_radio_disabled_rx     000008b5     0x28c      4  Code  Lc  nrf_esb.o
+  on_radio_disabled_rx_ack
+                           00000b5d      0x54      4  Code  Lc  nrf_esb.o
+  on_radio_end             20000940       0x4      4  Data  Lc  nrf_esb.o
+  pmInit                   00003f3f      0x56      2  Code  Gb  pm.o
+  pmIsCharging             0000441b      0x14      2  Code  Gb  pm.o
+  pmProcess                00002039     0x110      4  Code  Gb  pm.o
+  pmUSBPower               00004407      0x14      2  Code  Lc  pm.o
+  pm_adc_init              0000220d      0x68      4  Code  Gb  pm.o
+  powerf                   0000373c      0x18      4  Cnst  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  ppi_init                 00000d45      0x80      4  Code  Lc  nrf_esb.o
+  printf                   00003c51      0x32      2  Code  Gb  SEGGER_RTT_SES.o
+  received                 200007e9       0x1         Data  Gb  main.o
+  reset_fifos              00000bb1      0x30      4  Code  Lc  nrf_esb.o
+  rx_fifo_push_rfbuf       00000611      0xf0      4  Code  Lc  nrf_esb.o
+  rx_payload               200007ec      0x25      4  Data  Gb  main.o
+  rxq                      20000674      0x80      4  Data  Lc  uart.o
+  stack$$Base              20007800                   ----  Gb  - Linker created -
+  stack$$Length            00000800                   ----  Gb  - Linker created -
+  stack$$Limit             20008000                   ----  Gb  - Linker created -
+  start                    00003aa7      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  strcpy                   000046af      0x10      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  strlen                   000040a1       0xe      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  strnlen                  0000466b      0x28      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  sysPacket                20000838      0x22      4  Data  Lc  main.o
+  sysPacket                200008a4      0x22      4  Data  Lc  pm.o
+  sys_timer_init           00000889      0x2c      4  Code  Lc  nrf_esb.o
+  syslinkSend              00003d8d      0xf6      2  Code  Gb  syslink.o
+  systickInit              00001e1d      0x50      4  Code  Gb  systick.o
+  systick_GetTick_ms       00001fad       0xc      4  Code  Gb  systick.o
+  tail                     20000960       0x4      4  Data  Lc  uart.o
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  tbss$$Length             00000004                   ----  Gb  - Linker created -
+  tbss$$Limit              20000004                   ----  Gb  - Linker created -
+  tdata$$Base              20000004                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  tdata$$Limit             20000004                   ----  Gb  - Linker created -
+  tdata_load$$Base         00003b9d                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  tdata_load$$Limit        00003b9d                   ----  Gb  - Linker created -
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  tls$$Length              00000004                   ----  Gb  - Linker created -
+  tls$$Limit               20000004                   ----  Gb  - Linker created -
+  transmitted              200007ea       0x1         Data  Gb  main.o
+  tx_payload               200007c4      0x25      4  Data  Gb  main.o
+  uartInit                 000015cd     0x114      4  Code  Gb  uart.o
+  uartPutc                 000016e1      0x50      4  Code  Gb  uart.o
+  uint32asBytes            20000974       0x4      4  Data  Gb  pm.o
+  update_radio_addresses   000007f1      0x98      4  Code  Lc  nrf_esb.o
+  update_radio_bitrate     00000e2d      0x58      4  Code  Lc  nrf_esb.o
+  update_radio_crc         00000be1      0x60      4  Code  Lc  nrf_esb.o
+  update_radio_parameters  000005e5      0x2c      4  Code  Lc  nrf_esb.o
+  update_radio_protocol    0000073d      0x40      4  Code  Lc  nrf_esb.o
+  update_radio_tx_power    00000b41      0x1c      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format
+                           2000094c       0x4      4  Data  Lc  nrf_esb.o
+  update_rf_payload_format_esb
+                           00000d01      0x44      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format_esb_dpl
+                           00000701      0x3c      4  Code  Lc  nrf_esb.o
+  vectors$$Base            00000000                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  vectors$$Limit           000000c0                   ----  Gb  - Linker created -
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  vsnprintf                00004693      0x1c      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+
+Symbols by file then by name
+
+  Symbol                   Value         Size  Align  Type      Object
+  ------                   -----         ----  -----  ----      ------
+  __FLASH1_segment_end__   00040000                   ----  Gb  - Linker created -
+  __FLASH1_segment_size__  00040000                   ----  Gb  - Linker created -
+  __FLASH1_segment_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH1_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_end__    00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_size__   00040000                   ----  Gb  - Linker created -
+  __FLASH_segment_start__  00000000                   ----  Gb  - Linker created -
+  __FLASH_segment_used_end__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH_segment_used_size__
+                           00004778                   ----  Gb  - Linker created -
+  __FLASH_segment_used_start__
+                           00000000                   ----  Gb  - Linker created -
+  __HEAPSIZE__             00000800                   ----  Gb  - Linker created -
+  __RAM1_segment_end__     20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_size__    00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_start__   20000000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM1_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __RAM_segment_end__      20008000                   ----  Gb  - Linker created -
+  __RAM_segment_size__     00008000                   ----  Gb  - Linker created -
+  __RAM_segment_start__    20000000                   ----  Gb  - Linker created -
+  __RAM_segment_used_end__
+                           20008000                   ----  Gb  - Linker created -
+  __RAM_segment_used_size__
+                           00008000                   ----  Gb  - Linker created -
+  __RAM_segment_used_start__
+                           20000000                   ----  Gb  - Linker created -
+  __SEGGER_init_data__     00004728      0x20      4  Cnst  Lc  - Linker created -
+  __SEGGER_init_table__    000046c0      0x68      4  Cnst  Lc  - Linker created -
+  __STACKSIZE_PROCESS__    00000000                   ----  Gb  - Linker created -
+  __STACKSIZE__            00000800                   ----  Gb  - Linker created -
+  __ctors_end              00003b9d                   ----  Gb  - Linker created -
+  __ctors_end__            00003b9d                   ----  Gb  - Linker created -
+  __ctors_size             00000000                   ----  Gb  - Linker created -
+  __ctors_size__           00000000                   ----  Gb  - Linker created -
+  __ctors_start            00003b9d                   ----  Gb  - Linker created -
+  __ctors_start__          00003b9d                   ----  Gb  - Linker created -
+  __dtors_end              00003b9d                   ----  Gb  - Linker created -
+  __dtors_end__            00003b9d                   ----  Gb  - Linker created -
+  __dtors_size             00000000                   ----  Gb  - Linker created -
+  __dtors_size__           00000000                   ----  Gb  - Linker created -
+  __dtors_start            00003b9d                   ----  Gb  - Linker created -
+  __dtors_start__          00003b9d                   ----  Gb  - Linker created -
+  __exidx_end              00003b9d                   ----  Gb  - Linker created -
+  __exidx_end__            00003b9d                   ----  Gb  - Linker created -
+  __exidx_size             00000000                   ----  Gb  - Linker created -
+  __exidx_size__           00000000                   ----  Gb  - Linker created -
+  __exidx_start            00003b9d                   ----  Gb  - Linker created -
+  __exidx_start__          00003b9d                   ----  Gb  - Linker created -
+  __heap_end               20001180                   ----  Gb  - Linker created -
+  __heap_end__             20001180                   ----  Gb  - Linker created -
+  __heap_size              00000800                   ----  Gb  - Linker created -
+  __heap_size__            00000800                   ----  Gb  - Linker created -
+  __heap_start             20000980                   ----  Gb  - Linker created -
+  __heap_start__           20000980                   ----  Gb  - Linker created -
+  __stack_end              20008000                   ----  Gb  - Linker created -
+  __stack_end__            20008000                   ----  Gb  - Linker created -
+  __stack_size             00000800                   ----  Gb  - Linker created -
+  __stack_size__           00000800                   ----  Gb  - Linker created -
+  __stack_start            20007800                   ----  Gb  - Linker created -
+  __stack_start__          20007800                   ----  Gb  - Linker created -
+  __tbss_end               20000004                   ----  Gb  - Linker created -
+  __tbss_end__             20000004                   ----  Gb  - Linker created -
+  __tbss_size              00000004                   ----  Gb  - Linker created -
+  __tbss_size__            00000004                   ----  Gb  - Linker created -
+  __tbss_start             20000000                   ----  Gb  - Linker created -
+  __tbss_start__           20000000                   ----  Gb  - Linker created -
+  __tdata_end              20000004                   ----  Gb  - Linker created -
+  __tdata_end__            20000004                   ----  Gb  - Linker created -
+  __tdata_load_end         00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_end__       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_size        00000000                   ----  Gb  - Linker created -
+  __tdata_load_size__      00000000                   ----  Gb  - Linker created -
+  __tdata_load_start       00003b9d                   ----  Gb  - Linker created -
+  __tdata_load_start__     00003b9d                   ----  Gb  - Linker created -
+  __tdata_size             00000000                   ----  Gb  - Linker created -
+  __tdata_size__           00000000                   ----  Gb  - Linker created -
+  __tdata_start            20000004                   ----  Gb  - Linker created -
+  __tdata_start__          20000004                   ----  Gb  - Linker created -
+  __tls_end                20000004                   ----  Gb  - Linker created -
+  __tls_end__              20000004                   ----  Gb  - Linker created -
+  __tls_size               00000004                   ----  Gb  - Linker created -
+  __tls_size__             00000004                   ----  Gb  - Linker created -
+  __tls_start              20000000                   ----  Gb  - Linker created -
+  __tls_start__            20000000                   ----  Gb  - Linker created -
+  __vectors_end            000000c0                   ----  Gb  - Linker created -
+  __vectors_end__          000000c0                   ----  Gb  - Linker created -
+  __vectors_ram_end        20000000                   ----  Gb  - Linker created -
+  __vectors_ram_end__      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_size       00000000                   ----  Gb  - Linker created -
+  __vectors_ram_size__     00000000                   ----  Gb  - Linker created -
+  __vectors_ram_start      20000000                   ----  Gb  - Linker created -
+  __vectors_ram_start__    20000000                   ----  Gb  - Linker created -
+  __vectors_size           000000c0                   ----  Gb  - Linker created -
+  __vectors_size__         000000c0                   ----  Gb  - Linker created -
+  __vectors_start          00000000                   ----  Gb  - Linker created -
+  __vectors_start__        00000000                   ----  Gb  - Linker created -
+  ctors$$Base              00003b9d                   ----  Gb  - Linker created -
+  ctors$$Length            00000000                   ----  Gb  - Linker created -
+  ctors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  dtors$$Base              00003b9d                   ----  Gb  - Linker created -
+  dtors$$Length            00000000                   ----  Gb  - Linker created -
+  dtors$$Limit             00003b9d                   ----  Gb  - Linker created -
+  exidx$$Base              00003b9d                   ----  Gb  - Linker created -
+  exidx$$Length            00000000                   ----  Gb  - Linker created -
+  exidx$$Limit             00003b9d                   ----  Gb  - Linker created -
+  heap$$Base               20000980                   ----  Gb  - Linker created -
+  heap$$Length             00000800                   ----  Gb  - Linker created -
+  heap$$Limit              20001180                   ----  Gb  - Linker created -
+  stack$$Base              20007800                   ----  Gb  - Linker created -
+  stack$$Length            00000800                   ----  Gb  - Linker created -
+  stack$$Limit             20008000                   ----  Gb  - Linker created -
+  tbss$$Base               20000000                   ----  Gb  - Linker created -
+  tbss$$Length             00000004                   ----  Gb  - Linker created -
+  tbss$$Limit              20000004                   ----  Gb  - Linker created -
+  tdata$$Base              20000004                   ----  Gb  - Linker created -
+  tdata$$Length            00000000                   ----  Gb  - Linker created -
+  tdata$$Limit             20000004                   ----  Gb  - Linker created -
+  tdata_load$$Base         00003b9d                   ----  Gb  - Linker created -
+  tdata_load$$Length       00000000                   ----  Gb  - Linker created -
+  tdata_load$$Limit        00003b9d                   ----  Gb  - Linker created -
+  tls$$Base                20000000                   ----  Gb  - Linker created -
+  tls$$Length              00000004                   ----  Gb  - Linker created -
+  tls$$Limit               20000004                   ----  Gb  - Linker created -
+  vectors$$Base            00000000                   ----  Gb  - Linker created -
+  vectors$$Length          000000c0                   ----  Gb  - Linker created -
+  vectors$$Limit           000000c0                   ----  Gb  - Linker created -
+  vectors_ram$$Base        20000000                   ----  Gb  - Linker created -
+  vectors_ram$$Length      00000000                   ----  Gb  - Linker created -
+  vectors_ram$$Limit       20000000                   ----  Gb  - Linker created -
+  SEGGER_RTT_Write         00000285      0x44      4  Code  Gb  SEGGER_RTT.o
+  SEGGER_RTT_WriteNoLock   000002c9      0xac      4  Code  Gb  SEGGER_RTT.o
+  _DoInit                  000001e9      0x9c      4  Code  Lc  SEGGER_RTT.o
+  _GetAvailWriteSpace      000041db      0x3c      2  Code  Lc  SEGGER_RTT.o
+  _SEGGER_RTT              200006f4      0x78      4  Data  Gb  SEGGER_RTT.o
+  _WriteBlocking           000040af      0xb0      2  Code  Lc  SEGGER_RTT.o
+  _WriteNoCheck            0000415f      0x7c      2  Code  Lc  SEGGER_RTT.o
+  _acDownBuffer            20000908      0x10      4  Data  Lc  SEGGER_RTT.o
+  _acUpBuffer              20000024     0x400      4  Data  Lc  SEGGER_RTT.o
+  printf                   00003c51      0x32      2  Code  Gb  SEGGER_RTT_SES.o
+  __SEGGER_init_copy       00004749      0x1a      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero       00004763      0x16      2  Code  Gb  SEGGER_THUMB_Startup.o
+  __aeabi_read_tp          00002274       0x8      4  Code  Wk  SEGGER_THUMB_Startup.o
+  _start                   00003a69      0x64      4  Code  Gb  SEGGER_THUMB_Startup.o
+  ctor_end                 00003aa0      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  ctor_loop                00003a90      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  exit                     00003aaf      0x64      4  Code  Wk  SEGGER_THUMB_Startup.o
+  exit_loop                00003aae      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  start                    00003aa7      0x64      4  Code  Lc  SEGGER_THUMB_Startup.o
+  .LANCHOR7                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_hex_lc             0000371c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_hex_uc             0000372c      0x10      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_pow10f             0000296d      0x4c      4  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_pre_padding        00004063      0x16      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __RAL_print_padding      0000460b      0x18      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_EDOM             00003754       0x4      4  Cnst  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_errno_addr       000029b9      0x10      4  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  __putc                   000045cf      0x3c      2  Code  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  __user_format_extender   2000097c       0x4      4  Data  Gb  libc2.o (libc_v6m_t_le_eabi.a)
+  abs                      00004663       0x8      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  errno_val                20000000       0x4      4  Data  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  powerf                   0000373c      0x18      4  Cnst  Lc  libc2.o (libc_v6m_t_le_eabi.a)
+  strnlen                  0000466b      0x28      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  vsnprintf                00004693      0x1c      2  Code  Wk  libc2.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy           00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy4          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_memcpy8          00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  memcpy                   00004079      0x16      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  memset                   0000408f      0x12      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  strcpy                   000046af      0x10      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  strlen                   000040a1       0xe      2  Code  Wk  libc2_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_idiv             0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_idivmod          00004623      0x40      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_uidiv            000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __aeabi_uidivmod         00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __divsi3                 0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __int32_div              0000456b      0x3c      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __int32_udivmod          00004039      0x2a      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __udivsi3                000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  __uint32_div             000045a7      0x28      2  Code  Wk  libc_asm.o (libc_v6m_t_le_eabi.a)
+  _Z4fmodff                0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  _Z4modffPf               00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  fmodf                    0000286d     0x100      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  modff                    00002825      0x48      4  Code  Wk  libm2.o (libm_v6m_t_le_eabi.a)
+  .L__aeabi_fadd_fast_entry
+                           000024d9     0x13c      4  Code  Lc  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z4fabsf                 00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5floorf                00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5frexpfPi              000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  _Z5ldexpfi               00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_d2f              00002669      0x64      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_dcmpge           00002441      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_f2d              000027bd      0x44      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_f2uiz            00002729      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fadd             000024d5     0x13c      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpeq           00002485      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpge           0000240d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmpgt           00002611      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmple           0000227d      0x34      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fcmplt           000024a5      0x30      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fdiv             000022b1      0x94      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fmul             00002345      0xb8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_fsub             000023fd      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_i2f              00002641      0x28      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __aeabi_ui2f             00002709      0x20      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_isinf          000026f9      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_isnan          000027ad      0x10      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __float32_signbit        000026cd       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  fabsf                    00002751       0x8      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  floorf                   00002759      0x54      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  frexpf                   000026d5      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  ldexpf                   00002801      0x24      4  Code  Wk  libm_asm.o (libm_v6m_t_le_eabi.a)
+  __vfprintf               000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  __vfprintf_short_float_long
+                           000029c9     0xd54      4  Code  Gb  libvfprintf_v6m_t_le_eabi.o
+  ipow10                   000000c0      0xa0      8  Cnst  Lc  libvfprintf_v6m_t_le_eabi.o
+  PM_Task                  00003d83       0xa      2  Code  Gb  main.o
+  Radio_Task               00000459      0x88      4  Code  Gb  main.o
+  Switch_Task              00003c95      0x32      2  Code  Gb  main.o
+  clocks_start             00003cdd      0x2a      2  Code  Gb  main.o
+  esb_init_txrx            00000375      0xe4      4  Code  Gb  main.o
+  gpio_init                000004e1      0x4c      4  Code  Gb  main.o
+  main                     00004263      0x2c      2  Code  Gb  main.o
+  nrf_esb_event_handler    00000545      0xa0      4  Code  Gb  main.o
+  nrf_gpio_cfg             00003d07      0x6e      2  Code  Lc  main.o
+  nrf_gpio_cfg_input       000042df      0x2c      2  Code  Lc  main.o
+  nrf_gpio_cfg_output      00004217      0x20      2  Code  Lc  main.o
+  nrf_gpio_pin_clear       000042b7      0x28      2  Code  Lc  main.o
+  nrf_gpio_pin_port_decode
+                           00003d75       0xe      2  Code  Lc  main.o
+  nrf_gpio_pin_read        00004237      0x2c      2  Code  Lc  main.o
+  nrf_gpio_pin_set         0000428f      0x28      2  Code  Lc  main.o
+  nrf_gpio_port_in_read    00003c83      0x12      2  Code  Lc  main.o
+  nrf_gpio_port_out_clear  0000052d      0x18      4  Code  Lc  main.o
+  nrf_gpio_port_out_set    00003cc7      0x16      2  Code  Lc  main.o
+  received                 200007e9       0x1         Data  Gb  main.o
+  rx_payload               200007ec      0x25      4  Data  Gb  main.o
+  sysPacket                20000838      0x22      4  Data  Lc  main.o
+  transmitted              200007ea       0x1         Data  Gb  main.o
+  tx_payload               200007c4      0x25      4  Data  Gb  main.o
+  ADC_IRQHandler           00001a49      0x84      4  Code  Gb  nrf_drv_adc.o
+  adc_sample_process       00001ae1      0xa0      4  Code  Lc  nrf_drv_adc.o
+  m_cb                     200008e0      0x14      4  Data  Lc  nrf_drv_adc.o
+  m_default_config         00003b9c       0x1      4  Cnst  Lc  nrf_drv_adc.o
+  nrf_adc_config_set       00001861      0x1c      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_disable          00001b81      0x14      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_enable           00001acd      0x14      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_check      000018b1      0x28      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_event_clear      0000188d      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_disable      00001b95      0x18      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_int_enable       000018d9      0x18      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_result_get       0000187d      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_start            00001851      0x10      4  Code  Lc  nrf_drv_adc.o
+  nrf_adc_task_trigger     000018f1      0x24      4  Code  Lc  nrf_drv_adc.o
+  nrf_drv_adc_channel_enable
+                           000019a9      0x40      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_init         000019e9      0x60      4  Code  Gb  nrf_drv_adc.o
+  nrf_drv_adc_sample_convert
+                           00001915      0x94      4  Code  Gb  nrf_drv_adc.o
+  clock_clk_started_notify
+                           00001d95      0x54      4  Code  Lc  nrf_drv_clock.o
+  item_dequeue             00004373      0x20      2  Code  Lc  nrf_drv_clock.o
+  m_clock_cb               200008f4      0x14      4  Data  Lc  nrf_drv_clock.o
+  nrf_clock_event_check    00003e91      0x26      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_event_clear    00003eb7      0x22      2  Code  Lc  nrf_drv_clock.o
+  nrf_clock_int_disable    00003ed9      0x16      2  Code  Lc  nrf_drv_clock.o
+  nrf_drv_clock_onIRQ      00001d35      0x60      4  Code  Gb  nrf_drv_clock.o
+  LPCOMP_IRQHandler        00001d25      0x10      4  Code  Gb  nrf_drv_common.o
+  POWER_CLOCK_IRQHandler   00003e83       0xe      2  Code  Gb  nrf_drv_common.o
+  SPI0_TWI0_IRQHandler     00001d05      0x10      4  Code  Gb  nrf_drv_common.o
+  SPI1_TWI1_IRQHandler     00001d15      0x10      4  Code  Gb  nrf_drv_common.o
+  __NVIC_ClearPendingIRQ   00001be1      0x38      4  Code  Lc  nrf_drv_common.o
+  __NVIC_EnableIRQ         00001bad      0x34      4  Code  Lc  nrf_drv_common.o
+  __NVIC_SetPriority       00001c19      0xec      4  Code  Lc  nrf_drv_common.o
+  m_comp_lpcomp            20000934       0x8      4  Data  Lc  nrf_drv_common.o
+  m_serial_box_0           20000924       0x8      4  Data  Lc  nrf_drv_common.o
+  m_serial_box_1           2000092c       0x8      4  Data  Lc  nrf_drv_common.o
+  nrf_drv_common_irq_enable
+                           00004327      0x4c      2  Code  Gb  nrf_drv_common.o
+  m_pofwarn_handler        20000968       0x4      4  Data  Lc  nrf_drv_power.o
+  nrf_drv_power_onIRQ      00001de9      0x34      4  Code  Gb  nrf_drv_power.o
+  nrf_power_event_check    000043b7      0x28      2  Code  Lc  nrf_drv_power.o
+  nrf_power_event_clear    00004393      0x24      2  Code  Lc  nrf_drv_power.o
+  nrf_power_event_get_and_clear
+                           00003eef      0x42      2  Code  Lc  nrf_drv_power.o
+  nrf_power_int_enable_get
+                           00003f31       0xe      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get     000043df      0x14      2  Code  Lc  nrf_drv_power.o
+  nrf_power_regptr_get_c   000043f3      0x14      2  Code  Lc  nrf_drv_power.o
+  RADIO_IRQHandler         000013b1      0x9c      4  Code  Gb  nrf_esb.o
+  SWI0_IRQHandler          00001335      0x7c      4  Code  Gb  nrf_esb.o
+  __NVIC_ClearPendingIRQ   00000ef1      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_DisableIRQ        00001015      0x44      4  Code  Lc  nrf_esb.o
+  __NVIC_EnableIRQ         00000e85      0x34      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPendingIRQ     00000eb9      0x38      4  Code  Lc  nrf_esb.o
+  __NVIC_SetPriority       00000f29      0xec      4  Code  Lc  nrf_esb.o
+  addr_conv                0000430b      0x1c      2  Code  Lc  nrf_esb.o
+  bytewise_bit_swap        00000dc5      0x68      4  Code  Lc  nrf_esb.o
+  clear_events_restart_rx  00000c8d      0x74      4  Code  Lc  nrf_esb.o
+  initialize_fifos         0000077d      0x74      4  Code  Lc  nrf_esb.o
+  m_config_local           200008c8      0x18      4  Data  Lc  nrf_esb.o
+  m_esb_addr               20000004      0x14      4  Data  Lc  nrf_esb.o
+  m_esb_initialized        200007eb       0x1         Data  Lc  nrf_esb.o
+  m_event_handler          20000944       0x4      4  Data  Lc  nrf_esb.o
+  m_interrupt_flags        20000958       0x4      4  Data  Lc  nrf_esb.o
+  m_last_tx_attempts       20000954       0x4      4  Data  Lc  nrf_esb.o
+  m_nrf_esb_mainstate      20000811       0x1         Data  Lc  nrf_esb.o
+  m_pids                   20000918       0x9      4  Data  Lc  nrf_esb.o
+  m_rx_fifo                20000798      0x2c      4  Data  Lc  nrf_esb.o
+  m_rx_fifo_payload        20000424     0x128      4  Data  Lc  nrf_esb.o
+  m_rx_payload_buffer      20000880      0x22      4  Data  Lc  nrf_esb.o
+  m_rx_pipe_info           20000814      0x24      4  Data  Lc  nrf_esb.o
+  m_tx_fifo                2000076c      0x2c      4  Data  Lc  nrf_esb.o
+  m_tx_fifo_payload        2000054c     0x128      4  Data  Lc  nrf_esb.o
+  m_tx_payload_buffer      2000085c      0x22      4  Data  Lc  nrf_esb.o
+  m_wait_for_ack_timeout_us
+                           20000950       0x4      4  Data  Lc  nrf_esb.o
+  mp_current_payload       20000948       0x4      4  Data  Lc  nrf_esb.o
+  nrf_esb_disable          00001265      0x5c      4  Code  Gb  nrf_esb.o
+  nrf_esb_get_clear_interrupts
+                           00000c41      0x4c      4  Code  Lc  nrf_esb.o
+  nrf_esb_init             000010d5      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_read_rx_payload  0000119d      0xc8      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_0
+                           000012c1      0x40      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_base_address_1
+                           00001509      0x40      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_prefixes     00001059      0x7c      4  Code  Gb  nrf_esb.o
+  nrf_esb_set_rf_channel   00001301      0x34      4  Code  Gb  nrf_esb.o
+  nrf_esb_start_rx         0000144d      0xbc      4  Code  Gb  nrf_esb.o
+  on_radio_disabled        2000093c       0x4      4  Data  Lc  nrf_esb.o
+  on_radio_disabled_rx     000008b5     0x28c      4  Code  Lc  nrf_esb.o
+  on_radio_disabled_rx_ack
+                           00000b5d      0x54      4  Code  Lc  nrf_esb.o
+  on_radio_end             20000940       0x4      4  Data  Lc  nrf_esb.o
+  ppi_init                 00000d45      0x80      4  Code  Lc  nrf_esb.o
+  reset_fifos              00000bb1      0x30      4  Code  Lc  nrf_esb.o
+  rx_fifo_push_rfbuf       00000611      0xf0      4  Code  Lc  nrf_esb.o
+  sys_timer_init           00000889      0x2c      4  Code  Lc  nrf_esb.o
+  update_radio_addresses   000007f1      0x98      4  Code  Lc  nrf_esb.o
+  update_radio_bitrate     00000e2d      0x58      4  Code  Lc  nrf_esb.o
+  update_radio_crc         00000be1      0x60      4  Code  Lc  nrf_esb.o
+  update_radio_parameters  000005e5      0x2c      4  Code  Lc  nrf_esb.o
+  update_radio_protocol    0000073d      0x40      4  Code  Lc  nrf_esb.o
+  update_radio_tx_power    00000b41      0x1c      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format
+                           2000094c       0x4      4  Data  Lc  nrf_esb.o
+  update_rf_payload_format_esb
+                           00000d01      0x44      4  Code  Lc  nrf_esb.o
+  update_rf_payload_format_esb_dpl
+                           00000701      0x3c      4  Code  Lc  nrf_esb.o
+  ChargingManagement       000044a3      0x44      2  Code  Lc  pm.o
+  Debugfunction            00001fed      0x4c      4  Code  Gb  pm.o
+  DisableCharging          0000453b      0x18      2  Code  Lc  pm.o
+  EnableCharging           00004553      0x18      2  Code  Lc  pm.o
+  OperatingMode            00002149      0x60      4  Code  Lc  pm.o
+  Vbatt                    20000970       0x4      4  Data  Lc  pm.o
+  adc_event_handler        000021c1      0x4c      4  Code  Lc  pm.o
+  isBattOK                 00001fb9      0x34      4  Code  Lc  pm.o
+  m_channel_config         20000018       0x8      4  Data  Lc  pm.o
+  msTick.5769              20000978       0x4      4  Data  Lc  pm.o
+  nrf_gpio_cfg             00003f95      0x6e      2  Code  Lc  pm.o
+  nrf_gpio_cfg_input       000044e7      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_cfg_output      00004483      0x20      2  Code  Lc  pm.o
+  nrf_gpio_pin_clear       00004513      0x28      2  Code  Lc  pm.o
+  nrf_gpio_pin_port_decode
+                           0000402b       0xe      2  Code  Lc  pm.o
+  nrf_gpio_pin_read        00004457      0x2c      2  Code  Lc  pm.o
+  nrf_gpio_pin_set         0000442f      0x28      2  Code  Lc  pm.o
+  nrf_gpio_port_in_read    00004003      0x12      2  Code  Lc  pm.o
+  nrf_gpio_port_out_clear  000021a9      0x18      4  Code  Lc  pm.o
+  nrf_gpio_port_out_set    00004015      0x16      2  Code  Lc  pm.o
+  pmInit                   00003f3f      0x56      2  Code  Gb  pm.o
+  pmIsCharging             0000441b      0x14      2  Code  Gb  pm.o
+  pmProcess                00002039     0x110      4  Code  Gb  pm.o
+  pmUSBPower               00004407      0x14      2  Code  Lc  pm.o
+  pm_adc_init              0000220d      0x68      4  Code  Gb  pm.o
+  sysPacket                200008a4      0x22      4  Data  Lc  pm.o
+  uint32asBytes            20000974       0x4      4  Data  Gb  pm.o
+  ADC_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  CCM_AAR_IRQHandler       00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  Dummy_Handler            00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  ECB_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  GPIOTE_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  HardFault_Handler        00003a43      0x28      4  Code  Wk  ses_startup_nrf51.o
+  LPCOMP_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  NMI_Handler              00003a41      0x28      4  Code  Wk  ses_startup_nrf51.o
+  POWER_CLOCK_IRQHandler   00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  PendSV_Handler           00003a47      0x28      4  Code  Wk  ses_startup_nrf51.o
+  QDEC_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RADIO_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RNG_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  RTC1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SPI0_TWI0_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SPI1_TWI1_IRQHandler     00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SVC_Handler              00003a45      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI0_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI1_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI2_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI3_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI4_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SWI5_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  SysTick_Handler          00003a49      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TEMP_IRQHandler          00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER0_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER1_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  TIMER2_IRQHandler        00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  UART0_IRQHandler         00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  WDT_IRQHandler           00003a4b      0x28      4  Code  Wk  ses_startup_nrf51.o
+  _vectors                 00000000      0xc0      4  Code  Gb  ses_startup_nrf51.o
+  _vectors_end             000000c0      0xc0      4  Code  Lc  ses_startup_nrf51.o
+  nRFInitialize            00003a4d      0x28      4  Code  Gb  ses_startup_nrf51.o
+  Reset_Handler            00003acd      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  afterInitialize          00003ace      0x2c      4  Code  Gb  ses_startup_nrf_common.o
+  syslinkSend              00003d8d      0xf6      2  Code  Gb  syslink.o
+  SystemCoreClock          20000020       0x4      4  Data  Gb  system_nrf51.o
+  SystemCoreClockUpdate    00000161      0x14      4  Code  Gb  system_nrf51.o
+  SystemInit               00000175      0x74      4  Code  Gb  system_nrf51.o
+  nrf51_errata_26          00003c45       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_59          00003b9f       0x6      2  Code  Lc  system_nrf51.o
+  nrf51_errata_76          00003c4b       0x6      2  Code  Lc  system_nrf51.o
+  TIMER1_IRQHandler        00001f59      0x20      4  Code  Gb  systick.o
+  __NVIC_EnableIRQ         00001f79      0x34      4  Code  Lc  systick.o
+  __NVIC_SetPriority       00001e6d      0xec      4  Code  Lc  systick.o
+  mstick                   2000096c       0x4      4  Data  Lc  systick.o
+  systickInit              00001e1d      0x50      4  Code  Gb  systick.o
+  systick_GetTick_ms       00001fad       0xc      4  Code  Gb  systick.o
+  UART0_IRQHandler         00001549      0x84      4  Code  Gb  uart.o
+  __NVIC_EnableIRQ         0000181d      0x34      4  Code  Lc  uart.o
+  __NVIC_SetPriority       00001731      0xec      4  Code  Lc  uart.o
+  dropped                  20000964       0x4      4  Data  Lc  uart.o
+  dummy                    20000813       0x1         Data  Lc  uart.o
+  head                     2000095c       0x4      4  Data  Lc  uart.o
+  isInit                   20000812       0x1         Data  Lc  uart.o
+  rxq                      20000674      0x80      4  Data  Lc  uart.o
+  tail                     20000960       0x4      4  Data  Lc  uart.o
+  uartInit                 000015cd     0x114      4  Code  Gb  uart.o
+  uartPutc                 000016e1      0x50      4  Code  Gb  uart.o
+
+
+***************************************************************************************
+***                                                                                 ***
+***                                  LINK SUMMARY                                   ***
+***                                                                                 ***
+***************************************************************************************
+
+Link complete: 0 errors, 0 warnings, 0 remarks
+
+  Name             Range           Size       Allocated         Used   Loading  (Alignment loss)
+  ---------- -------- -------- --------   -------- -------- --------   -------  ----------------
+  FLASH      00000000 0003ffff   262144   00000000 00004777    18296     6.98%         6   0.03%
+  RAM        20000000 20007fff    32768   20000000 20007fff    32768   100.00%     26251  80.11%
+
+Section composition:
+
+     16868  RX        32  RW
+      1422  RO      6485  ZI
+  ------------   -----------
+     18290 ROM      6517 RAM

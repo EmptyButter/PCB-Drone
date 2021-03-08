@@ -1,0 +1,9 @@
+Manufacturer=ABRACON
+PartNumber=AMCA31-2R450G-S1F-T3
+PartCategory=Antenna
+PackageCategory=Antennas Chip
+PinCount=2
+Version=1.1
+Released=2018-01-18 16:21:05
+Downloaded=2020-07-06 04:38:44
+3D=Y
